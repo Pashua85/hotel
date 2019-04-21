@@ -1,6 +1,8 @@
-h1 {
-  color: blue;
-}
+@import './base-styles/variables.scss';
+@import './base-styles/base.scss';
+@import './base-styles/typography.scss';
+
+@import './components/header/header.scss';
 
 
 

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.eot');
+  src: url('./fonts/Montserrat-Regular.woff') format('woff'), 
+    url('./fonts/Montserrat-Regular.ttf') format('truetype'), 
+    url('./fonts/Montserrat-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('./fonts/Montserrat-Bold.eot');
+  src: url('./fonts/Montserrat-Bold.woff') format('woff'), 
+    url('./fonts/Montserrat-Bold.ttf') format('truetype'), 
+    url('./fonts/Montserrat-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand Bold';
+  src: url('./fonts/Quicksand-Bold.eot');
+  src: url('./fonts/Quicksand-Bold.woff') format('woff'), 
+    url('./fonts/Quicksand-Bold.ttf') format('truetype'), 
+    url('./fonts/Quicksand-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/Quicksand-Regular.eot');
+  src: url('./fonts/Quicksand-Regular.woff') format('woff'), 
+    url('./fonts/Quicksand-Regular.ttf') format('truetype'), 
+    url('./fonts/Quicksand-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $default-font-size;
+  line-height: 2.4rem;
+}
+
+.header--first {
+  font-family: 'Quicksand Bold', sans-serif;
+  font-size: 2.4rem;
+  line-height: normal;
+}
+
+.header--second {
+  font-family: 'Quicksand Bold', sans-serif;
+  font-size: 1.9rem;
+  line-height: normal;
+}
+
+.header--third {
+  font-size: 1.2rem;
+  line-height: normal;
+
+}
+
