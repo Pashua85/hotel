@@ -1,0 +1,10 @@
+mixin button(title, color, height, width) 
+  - title = title || 'click me';
+  - color = color || 'white';
+  - height = height || 'high'
+  - width = width || 'wide'
+  - var colorClass = 'button--' + color;
+  - var heightClass = 'button--' + height;
+  - var widthClass = 'button--' + width;
+
+  button(class=`button ${colorClass} ${heightClass} ${widthClass}`)= title

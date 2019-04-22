@@ -1,4 +1,5 @@
 include ../../components/header/header.pug
+include ../../components/button/button.pug
 
 doctype html
 html(lang="en")
@@ -8,5 +9,6 @@ html(lang="en")
     title
       block title
     body
-      + header(false)
+      //- + header(false)
+      + button('Зарегистрироваться', 'blue', 'low', 'narrow')
       block main
