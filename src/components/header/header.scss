@@ -1,0 +1,91 @@
+.header {
+  height: 7rem;
+
+  &__container {
+    display: flex;
+    width: $grid-width;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+   
+  &__logo {
+    height: 4rem;
+  }
+
+  &__logo-link {
+    display: inline-block;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__nav-list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__nav-item {
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 2.2rem;
+    }
+
+    &--expandable {
+      position: relative;
+      padding-right: 2.4rem;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: .2rem;
+        display: table;
+        content: '';
+        width: 2.4rem;
+        height: 2.1rem;
+        background-image: url('./components/header/images/expand_more.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $grey-color;
+  }
+
+  &__user-block--logged {
+    color: $grey-color;
+    padding-left: 6.1rem;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: .8rem;
+      display: block;
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: $grey-color;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+
+
+}

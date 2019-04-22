@@ -1,15 +1,12 @@
 .button {
-  position: absolute;
-  left: 1104px;
-  top: 18px;
-
-
+  position: relative;
   border: none;
   outline: none;
   font-family: 'Montserrat Bold';
   font-size: 1.225rem;
   text-transform: uppercase;
   vertical-align: middle;
+  cursor: pointer;
 
   &--low {
     font-size: 1.2rem;
