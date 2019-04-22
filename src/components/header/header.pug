@@ -37,12 +37,28 @@ mixin header(isLoggedIn, userName)
             a.header__nav-link(href="#") О нас
           li.header__nav-item.header__nav-item--expandable
             a.header__nav-link(href="#") Услуги
+            ul.header__expand-list
+              li.header__expand-item
+                a.header__expand-link(href="#") Услуга 1
+              li.header__expand-item
+                a.header__expand-link(href="#") Услуга 2
+              li.header__expand-item
+                a.header__expand-link(href="#") Услуга 3
+              li.header__expand-item
+                a.header__expand-link(href="#") Услуга 4
           li.header__nav-item
             a.header__nav-link(href="#") Вакансии
           li.header__nav-item
             a.header__nav-link(href="#") Новости
           li.header__nav-item.header__nav-item--expandable
             a.header__nav-link(href="#") Соглашения
+            ul.header__expand-list
+              li.header__expand-item
+                a.header__expand-link(href="#") Соглашение 1
+              li.header__expand-item
+                a.header__expand-link(href="#") Соглашение 2
+              li.header__expand-item
+                a.header__expand-link(href="#") Соглашение 3
         if !isLoggedIn 
           .header__user-block--unlogged
             a.header__link(href="#")
