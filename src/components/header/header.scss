@@ -77,16 +77,14 @@
     list-style: none;
     text-align: center;
     opacity: 0;
-
-    transform: scaleY(.2);
-    transform-origin: top;
-    transition: transform .4s, opacity .3s;
   }
 
   &__nav-item--expandable:hover .header__expand-list {
-    transform: none;
     opacity: 1;
-    transition: transform .4s, opacity .5s;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: easy-in;
+    transition-delay: .1s;
   }
 
   &__expand-link {
