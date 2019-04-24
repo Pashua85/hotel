@@ -1,0 +1,50 @@
+.subscription-form {
+  display: flex;
+  width: 26rem;
+  height: 4.4rem;
+  
+
+  &__input {
+    outline: none;
+    border: none;
+    padding-left: 1.4rem;
+    padding-bottom: .2rem;
+    border: 1px solid $light-grey-color;
+    border-radius: .4rem 0 0 .4rem;
+    border-right: none;
+
+    &::placeholder {
+      color: $light-grey-color;
+    }
+  }
+
+  &__button {
+    outline: none;
+    border: none;
+    flex: 1;
+    text-align: center;
+    border: 1px solid $light-grey-color;
+    border-radius: 0 .4rem .4rem 0;
+    border-left: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover .subscription-form__icon-box::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(white, .3);
+    }
+  }
+
+  &__icon-box {
+    position: relative;
+    display: inline-block;
+    margin-top: .2rem;
+    margin-right: .3rem;
+  }
+
+
+}
