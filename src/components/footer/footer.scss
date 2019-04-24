@@ -11,6 +11,7 @@
     background-color: red;
     margin-top: -.4rem;
     width: 26rem;
+    margin-right: 3.4482759%;
   }
 
   &__logo {
@@ -28,6 +29,38 @@
 
   &__subscription-text {
     margin-bottom: 2.3rem;
+  }
+
+  &__group {
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+    line-height: normal;
+    padding-top: .3rem;
+  }
+
+  &__list-item {
+    margin-bottom: 2rem;
+  }
+
+  &__list-item:not(:first-child) &__list-link {
+    // padding: .5rem 0;
+  }
+
+  &__list-link {
+    display: block;
+    text-decoration: none;
+    color: $grey-color;
+  }
+
+  &__navigation {
+    margin-right: 4.9137931%;
+  }
+
+  &__about {
+    margin-right: 7.9310345%;
   }
 
 }
