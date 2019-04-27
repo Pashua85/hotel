@@ -68,16 +68,32 @@
     background-color: white;
     list-style: none;
     text-align: center;
+    transition: all .5s ease;
+    display: none;
     opacity: 0;
+    visibility: hidden;
   }
 
-  &__nav-item--expandable:hover .header__expand-list {
+  &__nav-item:hover &__expand-list,
+  &__nav-item &__expand-list:hover,
+  &__nav-item:focus-within &__expand-list {
+    visibility: visible;
     opacity: 1;
-    transition-property: opacity;
-    transition-duration: .3s;
-    transition-timing-function: easy-in;
-    transition-delay: .1s;
+    display: block;
   }
+
+  // &__nav-item--expandable:hover .header__expand-list,
+  // &__nav-item--expandable .header__nav-link:focus + .header__expand-list {
+  //   visibility: visible;
+  //   transition-property: visibility;
+  //   transition-duration: .3s;
+  //   transition-timing-function: easy-in;
+  //   transition-delay: .1s;
+  // }
+
+  // &__nav-item--expandable:focus-within .header__expand-list {
+  //   background-color: red;
+  // }
 
   &__expand-link {
     text-decoration: none;

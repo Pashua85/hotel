@@ -1,0 +1,15 @@
+.main {
+  padding-top: 5rem;
+  background-color: $purple-color;
+  min-height: 83rem;
+
+  &__container {
+    width: $grid-width;
+    margin: 0 auto;
+  }
+
+  &__text {
+    width: 29rem;
+    
+  }
+}
