@@ -7,6 +7,8 @@ $smoke-white-color: rgba(31, 32, 65, 0.05);
 $light-blue-color: #8BA4F9;
 $purple-color: #BC9CFF;
 $blue-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$blue-gradient-transparent: linear-gradient(180deg, rgba(#BC9CFF, .25) 0%, rgba(#8BA4F9, .25) 100%);
+$green-gradient: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 $green-color: #6FCF97;
 
 //fonts

@@ -1,0 +1,12 @@
+include ../input-dropdown/input-dropdown
+
+script 
+  include datepicker.js
+.datepicker(id="datepicker")
+  .datepicker__group.datepicker__group--left
+    label.datepicker__label.header--third(for="input1") Прибытие
+    + input-dropdown("datepicker__input", "text", "input1", "input1", "ДД.ММ.ГГГГ")
+  .datepicker__group.datepicker__group--right
+    label.datepicker__label.header--third(for="input2") Выезд
+    + input-dropdown("datepicker__input", "text", "input2", "input2", "ДД.ММ.ГГГГ")
+  .datepicker__calendar(id="datepicker-calendar")

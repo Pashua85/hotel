@@ -1,0 +1,178 @@
+.ui-datepicker {
+  width: 32rem;
+  background-color: white;
+  border: 1px solid $light-grey-color;
+  border-radius: .4rem;
+  box-shadow: 0rem 1rem 2rem rgba(31, 32, 65, 0.05);
+  padding: 1.9rem;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  &-prev, &-next {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+
+    &:hover::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(white, .2);
+    }
+
+    & span {
+      display: none;
+    }
+  }
+
+  &-next {
+    order: 1;
+    background-image: url('./components/ui-calendar/images/arrow_forward.svg');
+  }
+
+  &-prev {
+    background-image: url('./components/ui-calendar/images/arrow_back.svg');
+  }
+
+  &-title {
+    font-family: 'Montserrat Bold';
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+
+    // stiles for 'quicksand''s imitation
+    letter-spacing: -.05rem;
+    margin-bottom: -.1rem;
+  }
+
+  &-calendar {
+    width: 100%;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    border: 0;
+    margin-bottom: 2rem;
+
+    & td,
+    & th {
+      border: 0;
+    }
+
+    & thead {
+      color: $purple-color;
+      font-family: 'Montserrat Bold';
+    }
+
+    & tr {
+      height: 4rem;
+    }
+
+    & td {
+      text-align: center;
+    }
+
+    & td a {
+      // background: rgba(green, .2);
+
+      text-decoration: none;
+      color: $grey-color;
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      line-height: 4rem;
+      vertical-align: middle;
+    }
+    
+    & .dp-startdate-alone a,
+    & .dp-startdate a,
+    & .dp-enddate a {
+      background: $blue-gradient;
+      color: white;
+    }
+
+    & .dp-startdate,
+    & .dp-enddate {
+      // background-image: $blue-gradient-transparent;
+      background-image: $blue-gradient-transparent;
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+    }
+
+    & .dp-startdate {
+      background-position: 100% 0;
+    }
+
+    & .dp-enddate {
+      background-position: 0 0;
+    }
+
+    & .dp-highlight  {
+      background: $blue-gradient-transparent;
+    }
+
+    & .ui-datepicker-today a {
+      background: $green-gradient;
+      color: white;
+    }
+
+    & .ui-datepicker-other-month a {
+      color: $light-grey-color;
+    }
+  }
+
+  // Buttons
+
+  &-buttonpane {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-current {
+    display: none;
+  }
+
+  &-clear, &-done {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat Bold', sans-serif;
+    // letter-spacing: .04rem;
+  }
+
+  &-clear {
+    color: $grey-color;
+
+    &:hover {
+      color: $grey-blue-color;
+    }
+
+    &:active {
+      color: lighten($grey-color, 30%);
+    }
+  }
+
+  &-done {
+    color: $purple-color;
+
+    &:hover {
+      color: darken($purple-color, 15%);
+    }
+
+    &:active {
+      color: $purple-color;
+    }
+  }
+}

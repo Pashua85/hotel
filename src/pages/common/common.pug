@@ -8,6 +8,15 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title
       block title
+    //- link(rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+    script(src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous")
+    //- script
+    //-   include ./jquery.datepicker.extension.range.min.js
     body
       + header(false)
       //- + button('Зарегистрироваться', 'blue', 'low', 'narrow')

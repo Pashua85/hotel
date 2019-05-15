@@ -1,4 +1,5 @@
 @import './base-styles/variables.scss';
+@import './base-styles/mixins.scss';
 @import './base-styles/base.scss';
 @import './base-styles/typography.scss';
 
@@ -8,6 +9,9 @@
 @import './components/logo/logo.scss';
 @import './components/subscription-form/subscription-form.scss';
 @import './components/search-form-short/search-form-short.scss';
+@import './components/input-dropdown/input-dropdown.scss';
+@import './components/ui-calendar/ui-calendar.scss';
+@import './components/datepicker/datepicker.scss';
 
 
 @import './pages/index/index.scss';

@@ -50,6 +50,10 @@
     display: block;
     text-decoration: none;
     color: $grey-color;
+
+    &:hover {
+      color: $grey-blue-color;
+    }
   }
 
   &__navigation {

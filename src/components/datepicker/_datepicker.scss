@@ -1,0 +1,29 @@
+.datepicker {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+
+  &__group {
+    width: 15rem;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: .54rem;
+  }
+
+  &__calendar {
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity .2s linear;
+
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

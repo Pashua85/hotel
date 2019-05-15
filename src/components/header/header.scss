@@ -82,19 +82,6 @@
     display: block;
   }
 
-  // &__nav-item--expandable:hover .header__expand-list,
-  // &__nav-item--expandable .header__nav-link:focus + .header__expand-list {
-  //   visibility: visible;
-  //   transition-property: visibility;
-  //   transition-duration: .3s;
-  //   transition-timing-function: easy-in;
-  //   transition-delay: .1s;
-  // }
-
-  // &__nav-item--expandable:focus-within .header__expand-list {
-  //   background-color: red;
-  // }
-
   &__expand-link {
     text-decoration: none;
     color: $grey-color;

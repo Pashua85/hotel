@@ -1,0 +1,33 @@
+.input-dropdown {
+  width: 100%;
+  padding-left: 1.4rem;
+  outline: none;
+  border: 1px solid $light-grey-color;
+  border-radius: .4rem;
+  padding-bottom: .3rem;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  height: 4.4rem;
+  
+  &__container {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: table;
+      width: 4.4rem;
+      height: 4.4rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: no-repeat center url('./components/input-dropdown/images/expand_more.svg');
+      transition: all .2s;
+    }
+
+    &:focus-within::after {
+      transform: rotate(180deg);
+      transform-origin: center;
+      transition: transform .2s;
+    }
+  }
+}
