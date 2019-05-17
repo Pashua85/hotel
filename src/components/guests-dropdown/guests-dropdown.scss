@@ -1,0 +1,143 @@
+.dropdown {
+
+  &:focus-within .input-dropdown {
+    border: 1px solid $grey-color;
+    border-radius: .4rem .4rem 0 0;
+    border-bottom: none;
+  }
+
+  &:focus-within .input-dropdown__container::after {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+
+  &__group {
+    position: relative;
+    // background: red;
+  }
+
+  &__box {
+    box-shadow: 0rem 1rem 2rem $smoke-white-color;
+    border: 1px solid $grey-color;
+    border-radius: 0 0 .4rem .4rem;
+    background-color: white;
+    position: absolute;
+    width: calc(100% - .2rem);
+    top: calc(100%);
+    left: .1rem;
+    padding-bottom: 1.3rem;
+    display: none;
+
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-top: .14rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.7rem;
+    padding-right: .6rem;
+    padding-left: 1.4rem;
+  }
+
+  &__item-title {
+    margin-top: -.3rem;
+    letter-spacing: 0;
+  }
+
+  &__amount-box {
+    display: flex;
+    align-items: center;
+    min-width: 9.2rem;
+    justify-content: space-between;
+  }
+
+  &__amount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    &--disabled {
+      color: $grey-color;
+    }
+  }
+
+  &__amount-btn {
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $light-grey-color;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $grey-color;
+
+    &:hover {
+      color: $grey-blue-color;
+      border: 1px solid $grey-color;
+      cursor: pointer;
+    }
+
+    &--disabled:hover {
+      color: $grey-color;
+      border: 1px solid $light-grey-color;
+      cursor: auto;
+    }
+  }
+
+  &__btn-row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.4rem;
+    padding-right: .6rem;
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    letter-spacing: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__btn--done {
+    color: $purple-color;
+
+    &:hover {
+      color: darken($purple-color, 30%);
+    }
+
+    &:active {
+      color: $purple-color;
+    }
+  }
+
+  &__btn--clear {
+    color: $grey-color;
+    transition: visibility 0s, opacity .4s linear;
+
+    &:hover {
+      color: $grey-blue-color;
+    }
+
+    &:active {
+      color: $grey-color;
+    }
+  }
+
+  &__btn--hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .4s linear;
+  }
+}

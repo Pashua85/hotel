@@ -1,0 +1,34 @@
+include ../input-dropdown/input-dropdown
+
+//- используются стили из ../dropdown/dropdown.scss
+
+script 
+  include ./guests-dropdown.js
+.guests-dropdown.dropdown
+  label.guests-dropdown__label.dropdown__label.header--third(for="guests-input") Гости
+  .dropdown__group
+    + input-dropdown("guests-dropdown__input", "text", "guests-input", "guests-amount", "Сколько гостей")
+    .quests-dropdown__box.dropdown__box(id="guests-dropdown-box") 
+      ul.dropdown__list
+        li.dropdown__item 
+          .dropdown__item-title.header--third Взрослые
+          .dropdown__amount-box 
+            button.dropdown__amount-btn.dropdown__discrete(id="adults-discrete") -
+            .dropdown__amount(id="adults-amount") 0
+            button.dropdown__amount-btn.dropdown__amount-add(id="adults-add") +
+        li.dropdown__item 
+          .dropdown__item-title.header--third Дети
+          .dropdown__amount-box 
+            button.dropdown__amount-btn.dropdown__discrete(id="children-discrete") -
+            .dropdown__amount(id="children-amount") 0
+            button.dropdown__amount-btn.dropdown__amount-add(id="children-add") +
+        li.dropdown__item 
+          .dropdown__item-title.header--third Младенцы
+          .dropdown__amount-box 
+            button.dropdown__amount-btn.dropdown__discrete(id="babies-discrete") -
+            .dropdown__amount(id="babies-amount") 0
+            button.dropdown__amount-btn.dropdown__amount-add(id="babies-add") + 
+      .dropdown__btn-row
+        button.dropdown__btn.header--third.dropdown__btn--clear(id="guests-clear") Очистить
+        button.dropdown__btn.header--third.dropdown__btn--done(id="guests-done") Применить
+
