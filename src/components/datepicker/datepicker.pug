@@ -5,8 +5,8 @@ script
 .datepicker(id="datepicker")
   .datepicker__group.datepicker__group--left
     label.datepicker__label.header--third(for="input1") Прибытие
-    + input-dropdown("datepicker__input", "text", "input1", "input1", "ДД.ММ.ГГГГ")
+    + input-dropdown("datepicker__input", "text", "input1", "start-date", "ДД.ММ.ГГГГ")
   .datepicker__group.datepicker__group--right
     label.datepicker__label.header--third(for="input2") Выезд
-    + input-dropdown("datepicker__input", "text", "input2", "input2", "ДД.ММ.ГГГГ")
+    + input-dropdown("datepicker__input", "text", "input2", "end-date", "ДД.ММ.ГГГГ")
   .datepicker__calendar(id="datepicker-calendar")

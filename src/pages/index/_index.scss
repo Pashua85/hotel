@@ -1,11 +1,13 @@
 .main {
-  background-color: $purple-color;
+  background-image: url(pages/index/images/image-3.jpg);
+  background-position: 50% -7rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__container {
     min-height: 83rem;
     padding-top: 7rem;
     padding-bottom: 2rem;
-    background-color: yellow;
     width: $grid-width;
     margin: 0 auto;
     display: flex;

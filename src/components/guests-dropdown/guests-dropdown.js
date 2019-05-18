@@ -3,6 +3,7 @@ $(function () {
   const guestsClear = $('#guests-clear');
   const guestsDone = $('#guests-done');
   const guestsBox = $('#guests-dropdown-box');
+  const dropdownGroup = $('#dropdown-group');
 
   const addAdultsButton = $('#adults-add');
   const adultsAmount = $('#adults-amount');
@@ -182,12 +183,18 @@ $(function () {
   guestsDone.click(e => {
     e.preventDefault();
     setGuestsAmount();
-    guestsBox.removeClass('dropdown__box--visible')
+    guestsBox.removeClass('dropdown__box--visible');
   });
 
   guestsClear.click(e => {
     e.preventDefault();
     clearGuestsAmount();
+  });
+
+  $(document).click(e => {
+    if($(event.target).closest('.dropdown__group').length) return;
+    guestsBox.removeClass('dropdown__box--visible');
+    event.stopPropagation();
   });
 
   checkAdultsAmount();

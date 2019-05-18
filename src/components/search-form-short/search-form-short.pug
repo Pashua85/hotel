@@ -1,7 +1,10 @@
+include ../button/button.pug
+
 form.search-form-short
   h1.search-form-short__header.header--first Найдём номера под ваши пожелания
   .search-form-short__datepicker
     include ../datepicker/datepicker
-  .search-form-short__guest-dropdown
+  .search-form-short__guests-dropdown
     include ../guests-dropdown/guests-dropdown
+  + button('Подобрать номер', 'blue', 'high', 'wide')
 

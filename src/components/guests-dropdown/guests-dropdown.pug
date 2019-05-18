@@ -6,9 +6,9 @@ script
   include ./guests-dropdown.js
 .guests-dropdown.dropdown
   label.guests-dropdown__label.dropdown__label.header--third(for="guests-input") Гости
-  .dropdown__group
+  .dropdown__group(id="dropdown-group")
     + input-dropdown("guests-dropdown__input", "text", "guests-input", "guests-amount", "Сколько гостей")
-    .quests-dropdown__box.dropdown__box(id="guests-dropdown-box") 
+    .quests-dropdown__box.dropdown__box(id="guests-dropdown-box").dropdown__box--hidden 
       ul.dropdown__list
         li.dropdown__item 
           .dropdown__item-title.header--third Взрослые
