@@ -16,6 +16,11 @@
     &::placeholder {
       color: $light-grey-color;
     }
+
+    &:focus {
+      border: 1px solid $grey-color;
+      border-right: none;
+    }
   }
 
   &__button {
@@ -37,6 +42,16 @@
       height: 100%;
       background-color: rgba(white, .3);
     }
+  }
+
+  &:focus-within &__button {
+    border: 1px solid $grey-color;
+    border-left: none;
+  }
+
+  &:focus-within &__button:active {
+    border: 1px solid $light-grey-color;
+    border-left: none;
   }
 
   &__icon-box {

@@ -1,0 +1,17 @@
+.search {
+  
+  &__container {
+    width: $grid-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    min-height: 60rem;
+  }
+
+  &__sidebar {
+    width: 25.09%;
+  }
+
+}
+

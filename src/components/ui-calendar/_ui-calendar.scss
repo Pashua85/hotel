@@ -5,6 +5,7 @@
   border-radius: .4rem;
   box-shadow: 0rem 1rem 2rem rgba(31, 32, 65, 0.05);
   padding: 1.9rem;
+  display: none;
 
   &-header {
     display: flex;
@@ -126,6 +127,12 @@
 
     & .ui-datepicker-other-month a {
       color: $light-grey-color;
+    }
+
+    & .dp-startdate-alone.ui-datepicker-other-month a,
+    & .dp-startdate.ui-datepicker-other-month a,
+    & .dp-enddate.ui-datepicker-other-month a {
+      color: white;
     }
   }
 

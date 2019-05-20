@@ -55,20 +55,18 @@ return datepicker.regional.ru;
 
 $.datepicker.setDefaults($.datepicker.regional["ru"]);
 
-
-
 $(function() {
   var eventObject = {
     focus: function () {
-      $('#datepicker-calendar').addClass('datepicker__calendar--visible');
+      $('#datepicker-single-calendar').addClass('datepicker-single__calendar--visible');
     }
   };
 
-  $('#input1').bind(eventObject);
-  $('#input2').bind(eventObject);
+  $('#dates-input').bind(eventObject);
 
-
-  $("#datepicker-calendar").datepicker({
+  const datepickerCalendar = $('#datepicker-single-calendar');
+  
+  datepickerCalendar.datepicker({
     showOtherMonths: true,
     selectOtherMonths: true,
     showButtonPanel: true,
@@ -79,8 +77,22 @@ $(function() {
       addButtons(inst.input); 
     },
     beforeShowDay: function(date) {
-      var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#input1").val());
-      var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#input2").val());
+      var datesString = $('#dates-input').val();
+      var date1, date2, date1String, date2String;
+      if(datesString.length === 0) {
+        date1 = null;
+        date2 = null;
+      } else if (datesString.length === 10) {
+        date1String = datesString;
+        date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, datesString);
+        date2 = null;
+      } else {
+        date1String = datesString.substring(0,datesString.indexOf(' - '));
+        date2String = datesString.substring(datesString.indexOf(' - ') + 3);
+        date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, date1String);
+        date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, date2String);
+      }
+
       if(date1 && !date2 && date.getTime() == date1.getTime()) {
         return [true, 'dp-startdate-alone'];
       } else if(date1 && date2 && date.getTime() == date1.getTime()) {
@@ -91,27 +103,40 @@ $(function() {
       return [true, date1 && ((date.getTime() == date1.getTime()) || (date2 && date > date1 && date < date2)) ? "dp-highlight" : ""];
     },
     onSelect: function(dateText, inst) {
-      var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#input1").val());
-      var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#input2").val());
+      var datesString = $('#dates-input').val();
+      var date1, date2, date1String, date2String, newDatesString;
       var selectedDate = $.datepicker.parseDate($.datepicker._defaults.dateFormat, dateText);
       
       addButtons(inst.input);
 
-      if (!date1 || date2) {
-          $("#input1").val(dateText);
-          $("#input2").val("");
-          $(this).datepicker();
-      } else if( selectedDate < date1 ) {
-          $("#input2").val( $("#input1").val() );
-          $("#input1").val( dateText );
-          $(this).datepicker();
+      if(datesString.length === 0) {
+        date1 = null;
+        date2 = null;
+      } else if (datesString.length === 10) {
+        date1String = datesString;
+        date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, datesString);
+        date2 = null;
       } else {
-          $("#input2").val(dateText);
-          $(this).datepicker();
+        date1String = datesString.substring(0,datesString.indexOf(' - '));
+        date2String = datesString.substring(datesString.indexOf(' - ') + 3);
+        date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, date1String);
+        date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, date2String);
+      }
+
+      if(!date1 || date2) {
+        $('#dates-input').val(dateText);
+        $(this).datepicker();
+      } else if (selectedDate < date1) {
+        newDatesString = dateText + ' - ' + date1String;
+        $('#dates-input').val(newDatesString);
+        $(this).datepicker();
+      } else {
+        newDatesString = date1String + ' - ' + dateText;
+        $('#dates-input').val(newDatesString);
+        $(this).datepicker();
       }
     }
   });
-
 
   function addButtons( calendar ) {
     setTimeout(function() {
@@ -131,18 +156,17 @@ $(function() {
     }, 1);
   };
 
-  function removeCalendar(event) {
-    event.preventDefault();
-    $('#datepicker-calendar').removeClass('datepicker__calendar--visible');
-    document.getElementById("input1").blur();
-    document.getElementById("input2").blur();
-  }
-
   function removeDates(event, calendar) {
     event.preventDefault();
-    $('#input1').add('#input2').val('');
+    $('#dates-input').val('');
     $(calendar).find('.dp-highlight').removeClass('dp-highlight');
     $(calendar).find('.dp-startdate').removeClass('dp-startdate');
     $(calendar).find('.dp-enddate').removeClass('dp-enddate');
+  }
+
+  function removeCalendar(event) {
+    event.preventDefault();
+    $('#datepicker-single-calendar').removeClass('datepicker-single__calendar--visible');
+    document.getElementById('dates-input').blur(); 
   }
 });

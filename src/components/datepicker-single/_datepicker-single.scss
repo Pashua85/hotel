@@ -1,15 +1,8 @@
-.datepicker {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+.datepicker-single {
   position: relative;
 
   & .ui-datepicker {
     display: block;
-  }
-
-  &__group {
-    width: 15rem;
   }
 
   &__label {
@@ -17,7 +10,7 @@
     margin-bottom: .54rem;
   }
 
-  &__calendar {
+    &__calendar {
     z-index: 100;
     position: absolute;
     top: 7.5rem;

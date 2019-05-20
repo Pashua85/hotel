@@ -2,5 +2,8 @@ extends ../common/common
 block title
     | Search room
 block main
-    h1 Search room page
-    a(href="index.html") to main
+  main(class="search__main")
+    .search__container
+      aside.search__sidebar 
+        include ../../components/search-form/search-form
+      .search__content номера
