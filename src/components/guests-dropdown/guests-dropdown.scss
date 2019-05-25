@@ -1,19 +1,13 @@
 .dropdown {
+  
+  position: relative;
 
-  &:focus-within .input-dropdown {
+  & .input-dropdown--open {
     border: 1px solid $grey-color;
     border-radius: .4rem .4rem 0 0;
-    border-bottom: none;
+    border-bottom: none;   
   }
 
-  &:focus-within .input-dropdown__container::after {
-    transform: rotate(180deg);
-    transform-origin: center;
-  }
-
-  &__group {
-    position: relative;
-  }
 
   &__box {
     box-shadow: 0rem 1rem 2rem $smoke-white-color;

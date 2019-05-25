@@ -4,5 +4,6 @@ mixin input-dropdown (className, type, id, name, placeholder)
   - id = id || '';
   - name = name || '';
   - placeholder = placeholder || '';
-  .input-dropdown__container
-    input.input-dropdown(class=className, type=type, id=id, name=name, placeholder=placeholder, autocomplete="off", readonly="readonly")
+  .input-dropdown
+    input.input-dropdown__field(class=className, type=type, id=id, name=name, placeholder=placeholder, autocomplete="off", readonly="readonly")
+    .input-dropdown__toggle

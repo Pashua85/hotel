@@ -4,6 +4,7 @@ $(function () {
   const guestsDone = $('#guests-done');
   const guestsBox = $('#guests-dropdown-box');
   const dropdownGroup = $('#dropdown-group');
+  const inputToggle = $('#guests-dropdown .input-dropdown__toggle');
 
   const addAdultsButton = $('#adults-add');
   const adultsAmount = $('#adults-amount');
@@ -146,6 +147,13 @@ $(function () {
 
   guestsInput.focus(() => {
     guestsBox.addClass('dropdown__box--visible');
+    $('#guests-dropdown .input-dropdown').addClass('input-dropdown--open');
+  });
+
+  inputToggle.click(() => {
+    console.log('click');
+    guestsBox.toggleClass('dropdown__box--visible');
+    $('#guests-dropdown .input-dropdown').toggleClass('input-dropdown--open');
   });
 
   addAdultsButton.click(e => {
@@ -184,6 +192,7 @@ $(function () {
     e.preventDefault();
     setGuestsAmount();
     guestsBox.removeClass('dropdown__box--visible');
+    $('#guests-dropdown .input-dropdown').removeClass('input-dropdown--open');
   });
 
   guestsClear.click(e => {
@@ -194,6 +203,7 @@ $(function () {
   $(document).click(e => {
     if($(event.target).closest('.dropdown__group').length) return;
     guestsBox.removeClass('dropdown__box--visible');
+    $('#guests-dropdown .input-dropdown').removeClass('input-dropdown--open');
     event.stopPropagation();
   });
 

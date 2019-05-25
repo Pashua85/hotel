@@ -2,7 +2,7 @@ include ../input-dropdown/input-dropdown
 
 script
   include datepicker-single.js
-.datepicker-single
+.datepicker-single(id="datepicker-single")
   label.datepicker-single__label.header--third Даты пребывания в отеле
   .datepicker-single__group
     + input-dropdown('datepicker-single__input', 'text', 'dates-input', 'dates', 'Даты прибывания')

@@ -56,15 +56,21 @@ return datepicker.regional.ru;
 $.datepicker.setDefaults($.datepicker.regional["ru"]);
 
 $(function() {
+  const datepickerCalendar = $('#datepicker-single-calendar');
+
   var eventObject = {
     focus: function () {
-      $('#datepicker-single-calendar').addClass('datepicker-single__calendar--visible');
+      datepickerCalendar.addClass('datepicker-single__calendar--visible');
+      $('#datepicker-single .input-dropdown').addClass('input-dropdown--open');
     }
   };
 
   $('#dates-input').bind(eventObject);
 
-  const datepickerCalendar = $('#datepicker-single-calendar');
+  $('#datepicker-single .input-dropdown__toggle').click(() => {
+    datepickerCalendar.toggleClass('datepicker-single__calendar--visible');
+    $('#datepicker-single .input-dropdown').toggleClass('input-dropdown--open'); 
+  });
 
   const dateObject = {
     startDate: null,
@@ -160,6 +166,7 @@ $(function() {
   function removeCalendar(event) {
     event.preventDefault();
     $('#datepicker-single-calendar').removeClass('datepicker-single__calendar--visible');
+    $('#datepicker-single .input-dropdown').removeClass('input-dropdown--open');
     document.getElementById('dates-input').blur(); 
   }
 });

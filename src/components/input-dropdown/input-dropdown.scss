@@ -1,33 +1,55 @@
 .input-dropdown {
+  position: relative;
+  border: 1px solid $light-grey-color;
+  height: 4.4rem; 
+  border-radius: .4rem;
+  padding-bottom: .3rem;
+
+  &__field {
   width: 100%;
   padding-left: 1.4rem;
   outline: none;
-  border: 1px solid $light-grey-color;
-  border-radius: .4rem;
-  padding-bottom: .3rem;
+  border: none;
   font-size: 1.4rem;
-  font-family: 'Montserrat', sans-serif;
-  height: 4.4rem;
-  
-  &__container {
-    position: relative;
+  font-family: 'Montserrat', sans-serif;  
+  line-height: 3.9rem;
+  vertical-align: middle; 
+  }
 
-    &::after {
-      content: '';
-      display: table;
-      width: 4.4rem;
-      height: 4.4rem;
+  &__toggle {
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    // background: no-repeat center url('./components/input-dropdown/images/expand_more.svg');
+    transition: all .2s;
+
+    &::after { 
+      font-family: 'Material Icons';
+      content: '\e5cf';
+      font-size: 2.4rem;
+      color: white;
+      display: block;
       position: absolute;
-      top: 0;
-      right: 0;
-      background: no-repeat center url('./components/input-dropdown/images/expand_more.svg');
+      top: 50%;
+      right: 50%;
+      margin-top: -1rem;
+      margin-right: -1rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      vertical-align: middle;
+      text-align: center;
+      color: $grey-color;
       transition: all .2s;
     }
+  }
 
-    &:focus-within::after {
-      transform: rotate(180deg);
+  &--open &__toggle::after {
+    transform: rotate(180deg);
       transform-origin: center;
       transition: transform .2s;
-    }
   }
 }

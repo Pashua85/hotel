@@ -61,11 +61,17 @@ $(function() {
   var eventObject = {
     focus: function () {
       $('#datepicker-calendar').addClass('datepicker__calendar--visible');
+      $('#datepicker .input-dropdown').addClass('input-dropdown--open');
     }
   };
 
   $('#input1').bind(eventObject);
   $('#input2').bind(eventObject);
+
+  $('#datepicker .input-dropdown__toggle').click(() => {
+    $('#datepicker-calendar').toggleClass('datepicker__calendar--visible');
+    $('#datepicker .input-dropdown').toggleClass('input-dropdown--open');
+  });
 
 
   $("#datepicker-calendar").datepicker({
@@ -134,6 +140,7 @@ $(function() {
   function removeCalendar(event) {
     event.preventDefault();
     $('#datepicker-calendar').removeClass('datepicker__calendar--visible');
+    $('#datepicker .input-dropdown').removeClass('input-dropdown--open');
     document.getElementById("input1").blur();
     document.getElementById("input2").blur();
   }

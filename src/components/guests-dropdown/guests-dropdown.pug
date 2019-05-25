@@ -2,7 +2,7 @@ include ../input-dropdown/input-dropdown
 
 script 
   include ./guests-dropdown.js
-.guests-dropdown.dropdown
+.guests-dropdown.dropdown(id="guests-dropdown")
   label.guests-dropdown__label.dropdown__label.header--third(for="guests-input") Гости
   .dropdown__group(id="dropdown-group")
     + input-dropdown("guests-dropdown__input", "text", "guests-input", "guests-amount", "Сколько гостей")
