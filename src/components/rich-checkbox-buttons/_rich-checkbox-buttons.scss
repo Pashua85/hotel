@@ -1,17 +1,17 @@
-.checkbox-buttons {
+.rich-checkbox-buttons {
 
   &__title {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.7rem;
   }
 
   &__list {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: none;
+    padding: none;
   }
 
   &__item {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
   }
 
   &__input {
@@ -21,17 +21,18 @@
   &__label {
     display: block;
     position: relative;
-    color: $grey-color;
     line-height: 1.8rem;
+    font-family: 'Montserrat Bold';
     padding-left: 3rem;
+    margin-bottom: .6rem;
 
     &:hover {
-      color: $grey-blue-color;
       cursor: pointer;
+      color: $dark-blue-color;
     }
 
     &:active {
-      color: $grey-color;
+      color: $grey-blue-color;
     }
 
     &::before {
@@ -44,14 +45,21 @@
       border-radius: .4rem;
       top: 0;
       left: 0;
+      margin-top: -.1rem;
     }
   }
 
-  &__input:checked + &__label::before{
+  &__input:checked + &__label::before {
     border-color: $purple-color;
     background-image: url(components/checkbox-buttons/images/Vector.png); 
     background-repeat: no-repeat;
     background-position: 50% 40%;
-    // background-size: contain;
+  }
+
+  &__text {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $grey-color;
   }
 }
