@@ -1,0 +1,56 @@
+.checkbox-buttons {
+
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-bottom: 1.3rem;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    color: $grey-color;
+    line-height: 1.8rem;
+    padding-left: 3rem;
+
+    &:hover {
+      color: $grey-blue-color;
+    }
+
+    &:active {
+      color: $grey-color;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid $light-grey-color;
+      border-radius: .4rem;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__input:checked + &__label::before{
+    border-color: $purple-color;
+    background-image: url(components/checkbox-buttons/images/Vector.png); 
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    // background-size: contain;
+  }
+}
