@@ -1,0 +1,21 @@
+include ../checkbox-list/checkbox-list
+-
+  var features = [
+    { id: 'breakfast-checkbox', name: 'feature1', value: 'breakfast', label: 'Завтрак'},
+    { id: 'desk-checkbox', name: 'feature2', value: 'desk', label: 'Письменный стол'},
+    { id: 'highchair-checkbox', name: 'feature3', value: 'highchair', label: 'Стул для кормления'},
+    { id: 'baby-bed-checkbox', name: 'feature4', value: 'baby-bed', label: 'Кроватка'},
+    { id: 'tv-checkbox', name: 'feature5', value: 'tv', label: 'Телевизор'},
+    { id: 'shampoo-checkbox', name: 'feature5-6', value: 'shampoo', label: 'Шампунь'},
+    { id: 'tv-checkbox-1', name: 'feature7', value: 'tv', label: 'Телевизор'},
+    { id: 'shampoo-checkbox-1', name: 'feature8', value: 'shampoo', label: 'Шампунь'}
+  ]
+
+script
+  include additional-features.js
+
+.additional-features
+  .additional-features__row
+    .additional-features__title.header--third Дополнительные удобства
+    .additional-features__toggle(id="features-toggle")
+  + checkbox-list('additional-features__list', features)

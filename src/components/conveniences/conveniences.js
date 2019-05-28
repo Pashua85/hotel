@@ -191,4 +191,5 @@ $(function() {
     event.stopPropagation();
   });
 
+  setConveniencesAmount();
 });

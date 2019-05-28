@@ -207,4 +207,5 @@ $(function () {
   });
 
   checkAdultsAmount();
+  setGuestsAmount();
 });

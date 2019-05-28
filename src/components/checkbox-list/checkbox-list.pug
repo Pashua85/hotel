@@ -2,7 +2,7 @@
 
 mixin checkbox-list ( className, items)
   - className = className || '';
-  ul.checkbox-list
+  ul.checkbox-list(class=className)
     each item in items
       li.checkbox-list__item
         input.checkbox-list__input(type="checkbox" id=item.id name=item.name value=item.value)

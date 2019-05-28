@@ -1,0 +1,67 @@
+.additional-features {
+    position: relative;
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: .5rem;
+    }
+
+    &__title {
+      cursor: pointer;
+    }
+
+    &__toggle {
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    position: relative;
+    transition: all .2s;
+
+    &::after { 
+      font-family: 'Material Icons';
+      content: '\e5cf';
+      font-size: 2.4rem;
+      color: white;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      margin-top: -1rem;
+      margin-right: -1rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      vertical-align: middle;
+      text-align: center;
+      color: $grey-color;
+      transition: all .2s;
+    }
+  }
+
+  &--open &__toggle::after {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: transform .2s;
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .2s linear;
+  }
+
+  &--open &__list {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity .2s linear;
+  }
+
+  & .checkbox-list__item {
+    margin-bottom: 1.2rem;
+  }
+}
