@@ -1,0 +1,10 @@
+
+
+mixin checkbox-list ( className, items)
+  - className = className || '';
+  ul.checkbox-list
+    each item in items
+      li.checkbox-list__item
+        input.checkbox-list__input(type="checkbox" id=item.id name=item.name value=item.value)
+        label.checkbox-list__label(for=item.id)= item.label
+
