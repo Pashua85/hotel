@@ -1,5 +1,5 @@
 .dropdown {
-  
+
   position: relative;
 
   & .input-dropdown--open {
@@ -30,7 +30,6 @@
   &__list {
     list-style: none;
     padding-top: .14rem;
-    margin-bottom: 1.6rem;
   }
 
   &__item {
@@ -57,10 +56,6 @@
   &__amount {
     font-size: 1.2rem;
     font-weight: bold;
-    
-    &--disabled {
-      color: $grey-color;
-    }
   }
 
   &__amount-btn {
@@ -81,57 +76,6 @@
       border: 1px solid $grey-color;
       cursor: pointer;
     }
-
-    &.dropdown__amount-btn--disabled:hover {
-      color: $grey-color;
-      border: 1px solid $light-grey-color;
-      cursor: auto;
-    }
   }
 
-  &__btn-row {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1.4rem;
-    padding-right: .6rem;
-  }
-
-  &__btn {
-    border: none;
-    outline: none;
-    letter-spacing: 0;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  &__btn--done {
-    color: $purple-color;
-
-    &:hover {
-      color: darken($purple-color, 30%);
-    }
-
-    &:active {
-      color: $purple-color;
-    }
-  }
-
-  &__btn--clear {
-    color: $grey-color;
-    transition: visibility 0s, opacity .4s linear;
-
-    &:hover {
-      color: $grey-blue-color;
-    }
-
-    &:active {
-      color: $grey-color;
-    }
-  }
-
-  &__btn--hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity .4s linear;
-  }
 }

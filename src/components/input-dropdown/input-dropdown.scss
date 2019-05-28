@@ -6,14 +6,17 @@
   padding-bottom: .3rem;
 
   &__field {
-  width: 100%;
-  padding-left: 1.4rem;
-  outline: none;
-  border: none;
-  font-size: 1.4rem;
-  font-family: 'Montserrat', sans-serif;  
-  line-height: 3.9rem;
-  vertical-align: middle; 
+    width: 100%;
+    padding-left: 1.4rem;
+    padding-right: 4.2rem;
+    text-overflow: ellipsis;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;  
+    line-height: 3.9rem;
+    vertical-align: middle; 
+    color: $default-font-color;
   }
 
   &__toggle {
@@ -49,7 +52,7 @@
 
   &--open &__toggle::after {
     transform: rotate(180deg);
-      transform-origin: center;
-      transition: transform .2s;
+    transform-origin: center;
+    transition: transform .2s;
   }
 }

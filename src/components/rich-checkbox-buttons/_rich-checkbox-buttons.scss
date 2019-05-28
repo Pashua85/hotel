@@ -51,7 +51,7 @@
 
   &__input:checked + &__label::before {
     border-color: $purple-color;
-    background-image: url(components/checkbox-buttons/images/Vector.png); 
+    background-image: url(components/rich-checkbox-buttons/images/Vector.png); 
     background-repeat: no-repeat;
     background-position: 50% 40%;
   }

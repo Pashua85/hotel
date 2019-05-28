@@ -151,7 +151,6 @@ $(function () {
   });
 
   inputToggle.click(() => {
-    console.log('click');
     guestsBox.toggleClass('dropdown__box--visible');
     $('#guests-dropdown .input-dropdown').toggleClass('input-dropdown--open');
   });
