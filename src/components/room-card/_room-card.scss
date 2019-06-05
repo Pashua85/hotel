@@ -1,0 +1,117 @@
+.room-card {
+  background: white;
+  box-shadow: 0rem 1rem 2rem $smoke-white-color;
+  width: 27rem;
+  border-radius: .5rem;
+  overflow: hidden;
+
+  &__image-box {
+    position: relative;
+  }
+
+  &__image {
+    width: 27rem;
+    display: block;
+  }
+
+  &__photo-nav {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+  }
+
+  &__photo-cyrcle {
+    width: .75rem;
+    height: .75rem;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: .375rem;
+    }
+
+    &--active {
+      background: white;
+    }
+  }
+
+  &__info {
+    padding: 2rem 1.7rem 1.9rem 2rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    padding-bottom: .8rem;
+    margin-bottom: .8rem;
+  }
+
+  &__number-group {
+    font-family: 'Quicksand Bold', 'Montserrat Bold', sans-serif;
+  }
+
+  &__number-symbol {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  &__number {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+  }
+
+  &__luxury {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: $purple-color;
+  }
+
+  &__price {
+    font-family: 'Montserrat Bold', sans-serif;
+    color: $grey-color;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  &__price-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./components/room-card/images/star_border.svg');
+
+    &--filled {
+      background-image: url('./components/room-card/images/star.svg');
+    }
+  }
+
+  &__reviews-number {
+    font-family: 'Montserrat Bold', sans-serif;
+    color: $grey-color;
+  }
+
+  &__reviews-word {
+    font-family: 'Montserrat', sans-serif;
+  }
+}

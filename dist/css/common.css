@@ -395,24 +395,28 @@ body {
   line-height: 2.4rem; }
 
 .header--first {
-  font-family: 'Quicksand Bold', sans-serif;
+  font-family: 'Quicksand Bold','Montserrat', sans-serif;
+  color: #1F2041;
+  font-weight: bold;
   font-size: 2.4rem;
-  line-height: normal; }
+  line-height: 3rem; }
 
 .header--second {
-  font-family: 'Quicksand Bold', sans-serif;
+  font-family: 'Quicksand Bold','Montserrat Bold', sans-serif;
   font-size: 1.9rem;
   line-height: normal; }
 
 .header--third {
+  font-family: 'Montserrat Bold', sans-serif;
   font-size: 1.2rem;
   line-height: normal;
   color: #1F2041;
-  text-transform: uppercase;
-  letter-spacing: .04rem; }
+  text-transform: uppercase; }
 
 .header {
-  height: 7rem; }
+  height: 7rem;
+  box-shadow: 0rem 1rem 2rem rgba(31, 32, 65, 0.05);
+  z-index: 5; }
   .header__container {
     display: flex;
     width: 80.56%;
@@ -609,16 +613,18 @@ body {
     width: 32rem;
     text-align: center; }
     .button--wide::after {
-      content: '';
-      display: table;
+      font-family: 'Material Icons';
+      content: "\e5c8";
+      font-size: 2.4rem;
+      color: white;
+      display: block;
       width: 4.4rem;
       height: 4.4rem;
       position: absolute;
       top: 0;
-      right: 0;
-      background-image: url(../images/arrow_forward.svg);
-      background-repeat: no-repeat;
-      background-position: center; }
+      right: 0; }
+    .button--wide:active::after {
+      color: rgba(31, 32, 65, 0.25); }
   .button--high {
     height: 4.4rem;
     border-radius: 2.2rem;
@@ -681,6 +687,9 @@ body {
     border-right: none; }
     .subscription-form__input::placeholder {
       color: rgba(31, 32, 65, 0.25); }
+    .subscription-form__input:focus {
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      border-right: none; }
   .subscription-form__button {
     outline: none;
     border: none;
@@ -698,6 +707,12 @@ body {
       width: 100%;
       height: 100%;
       background-color: rgba(255, 255, 255, 0.3); }
+  .subscription-form:focus-within .subscription-form__button {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-left: none; }
+  .subscription-form:focus-within .subscription-form__button:active {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-left: none; }
   .subscription-form__icon-box {
     position: relative;
     display: inline-block;
@@ -707,14 +722,618 @@ body {
 .search-form-short {
   background-color: white;
   width: 38rem;
-  min-height: 40rem; }
+  padding: 4rem 3rem 3rem 3rem;
+  box-shadow: 0rem 0rem 2.5rem rgba(0, 0, 0, 0.2); }
+  .search-form-short__header {
+    margin: 0;
+    margin-bottom: 1.7rem;
+    line-height: 3rem;
+    letter-spacing: .11rem; }
+  .search-form-short__datepicker {
+    margin-bottom: 1.6rem; }
+  .search-form-short__guests-dropdown {
+    margin-bottom: 3rem; }
+
+.input-dropdown {
+  position: relative;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  height: 4.4rem;
+  border-radius: .4rem;
+  padding-bottom: .3rem; }
+  .input-dropdown__field {
+    width: 100%;
+    padding-left: 1.4rem;
+    padding-right: 4.2rem;
+    text-overflow: ellipsis;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 3.9rem;
+    vertical-align: middle;
+    color: rgba(31, 32, 65, 0.75); }
+  .input-dropdown__toggle {
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    transition: all .2s; }
+    .input-dropdown__toggle::after {
+      font-family: 'Material Icons';
+      content: '\e5cf';
+      font-size: 2.4rem;
+      color: white;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      margin-top: -1rem;
+      margin-right: -1rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      vertical-align: middle;
+      text-align: center;
+      color: rgba(31, 32, 65, 0.5);
+      transition: all .2s; }
+  .input-dropdown--open .input-dropdown__toggle::after {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: transform .2s; }
+
+.ui-datepicker {
+  width: 32rem;
+  background-color: white;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: .4rem;
+  box-shadow: 0rem 1rem 2rem rgba(31, 32, 65, 0.05);
+  padding: 1.9rem;
+  display: none; }
+  .ui-datepicker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem; }
+  .ui-datepicker-prev, .ui-datepicker-next {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer; }
+    .ui-datepicker-prev:hover::after, .ui-datepicker-next:hover::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2); }
+    .ui-datepicker-prev span, .ui-datepicker-next span {
+      display: none; }
+  .ui-datepicker-next {
+    order: 1;
+    background-image: url(../images/arrow_forward.svg); }
+  .ui-datepicker-prev {
+    background-image: url(../images/arrow_back.svg); }
+  .ui-datepicker-title {
+    font-family: 'Montserrat Bold';
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    letter-spacing: -.05rem;
+    margin-bottom: -.1rem; }
+  .ui-datepicker-calendar {
+    width: 100%;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    border: 0;
+    margin-bottom: 2rem; }
+    .ui-datepicker-calendar td,
+    .ui-datepicker-calendar th {
+      border: 0; }
+    .ui-datepicker-calendar thead {
+      color: #BC9CFF;
+      font-family: 'Montserrat Bold'; }
+    .ui-datepicker-calendar tr {
+      height: 4rem; }
+    .ui-datepicker-calendar td {
+      text-align: center; }
+    .ui-datepicker-calendar td a {
+      text-decoration: none;
+      color: rgba(31, 32, 65, 0.5);
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      line-height: 4rem;
+      vertical-align: middle; }
+    .ui-datepicker-calendar .dp-startdate-alone a,
+    .ui-datepicker-calendar .dp-startdate a,
+    .ui-datepicker-calendar .dp-enddate a {
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      color: white; }
+    .ui-datepicker-calendar .dp-startdate,
+    .ui-datepicker-calendar .dp-enddate {
+      background-image: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+      background-size: 50% 100%;
+      background-repeat: no-repeat; }
+    .ui-datepicker-calendar .dp-startdate {
+      background-position: 100% 0; }
+    .ui-datepicker-calendar .dp-enddate {
+      background-position: 0 0; }
+    .ui-datepicker-calendar .dp-highlight {
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%); }
+    .ui-datepicker-calendar .ui-datepicker-today a {
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      color: white; }
+    .ui-datepicker-calendar .ui-datepicker-other-month a {
+      color: rgba(31, 32, 65, 0.25); }
+    .ui-datepicker-calendar .dp-startdate-alone.ui-datepicker-other-month a,
+    .ui-datepicker-calendar .dp-startdate.ui-datepicker-other-month a,
+    .ui-datepicker-calendar .dp-enddate.ui-datepicker-other-month a {
+      color: white; }
+  .ui-datepicker-buttonpane {
+    display: flex;
+    justify-content: space-between; }
+  .ui-datepicker-current {
+    display: none; }
+  .ui-datepicker-clear, .ui-datepicker-done {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat Bold', sans-serif; }
+  .ui-datepicker-clear {
+    color: rgba(31, 32, 65, 0.5); }
+    .ui-datepicker-clear:hover {
+      color: rgba(31, 32, 65, 0.75); }
+    .ui-datepicker-clear:active {
+      color: rgba(80, 83, 169, 0.5); }
+  .ui-datepicker-done {
+    color: #BC9CFF; }
+    .ui-datepicker-done:hover {
+      color: #8850ff; }
+    .ui-datepicker-done:active {
+      color: #BC9CFF; }
+
+.datepicker {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative; }
+  .datepicker .ui-datepicker {
+    display: block; }
+  .datepicker__group {
+    width: 15rem; }
+  .datepicker__label {
+    display: inline-block;
+    margin-bottom: .54rem; }
+  .datepicker__calendar {
+    z-index: 100;
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity .2s linear; }
+    .datepicker__calendar--visible {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity .2s linear; }
+
+.dropdown {
+  position: relative; }
+  .dropdown .input-dropdown--open {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: .4rem .4rem 0 0;
+    border-bottom: none; }
+  .dropdown__box {
+    box-shadow: 0rem 1rem 2rem rgba(31, 32, 65, 0.05);
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 0 0 .4rem .4rem;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding-bottom: 1.3rem;
+    display: none;
+    z-index: 90; }
+    .dropdown__box--visible {
+      display: block; }
+  .dropdown__list {
+    list-style: none;
+    padding-top: .14rem;
+    margin-bottom: 1.6rem; }
+  .dropdown__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.7rem;
+    padding-right: .6rem;
+    padding-left: 1.4rem; }
+  .dropdown__item-title {
+    margin-top: -.3rem;
+    letter-spacing: 0; }
+  .dropdown__amount-box {
+    display: flex;
+    align-items: center;
+    min-width: 9.2rem;
+    justify-content: space-between; }
+  .dropdown__amount {
+    font-size: 1.2rem;
+    font-weight: bold; }
+    .dropdown__amount--disabled {
+      color: rgba(31, 32, 65, 0.5); }
+  .dropdown__amount-btn {
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(31, 32, 65, 0.5); }
+    .dropdown__amount-btn:hover {
+      color: rgba(31, 32, 65, 0.75);
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      cursor: pointer; }
+    .dropdown__amount-btn.dropdown__amount-btn--disabled:hover {
+      color: rgba(31, 32, 65, 0.5);
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      cursor: auto; }
+  .dropdown__btn-row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.4rem;
+    padding-right: .6rem; }
+  .dropdown__btn {
+    border: none;
+    outline: none;
+    letter-spacing: 0;
+    background-color: transparent;
+    cursor: pointer; }
+  .dropdown__btn--done {
+    color: #BC9CFF; }
+    .dropdown__btn--done:hover {
+      color: #5403ff; }
+    .dropdown__btn--done:active {
+      color: #BC9CFF; }
+  .dropdown__btn--clear {
+    color: rgba(31, 32, 65, 0.5);
+    transition: visibility 0s, opacity .4s linear; }
+    .dropdown__btn--clear:hover {
+      color: rgba(31, 32, 65, 0.75); }
+    .dropdown__btn--clear:active {
+      color: rgba(31, 32, 65, 0.5); }
+  .dropdown__btn--hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .4s linear; }
+
+.search-form {
+  padding-bottom: 3rem; }
+  .search-form__datepicker-single {
+    margin-bottom: 1.6rem; }
+  .search-form__guests-dropdown {
+    margin-bottom: 3rem; }
+  .search-form__price-range {
+    margin-bottom: 2.9rem; }
+  .search-form__permissions {
+    margin-bottom: 3.1rem; }
+  .search-form__rich-checkbox-buttons {
+    margin-bottom: 2.5rem; }
+  .search-form__conveniences {
+    margin-bottom: 1.7rem; }
+
+.datepicker-single {
+  position: relative; }
+  .datepicker-single .ui-datepicker {
+    display: block; }
+  .datepicker-single__label {
+    display: inline-block;
+    margin-bottom: .54rem; }
+  .datepicker-single__calendar {
+    z-index: 100;
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity .2s linear; }
+    .datepicker-single__calendar--visible {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity .2s linear; }
+
+.price-range__text {
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between; }
+
+.price-range__label {
+  flex-grow: 2; }
+
+.price-range__input {
+  border: none;
+  outline: none;
+  width: 50%;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-tranform: uppercase; }
+
+.price-range__slider {
+  position: relative;
+  height: .6rem;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: .3rem;
+  margin-bottom: 1.4rem; }
+  .price-range__slider .ui-slider-range {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+  .price-range__slider .ui-slider-handle {
+    display: block;
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: .2rem solid white;
+    border-radius: 50%;
+    margin-top: -.6rem;
+    outline: none; }
+    .price-range__slider .ui-slider-handle:last-child {
+      margin-left: -1.4rem; }
+
+.price-range__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: rgba(31, 32, 65, 0.5); }
+
+.permissions__title {
+  margin-bottom: 1.6rem; }
+
+.rich-checkbox-buttons__title {
+  margin-bottom: 1.7rem; }
+
+.rich-checkbox-buttons__list {
+  list-style: none;
+  margin: none;
+  padding: none; }
+
+.rich-checkbox-buttons__item {
+  margin-bottom: 1rem; }
+
+.rich-checkbox-buttons__input {
+  display: none; }
+
+.rich-checkbox-buttons__label {
+  display: block;
+  position: relative;
+  line-height: 1.8rem;
+  font-family: 'Montserrat Bold';
+  padding-left: 3rem;
+  margin-bottom: .6rem; }
+  .rich-checkbox-buttons__label:hover {
+    cursor: pointer;
+    color: #1F2041; }
+  .rich-checkbox-buttons__label:active {
+    color: rgba(31, 32, 65, 0.75); }
+  .rich-checkbox-buttons__label::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: .4rem;
+    top: 0;
+    left: 0;
+    margin-top: -.1rem; }
+
+.rich-checkbox-buttons__input:checked + .rich-checkbox-buttons__label::before {
+  border-color: #BC9CFF;
+  background-image: url(../images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: 50% 40%; }
+
+.rich-checkbox-buttons__text {
+  padding-left: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: rgba(31, 32, 65, 0.5); }
+
+.dropdown {
+  position: relative; }
+  .dropdown .input-dropdown--open {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: .4rem .4rem 0 0;
+    border-bottom: none; }
+  .dropdown__box {
+    box-shadow: 0rem 1rem 2rem rgba(31, 32, 65, 0.05);
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 0 0 .4rem .4rem;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding-bottom: 1.3rem;
+    display: none;
+    z-index: 90; }
+    .dropdown__box--visible {
+      display: block; }
+  .dropdown__list {
+    list-style: none;
+    padding-top: .14rem; }
+  .dropdown__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.7rem;
+    padding-right: .6rem;
+    padding-left: 1.4rem; }
+  .dropdown__item-title {
+    margin-top: -.3rem;
+    letter-spacing: 0; }
+  .dropdown__amount-box {
+    display: flex;
+    align-items: center;
+    min-width: 9.2rem;
+    justify-content: space-between; }
+  .dropdown__amount {
+    font-size: 1.2rem;
+    font-weight: bold; }
+  .dropdown__amount-btn {
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(31, 32, 65, 0.5); }
+    .dropdown__amount-btn:hover {
+      color: rgba(31, 32, 65, 0.75);
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      cursor: pointer; }
+
+.checkbox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .checkbox-list__item {
+    margin-bottom: 1.3rem; }
+  .checkbox-list__input {
+    display: none; }
+  .checkbox-list__label {
+    display: block;
+    position: relative;
+    color: rgba(31, 32, 65, 0.5);
+    line-height: 1.8rem;
+    padding-left: 3rem;
+    white-space: pre-line; }
+    .checkbox-list__label:hover {
+      color: rgba(31, 32, 65, 0.75);
+      cursor: pointer; }
+    .checkbox-list__label:active {
+      color: rgba(31, 32, 65, 0.5); }
+    .checkbox-list__label::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: .4rem;
+      top: 0;
+      left: 0; }
+  .checkbox-list__input:checked + .checkbox-list__label::before {
+    border-color: #BC9CFF;
+    background-image: url(../images/Vector.png);
+    background-repeat: no-repeat;
+    background-position: 50% 40%; }
+
+.additional-features {
+  position: relative; }
+  .additional-features__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem; }
+  .additional-features__title {
+    cursor: pointer; }
+  .additional-features__toggle {
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4.2rem;
+    position: relative;
+    transition: all .2s; }
+    .additional-features__toggle::after {
+      font-family: 'Material Icons';
+      content: '\e5cf';
+      font-size: 2.4rem;
+      color: white;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      margin-top: -1rem;
+      margin-right: -1rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      vertical-align: middle;
+      text-align: center;
+      color: rgba(31, 32, 65, 0.5);
+      transition: all .2s; }
+  .additional-features--open .additional-features__toggle::after {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: transform .2s; }
+  .additional-features__list {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .2s linear; }
+  .additional-features--open .additional-features__list {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity .2s linear; }
+  .additional-features .checkbox-list__item {
+    margin-bottom: 1.2rem; }
 
 .main {
-  padding-top: 5rem;
-  background-color: #BC9CFF;
-  min-height: 83rem; }
+  background-image: url(../images/image-3.jpg);
+  background-position: 50% -7rem;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .main__container {
+    min-height: 83rem;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
     width: 80.56%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
   .main__text {
-    width: 29rem; }
+    width: 29rem;
+    align-self: flex-end;
+    text-align: right;
+    margin-right: -.6rem; }
+
+.search__container {
+  width: 80.56%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  min-height: 100rem; }
+
+.search__sidebar {
+  width: 22.93%; }
+
+.search__content {
+  background: yellow;
+  width: 71.896%; }
+
+.search__header {
+  padding: .5rem 0;
+  margin: 0; }

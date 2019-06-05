@@ -1,0 +1,11 @@
+include ../room-card/room-card
+
+- 
+  var rooms = [
+    { number: 888, price: 9900, alt: 'room-image', isLuxury: true,  rating: 3, reviewsNumber: 142}
+  ]
+
+
+.search-rooms  
+  each room in rooms
+    + room-card(room)

@@ -8,17 +8,17 @@
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: 'Material Icons';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-//   src: local('Material Icons'),
-//     local('MaterialIcons-Regular'),
-//     url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-//     url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-//     url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-// }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
 
 @font-face {
   font-family: 'Montserrat Bold';
@@ -57,14 +57,17 @@ body {
 }
 
 .header--first {
-  font-family: 'Quicksand Bold', sans-serif;
+  font-family: 'Quicksand Bold','Montserrat', sans-serif;
+  color: $dark-blue-color;
+  font-weight: bold;
   font-size: 2.4rem;
-  line-height: normal;
-  letter-spacing: .11rem;
+  line-height: 3rem;
+  // letter-spacing: 0;
+  // letter-spacing: .11rem;
 }
 
 .header--second {
-  font-family: 'Quicksand Bold', sans-serif;
+  font-family: 'Quicksand Bold','Montserrat Bold', sans-serif;
   font-size: 1.9rem;
   line-height: normal;
 }
