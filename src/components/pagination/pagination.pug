@@ -1,0 +1,26 @@
+mixin pagination(currentPage, itemsAmount)
+  - 
+    var lastPage = Math.ceil(itemsAmount / 12);
+    var lastDigit = itemsAmount % 10;
+    var rangeText = `${currentPage * 12 - 11} – ${currentPage * 12}`;
+    var paginationText;
+
+    if (itemsAmount > 100) {
+      paginationText = `${rangeText} из 100+ вариантов аренды`;
+    } else if (itemsAmount == 1) {
+      paginationText = `1 из 1 варианта аренды`;
+    } else if (lastDigit == 1) {
+      paginationText = `${rangeText} из ${itemsAmount} варианта аренды`;
+    } else {
+      paginationText = `${rangeText} из ${itemsAmount} вариантов аренды`;
+    };
+    
+  .pagination
+    .pagination__row
+      a.pagination__page.pagination__page--current 1
+      a.pagination__page(href="#") 2
+      a.pagination__page(href="#") 3
+      .pagination__dots ...
+      a.pagination__page(href="#") 15
+      a.pagination__forward(href="#")
+    .pagination__text= paginationText

@@ -1,16 +1,17 @@
 .room-card {
   background: white;
   box-shadow: 0rem 1rem 2rem $smoke-white-color;
-  width: 27rem;
+  width: 32.37%;
   border-radius: .5rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 
   &__image-box {
     position: relative;
   }
 
   &__image {
-    width: 27rem;
+    width: 100%;
     display: block;
   }
 

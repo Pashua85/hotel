@@ -1,4 +1,5 @@
 extends ../common/common
+include ../../components/pagination/pagination
 
 block title
     | Search room
@@ -9,4 +10,6 @@ block main
         include ../../components/search-form/search-form
       .search__content
         h1.search__header.header--first Номера, которые мы для вас подобрали
-        include ../../components/search-rooms/search-rooms
+        .search__rooms-container
+          include ../../components/search-rooms/search-rooms
+        + pagination(1, 150)
