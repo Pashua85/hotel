@@ -5,6 +5,23 @@
   border-radius: .5rem;
   overflow: hidden;
   margin-bottom: 2rem;
+  transition: all .2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0rem 1rem 2rem $light-grey-color;
+  }
+
+  &:active {
+    transform: scale(1);
+    box-shadow: 0rem .5rem 1rem $smoke-white-color;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $default-font-color;
+  }
 
   &__image-box {
     position: relative;

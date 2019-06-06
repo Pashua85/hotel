@@ -14,34 +14,36 @@ mixin room-card(room)
     };
 
   .room-card
-    .room-card__image-box
-      img.room-card__image(src=require(`../../components/room-card/images/room-${room.number}.jpg`) alt=`room${room.number}`)
-      .room-card__photo-nav
-        .room-card__photo-cyrcle.room-card__photo-cyrcle--active
-        .room-card__photo-cyrcle
-        .room-card__photo-cyrcle
-        .room-card__photo-cyrcle
-    .room-card__info
-      .room-card__row
-        if room.isLuxury
-          .room-card__number-group 
-            span.room-card__number-symbol &#8470;&nbsp;
-            span.room-card__number #{room.number}
-            span.room-card__luxury  Люкс
-        else
-          .room-card__number-group 
-            span.room-card__number-symbol &#8470;&nbsp;
-            span.room-card__number #{room.number}
-        .room-card__price
-          | #{roomPrice}₽
-          span.room-card__price-text  в сутки
-      .room-card__reviews
-        .room-card__stars
-          - var i = room.rating
-          - var rest = 5 - room.rating
-          - while (i--)
-            div.room-card__star.room-card__star--filled
-          - while(rest--)
-            div.room-card__star
-        .room-card__reviews-number= room.reviewsNumber 
-          span.room-card__reviews-word= reviewsWord
+    //- в данном учебном проекте все ссылки идут на страницу описания номера 888.
+    a.room-card__link(href="details.html")
+      .room-card__image-box
+        img.room-card__image(src=require(`../../components/room-card/images/room-${room.number}.jpg`) alt=`room${room.number}`)
+        .room-card__photo-nav
+          .room-card__photo-cyrcle.room-card__photo-cyrcle--active
+          .room-card__photo-cyrcle
+          .room-card__photo-cyrcle
+          .room-card__photo-cyrcle
+      .room-card__info
+        .room-card__row
+          if room.isLuxury
+            .room-card__number-group 
+              span.room-card__number-symbol &#8470;&nbsp;
+              span.room-card__number #{room.number}
+              span.room-card__luxury  Люкс
+          else
+            .room-card__number-group 
+              span.room-card__number-symbol &#8470;&nbsp;
+              span.room-card__number #{room.number}
+          .room-card__price
+            | #{roomPrice}₽
+            span.room-card__price-text  в сутки
+        .room-card__reviews
+          .room-card__stars
+            - var i = room.rating
+            - var rest = 5 - room.rating
+            - while (i--)
+              div.room-card__star.room-card__star--filled
+            - while(rest--)
+              div.room-card__star
+          .room-card__reviews-number= room.reviewsNumber 
+            span.room-card__reviews-word= reviewsWord
