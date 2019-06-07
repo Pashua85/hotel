@@ -1,9 +1,16 @@
 extends ../common/common
+
+
 block title
   | Details
 block main
-  script 
-    include details.js
-  main(class="details__main")
-    h2 details
+  main.details__main
+    .details__photos
+      .details__column--left
+        .details__photo.details__photo--1
+      .details__column--right
+        .details__photo.details__photo--2
+        .details__photo.details__photo--3
+    .details__container
+
     

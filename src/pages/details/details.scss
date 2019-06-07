@@ -1,5 +1,44 @@
 .details {
 
+  &__main {
+    padding-top: .1rem;
+  }
+
+  &__photos {
+    width: 100%;
+    display: flex;
+  }
+
+  &__column--left {
+    width: 68.13%;
+  }
+
+  &__column--right {
+    width: 31.87%;
+  }
+
+  &__photo {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--1 {
+      min-height: 33.6vw;
+      background-image: url('./pages/details/images/room-888-1.jpg');      
+    }
+
+    &--2 {
+      height: 50%;
+      background-image: url('./pages/details/images/room-888-2.jpg');     
+    }
+
+    &--3 {
+      height: 50%;
+      background-image: url('./pages/details/images/room-888-3.jpg');      
+    }
+  }
+
   &__container {
     
   }
