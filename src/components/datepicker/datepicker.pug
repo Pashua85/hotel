@@ -4,9 +4,9 @@ script
   include datepicker.js
 .datepicker(id="datepicker")
   .datepicker__group.datepicker__group--left
-    label.datepicker__label.header--third(for="input1") Прибытие
-    + input-dropdown("datepicker__input", "text", "input1", "start-date", "ДД.ММ.ГГГГ")
+    label.datepicker__label.header--third(for="start-date-date-input") Прибытие
+    + input-dropdown("datepicker__input", "text", "start-date-input", "start-date", "ДД.ММ.ГГГГ")
   .datepicker__group.datepicker__group--right
-    label.datepicker__label.header--third(for="input2") Выезд
-    + input-dropdown("datepicker__input", "text", "input2", "end-date", "ДД.ММ.ГГГГ")
+    label.datepicker__label.header--third(for="end-date-input") Выезд
+    + input-dropdown("datepicker__input", "text", "end-date-input", "end-date", "ДД.ММ.ГГГГ")
   .datepicker__calendar(id="datepicker-calendar")

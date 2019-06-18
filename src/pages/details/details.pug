@@ -1,16 +1,26 @@
 extends ../common/common
-
+include ../../components/booking-form/booking-form
 
 block title
   | Details
 block main
+  - 
+    var room = { 
+      number: 888,
+      price: 9990,
+      isLuxury: true
+    }
   main.details__main
     .details__photos
-      .details__column--left
+      .details__photo-column--left
         .details__photo.details__photo--1
-      .details__column--right
+      .details__photo-column--right
         .details__photo.details__photo--2
         .details__photo.details__photo--3
     .details__container
+      .details__info
+      .details__form
+        + booking-form(room)
+
 
     

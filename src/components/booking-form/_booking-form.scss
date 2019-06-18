@@ -1,0 +1,50 @@
+.booking-form {
+  width: 38rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: .4rem;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  padding-top: 3.9rem;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1.7rem;
+  }
+
+  &__number-group {
+    font-family: 'Quicksand Bold', 'Montserrat Bold', sans-serif;
+    margin-bottom: -.2rem;
+  }
+
+  &__number-symbol {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  &__number {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  &__luxury {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: $purple-color;
+  }
+
+  &__price {
+    font-family: 'Montserrat Bold', sans-serif;
+    color: $grey-color;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  &__price-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+  }
+}

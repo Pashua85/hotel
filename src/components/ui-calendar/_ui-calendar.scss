@@ -134,6 +134,10 @@
     & .dp-enddate.ui-datepicker-other-month a {
       color: white;
     }
+
+    & .ui-datepicker-unselectable  {
+      color: $light-grey-color;
+    }
   }
 
   // Buttons

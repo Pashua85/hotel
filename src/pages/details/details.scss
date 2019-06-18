@@ -9,11 +9,11 @@
     display: flex;
   }
 
-  &__column--left {
+  &__photo-column--left {
     width: 68.13%;
   }
 
-  &__column--right {
+  &__photo-column--right {
     width: 31.87%;
   }
 
@@ -30,16 +30,20 @@
 
     &--2 {
       height: 50%;
-      background-image: url('./pages/details/images/room-888-2.jpg');     
+      background-image: url('./pages/details/images/room-888-2.jpg');  
     }
 
     &--3 {
       height: 50%;
-      background-image: url('./pages/details/images/room-888-3.jpg');      
+      background-image: url('./pages/details/images/room-888-3.jpg');   
     }
   }
 
   &__container {
-    
+    width: $grid-width;
+    padding-top: 7rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 }

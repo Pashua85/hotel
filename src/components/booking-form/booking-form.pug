@@ -1,0 +1,25 @@
+mixin booking-form(room)
+  -
+    var roomPrice = room['price'].toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 '); 
+  form.booking-form(id="booking-form")
+    .booking-form__row
+      if room.isLuxury
+        .booking-form__number-group 
+          span.booking-form__number-symbol &#8470;&nbsp;
+          span.booking-form__number #{room.number}
+          span.booking-form__luxury  Люкс
+      else
+        .booking-form__number-group 
+          span.booking-form__number-symbol &#8470;&nbsp;
+          span.booking-form__number #{room.number}
+      .booking-form__price
+        | #{roomPrice}₽
+        span.booking-form__price-text  в сутки
+    .booking-form__datepicker
+      include ../datepicker/datepicker
+    .booking-form__text-row
+      .booking-form__text
+        //-  цена, используемая в подсчёте стоимости, захардкодена в datepicker.js в функции setDaysCost
+        | #{roomPrice}₽ x&nbsp;
+        span.booking-form__days(id="booking-form-days") 0 суток
+      .booking-form__days-cost(id="booking-form-days-cost") 0₽
