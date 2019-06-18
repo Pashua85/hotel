@@ -72,9 +72,11 @@ $(function() {
       // в случае выезда в день заезда гость платит за 1 сутки полностью
       setDaysPeriod(1);
       setDaysCost(1);
+      setTotalCost(1);
     } else {
       setDaysPeriod(days);
       setDaysCost(days);
+      setTotalCost(days);
     }
   }
 
@@ -91,6 +93,15 @@ $(function() {
         daysText = 'суток';
       }
       $('#booking-form #booking-form-days').text(`${days} ${daysText}`);
+    }
+  }
+
+  function setTotalCost(days) {
+    var bookingForm = $('#booking-form');
+    if(bookingForm) {
+      var total = 9990 * days + 300;
+      var totalString = total.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 '); 
+      $('#booking-form #booking-form-total-cost').text(`${totalString}₽`);
     }
   }
 

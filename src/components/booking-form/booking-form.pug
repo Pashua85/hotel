@@ -1,3 +1,5 @@
+include ../button/button
+
 mixin booking-form(room)
   -
     var roomPrice = room['price'].toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 '); 
@@ -17,9 +19,30 @@ mixin booking-form(room)
         span.booking-form__price-text  в сутки
     .booking-form__datepicker
       include ../datepicker/datepicker
-    .booking-form__text-row
-      .booking-form__text
-        //-  цена, используемая в подсчёте стоимости, захардкодена в datepicker.js в функции setDaysCost
-        | #{roomPrice}₽ x&nbsp;
-        span.booking-form__days(id="booking-form-days") 0 суток
-      .booking-form__days-cost(id="booking-form-days-cost") 0₽
+    .booking-form__guests-dropdown
+      include ../guests-dropdown/guests-dropdown
+    .booking-form__costs-text
+      .booking-form__text-row
+        .booking-form__text
+          //-  цена, используемая в подсчёте стоимости, захардкодена в datepicker.js в функции setDaysCost
+          | #{roomPrice}₽ x&nbsp;
+          span.booking-form__days(id="booking-form-days") 0 суток
+        .booking-form__days-cost(id="booking-form-days-cost") 0₽
+      .booking-form__text-row
+        .booking-form__text.booking-form__text--has-info
+          | Сбор за услуги: скидка 2 179₽
+        .booking-form__info-icon(title="скидка действует до 01.09.2019") i
+        .booking-form__service-cost 0₽
+      .booking-form__text-row
+        .booking-form__text.booking-form__text--has-info
+          | Сбор за дополнительные услуги 
+        .booking-form__info-icon(title="дополнительный сбор за каждого взрослого в номере - 100р") i
+        //- дополнительный сбор зафиксирован в datepicker.js(setTotalCost) и не меняется
+        .booking-form__additional-service-cost 300₽      
+    .booking-form__total
+      .booking-form__total-text Итого
+      .booking-form__total-line
+      .booking-form__total-cost(id="booking-form-total-cost") 0₽
+    + button('Забронировать', 'blue', 'high', 'wide')
+
+

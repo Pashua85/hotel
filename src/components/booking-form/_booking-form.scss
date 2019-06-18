@@ -47,4 +47,71 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
   }
+
+  &__datepicker {
+    margin-bottom: 1.5rem;
+  }
+
+  &__guests-dropdown {
+    margin-bottom: 1.8rem;
+  }
+
+  &__costs-text {
+    margin-bottom: 3.2rem;
+  }
+
+  &__text-row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    padding: 0 .1rem;
+    line-height: 1.8rem;
+    
+    &--has-info {
+      width: 21.9rem;
+    }
+  }
+  
+  &__info-icon {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid $light-grey-color;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    vertical-align: middle;
+    margin-right: auto;
+    position: relative;
+    top: .2rem;
+
+    &:hover {
+      border-color: $grey-color;
+      color: $grey-color;
+    }
+  }
+
+  &__total {
+    display: flex;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    font-family: 'Quicksand Bold', 'Montserrat Bold', sans-serif;
+    font-weight: bold;
+    color: $dark-blue-color;
+    align-content: flex-end;
+    margin-bottom: 2rem;
+  }
+
+  &__total-line {
+    flex-grow: 2;
+    height: 1px;
+    background: $light-grey-color;
+    align-self: flex-end;
+    margin: 0 .5rem;
+  }
 }
