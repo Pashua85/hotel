@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (max-width: 1439px) {
+    background-position: center;
+  }
+
   &__container {
     min-height: 83rem;
     padding-top: 7rem;

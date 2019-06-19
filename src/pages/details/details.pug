@@ -18,8 +18,12 @@ block main
         .details__photo.details__photo--2
         .details__photo.details__photo--3
     .details__container
-      .details__info
-      .details__form
+      .details__column--left
+        .details__info-row
+          .details__info
+            include ../../components/room-info/room-info
+          .details__impressions
+      .details__column--right
         + booking-form(room)
 
 
