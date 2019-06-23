@@ -1,0 +1,78 @@
+.room-impressions {
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+    align-self: flex-end;
+    margin-left: 3rem;
+    padding-bottom: .5rem;
+  }
+
+  &__item {
+    padding-left: 1.5rem;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      top: 50%;
+      left: 0;
+      margin-top: -.5rem;
+    }
+
+    &--great::before {
+      background: $orange-gradient;
+    }
+
+    &--good::before {
+      background: $green-gradient;
+    }  
+
+    &--fair::before {
+      background: $blue-gradient;
+    }  
+
+    &--disappointed::before {
+      background: $black-gradient;
+    }
+  }
+
+}
+
+.donut {
+
+  &__text {
+    fill: $purple-color;
+  }
+
+  &__number {
+    font-family: 'Quicksand Bold', 'Montserrat Bold', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-anchor: middle;
+    letter-spacing: -.1rem;
+  }
+
+  &__label {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-anchor: middle;
+    text-transform: uppercase;
+    -moz-transform: translateY(1.7rem);
+    -ms-transform: translateY(1.7rem);
+    -webkit-transform: translateY(1.7rem);
+    transform: translateY(1.7rem);
+  }
+}

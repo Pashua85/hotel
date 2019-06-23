@@ -46,4 +46,17 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__column--left {
+    width: 61.5%;
+  }
+
+  &__info-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__impressions {
+    width: 49.4%;
+  }
 }
