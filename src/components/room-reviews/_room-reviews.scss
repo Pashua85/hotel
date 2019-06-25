@@ -42,6 +42,7 @@
   }
 
   &__likes {
+    display: block;
     width: 4rem;
     height: 2rem;
     border-width: 1px;
@@ -56,6 +57,8 @@
     color: $light-grey-color;
     margin: 0 auto;
     position: relative;
+    background-color: transparent;
+    outline: none;
 
     &::before {
       font-family: 'Material Icons';
@@ -64,6 +67,12 @@
       position: absolute;
       top: 0;
       left: .4rem;
+    }
+
+    &:hover {
+      border-color: $purple-color;
+      color: $purple-color;
+      cursor: pointer;
     }
 
     &.review__likes--liked {

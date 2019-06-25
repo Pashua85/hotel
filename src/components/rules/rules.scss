@@ -1,0 +1,33 @@
+.rules {
+  
+  &__header {
+    padding-left: 2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 1.05rem;
+      height: 1.05rem;
+      border-radius: 50%;
+      background: $light-grey-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: .7rem;
+    }
+  }
+}
