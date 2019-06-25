@@ -1,0 +1,88 @@
+.room-reviews {
+  padding-right: .3rem;
+
+  &__header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.1rem;
+  }
+
+  &__amount {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: $grey-color;
+    margin-bottom: -.5rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.3rem;
+  }
+}
+
+.review {
+
+  &__column--left {
+    margin-right: .9rem;
+  }
+
+  &__image {
+    border: 2px solid white;
+    border-radius: 50%;
+    @include light-shadow;
+    margin-bottom: .5rem;
+  }
+
+  &__likes {
+    width: 4rem;
+    height: 2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: $light-grey-color;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 1rem;
+    color: $light-grey-color;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      font-family: 'Material Icons';
+      content: '\e87e';
+      font-size: 1rem;
+      position: absolute;
+      top: 0;
+      left: .4rem;
+    }
+
+    &.review__likes--liked {
+      border-color: $purple-color;
+      color: $purple-color;
+
+      &::before {
+        content: '\e87d';
+        margin-top: -.1rem;
+      }
+    }
+  }
+
+  &__name {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-weight: bold;
+  }
+
+  &__time {
+    margin-bottom: 1rem;
+  }
+}
