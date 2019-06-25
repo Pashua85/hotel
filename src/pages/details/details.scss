@@ -2,6 +2,7 @@
 
   &__main {
     padding-top: .1rem;
+    padding-bottom: 7.2rem;
   }
 
   &__photos {
@@ -63,5 +64,20 @@
 
   &__reviews {
     margin-bottom: 3.25rem;
+  }
+
+  &__rules-row {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+
+  &__rules {
+    width: 36%;
+    background: red;
+  }
+
+  &__cancel {
+    width: 48%;
   }
 }
