@@ -58,13 +58,12 @@ body {
 }
 
 .header--first {
-  font-family: 'Quicksand Bold','Montserrat', sans-serif;
+  font-family: 'Quicksand Bold', 'Arial','Montserrat Bold', sans-serif;
   color: $dark-blue-color;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 3rem;
-  // letter-spacing: 0;
-  // letter-spacing: .11rem;
+  letter-spacing: .1rem;
 }
 
 .header--second {

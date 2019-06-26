@@ -1,0 +1,20 @@
+.register-form {
+  width: 38rem;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: .4rem;
+  @include box-shadow;
+  padding-top: 3.8rem;
+  padding-left: 2.9rem;
+  padding-right: 2.9rem;
+  padding-bottom: 2.9rem;
+
+  &__header {
+    margin-bottom: 2.1rem;
+  }
+
+  &__input--first-name {
+    margin-bottom: 1rem;
+  }
+}
