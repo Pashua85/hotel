@@ -1,8 +1,11 @@
 include ../input-field/input-field.pug
+include ../radio-buttons/radio-buttons.pug
 
 form.register-form
   h2.register-form__header.header--first Регистрация аккаунта
   .register-form__input.register-form__input--first-name
     + input-field("new-user-first-name", "first-name", "Имя")
-  .register-form__input.register-form__input--first-name
+  .register-form__input.register-form__input--last-name
     + input-field("new-user-last-name", "last-name", "Фамилия")
+  .register-form__radio-buttons
+    + radio-buttons("gender", "male", "Мужчина", "female", "Женщина")

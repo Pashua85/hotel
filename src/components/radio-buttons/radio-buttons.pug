@@ -1,0 +1,6 @@
+mixin radio-buttons(name, value1, label1, value2, label2)
+  .radio-buttons
+    input.radio-buttons__input(type="radio" name=`${name}` id="radio-input-1" checked="true")
+    label.radio-buttons__label.radio-buttons__label--left(for="radio-input-1")= label1
+    input.radio-buttons__input(type="radio" name=`${name}` id="radio-input-2")
+    label.radio-buttons__label(for="radio-input-2")= label2

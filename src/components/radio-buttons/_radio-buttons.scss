@@ -1,0 +1,55 @@
+.radio-buttons {
+  display: flex;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    padding-left: 3rem;
+    position: relative;
+    color: $grey-color;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      color: $default-font-color;
+    }
+
+    &:hover::before {
+      box-shadow: 0 0 0 1px $grey-color;
+    }
+
+    &--left {
+      margin-right: 2rem;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -.9rem;
+      margin-left: .1rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      background: transparent;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 1px $light-grey-color;
+      transition: all .2s;
+    }
+  }
+
+  &__input:checked + &__label {
+    color: $default-font-color;
+    transition: all .2s;
+  }
+
+  &__input:checked + &__label:before {
+    background: $blue-gradient;
+    box-shadow: 0 0 0 1px $purple-color;
+    transition: all .2s;
+  }
+}
