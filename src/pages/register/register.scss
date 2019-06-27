@@ -1,6 +1,9 @@
 .register {
   &__main {
-    background: blue;
+    background-size: cover;
+    backgrond-repeat: no-repeat;
+    background-position: 50% -7rem;
+    background-image: url(pages/register/images/image-4.1.jpg);
     padding-top: 3rem;
     padding-bottom: 2.6rem;
   }
