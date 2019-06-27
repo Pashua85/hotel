@@ -21,4 +21,90 @@
   &__input--last-name {
     margin-bottom: .8rem;
   }
+
+  &__radio-buttons {
+    margin-bottom: 2.2rem;
+  }
+
+  &__label {
+    margin-bottom: .5rem;
+  }
+
+  &__input--birthday {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &:focus-within .register-form__subtitle {
+      display: block;
+    }
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -.5rem;
+    font-size: 1.2rem;
+    color: $light-grey-color;
+    display: none;
+  }
+
+  &__input--email {
+    margin-bottom: 1rem;
+  }
+
+  &__input--password {
+    margin-bottom: .7rem;
+  }
+
+}
+
+.toggle {
+  position: relative;
+
+  &__input {
+    display: none;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -.9rem;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 1rem;
+    border: 1px solid $light-grey-color;
+    transition: all .4s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1.2rem;
+      height: 1.2rem;
+      background: $light-grey-color;
+      border-radius: 50%;
+      top: .3rem;
+      left: .3rem;
+      margin-left: 0;
+      transition: all .4rem;
+    }
+  }
+  
+  &__input:checked + &__slider {
+    border-color: $purple-color;
+    transition: all .4s;
+
+    &::before {
+      transform: translateX(2rem);
+      transition: all .4s;
+      background: $blue-gradient;
+    }
+  }
+
+  &__label {
+    padding-left: 5rem;
+    user-select: none;
+    // background: red;
+  }
 }
