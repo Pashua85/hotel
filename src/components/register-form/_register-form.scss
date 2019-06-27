@@ -57,6 +57,24 @@
     margin-bottom: .7rem;
   }
 
+  &__toggle {
+    margin-bottom: 2.3rem;
+  }
+
+  &__submit-btn {
+    margin-bottom: 3rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+  }
 }
 
 .toggle {

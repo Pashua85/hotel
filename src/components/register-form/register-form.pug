@@ -1,5 +1,6 @@
-include ../input-field/input-field.pug
-include ../radio-buttons/radio-buttons.pug
+include ../input-field/input-field
+include ../radio-buttons/radio-buttons
+include ../button/button
 
 form.register-form
   h2.register-form__header.header--first Регистрация аккаунта
@@ -23,3 +24,11 @@ form.register-form
       input(type="checkbox" id="toggle-checkbox").toggle__input
       .toggle__slider
       label.toggle__label(for="toggle-checkbox") Получать спецпредложения
+  .register-form__submit-btn
+    + button("Зарегистрироваться", "blue", "high", "wide")
+  .register-form__row
+    .register-form__question Уже есть аккаунт на Toxin?
+    .register-form__question-btn
+      a(href="#").register-form__link
+        + button('Войти', 'white', 'high', 'narrow', 'button')
+

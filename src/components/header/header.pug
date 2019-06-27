@@ -38,9 +38,9 @@ mixin header(isLoggedIn, userName)
         if !isLoggedIn 
           .header__user-block--unlogged
             a.header__link(href="#")
-              + button('Войти', 'white', 'low', 'narrow')
+              + button('Войти', 'white', 'low', 'narrow', 'button')
             a.header__link(href="register.html")
-              + button('Зарегистрироваться', 'blue', 'low', 'narrow')
+              + button('Зарегистрироваться', 'blue', 'low', 'narrow', 'button')
         if isLoggedIn
           .header__user-block--logged= userName
 
