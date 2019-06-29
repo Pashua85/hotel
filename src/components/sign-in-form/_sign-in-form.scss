@@ -1,0 +1,38 @@
+.sign-in-form {
+  width: 38rem;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: .4rem;
+  @include box-shadow;
+  padding-top: 3.8rem;
+  padding-left: 2.9rem;
+  padding-right: 2.9rem;
+  padding-bottom: 3.1rem;
+
+  &__header {
+    margin-bottom: 2.1rem;
+  }
+
+  &__input--email {
+    margin-bottom: 1rem;
+  }
+
+  &__input--password {
+    margin-bottom: 2rem;
+  }
+
+  &__submit-btn {
+    margin-bottom: 3rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
