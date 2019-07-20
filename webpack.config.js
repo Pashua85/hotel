@@ -53,6 +53,11 @@ const common = merge([
         filename: 'sign-in.html',
         chunk: ['sing-in'],
         template: PATHS.source + '/pages/sign-in/sign-in.pug',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'empty-page.html',
+        chunk: ['empty-page'],
+        template: PATHS.source + '/pages/empty-page/empty-page.pug',
       })
     ],
     optimization: {
