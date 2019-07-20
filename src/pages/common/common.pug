@@ -15,7 +15,8 @@ html(lang="en")
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous")
     body
-      + header(false)
-      block main
-
-      include ../../components/footer/footer
+      .common__wrapper
+        + header(false)
+        block main
+        .common__footer
+          include ../../components/footer/footer
