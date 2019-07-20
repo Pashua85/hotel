@@ -199,7 +199,7 @@ $(function () {
     clearGuestsAmount();
   });
 
-  $(document).click(e => {
+  $(document).click(event => {
     if($(event.target).closest('.dropdown__group').length) return;
     guestsBox.removeClass('dropdown__box--visible');
     $('#guests-dropdown .input-dropdown').removeClass('input-dropdown--open');

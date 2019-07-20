@@ -34,17 +34,24 @@
       padding-right: 2.4rem;
 
       &::after {
+        font-family: 'Material Icons';
+        content: "\e5cf";
+        font-size: 2.4rem;
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
-        margin-top: .2rem;
-        display: table;
-        content: '';
+        margin-top: -1rem;
+        display: block;
         width: 2.4rem;
         height: 2.1rem;
-        background-image: url('./components/header/images/expand_more.svg');
-        background-repeat: no-repeat;
-        background-position: center;
+        line-height: 2.1rem;
+        vertical-align: middle;
+        color: $grey-color;
+      }
+
+      &:hover::after,
+      &:focus-within::after {
+        color: $grey-blue-color;
       }
     }
   }
@@ -76,12 +83,11 @@
     visibility: hidden;
   }
 
-  &__nav-item:hover &__expand-list,
-  &__nav-item &__expand-list:hover,
-  &__nav-item:focus-within &__expand-list {
+  &__nav-item--open &__expand-list {
     visibility: visible;
     opacity: 1;
     display: block;
+    transition: all .5s ease;
   }
 
   &__expand-link {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOXIN
+    <title>Details
     </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
@@ -62,13 +62,158 @@
           </nav>
         </div>
       </header>
-      <main class="main">
-        <div class="main__container">
-          <form class="search-form-short" action="/search-room.html">
-            <h1 class="search-form-short__header header--first">Найдём номера под ваши пожелания</h1>
-            <div class="search-form-short__datepicker">
-              <script>
-                  $.extend($.datepicker, {
+      <main class="details__main">
+        <div class="details__photos">
+          <div class="details__photo-column--left">
+            <div class="details__photo details__photo--1"></div>
+          </div>
+          <div class="details__photo-column--right">
+            <div class="details__photo details__photo--2"></div>
+            <div class="details__photo details__photo--3"></div>
+          </div>
+        </div>
+        <div class="details__container">
+          <div class="details__column--left">
+            <div class="details__info-row">
+              <div class="details__info">
+<div class="room-info">
+  <h2 class="room-info__title header--second">Сведения о намере</h2>
+  <ul class="room-info__list">
+    <li class="room-info__item room-info__item--comfort">
+      <div class="room-info__icon">&#xE24E;</div>
+      <div class="room-info__item-text">
+        <div class="room-info__item-title">Комфорт</div>
+        <div class="room-info__item-text">Шумопоглошающие стены</div>
+      </div>
+    </li>
+    <li class="room-info__item room-info__item--convenience">
+      <div class="room-info__icon">&#xe7f1;</div>
+      <div class="room-info__item-text">
+        <div class="room-info__item-title">Удобство</div>
+        <div class="room-info__item-text">Окно в каждой из спален</div>
+      </div>
+    </li>
+    <li class="room-info__item room-info__item--cosiness">
+      <div class="room-info__icon">&#xe80e;</div>
+      <div class="room-info__item-text">
+        <div class="room-info__item-title">Уют</div>
+        <div class="room-info__item-text">Номер оснащён камином</div>
+      </div>
+    </li>
+  </ul>
+</div>
+              </div>
+              <div class="details__impressions">
+<div class="room-impressions">
+  <h2 class="room-impressions__header header--second">Впечатления от номера</h2>
+  <div class="room-impressions__row">
+    <div class="room-impressions__donut"><svg width="120" height="121" viewBox="0 0 120 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="59" height="121">
+<path d="M0 0H59V121H0V0Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="60" cy="61" r="58" stroke="url(#orangeGradient)" stroke-width="4"/>
+</g>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="61" y="1" width="59" height="59">
+<path d="M61 1H120V60H61V1Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1)">
+<circle cx="60" cy="61" r="55" stroke="url(#blueGradient)" stroke-width="10"/>
+</g>
+<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="61" y="62" width="59" height="59">
+<path d="M120 62V121H61L61 62L120 62Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask2)">
+<circle cx="60" cy="61" r="58" transform="rotate(90 60 61)" stroke="url(#greenGradient)" stroke-width="4"/>
+</g>
+<g class="donut__text">
+<text class="donut__number" x="50%" y="50%">260</text>
+<text class="donut__label" x="50%" y="50%">голосов</text>
+</g>
+<defs>
+<linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#FFE39C"/>
+<stop offset="100%" stop-color="#FFBA9C"/>
+</linearGradient>
+<linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#BC9CFF"/>
+<stop offset="100%" offset="1" stop-color="#8BA4F9"/>
+</linearGradient>
+<linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#6FCF97"/>
+<stop offset="100%" stop-color="#66D2EA"/>
+</linearGradient>
+</defs>
+</svg>
+    </div>
+    <ul class="room-impressions__list">
+      <li class="room-impressions__item room-impressions__item--great">Великолепно</li>
+      <li class="room-impressions__item room-impressions__item--good">Хорошо</li>
+      <li class="room-impressions__item room-impressions__item--fair">Удовлетворительно</li>
+      <li class="room-impressions__item room-impressions__item--disappointed">Разочарован</li>
+    </ul>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="details__reviews">
+<div class="room-reviews">
+  <div class="room-reviews__header-row">
+    <h2 class="room-reviews__header header--second">Отзывы посетителей номера</h2>
+    <div class="room-reviews__amount">2 отзыва</div>
+  </div>
+  <ul class="room-reviews__list">
+    <li class="room-reviews__item">
+      <div class="review__column--left"><img class="review__image" src="images/image1.jpg" alt="user1" width="48" height="48">
+        <button class="review__likes review__likes--liked" type="button">12</button>
+      </div>
+      <div class="review__column--right">
+        <div class="review__name">Мурад Сарафанов</div>
+        <div class="review__time">5 дней назад</div>
+        <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+      </div>
+    </li>
+    <li class="room-reviews__item">
+      <div class="review__column--left"><img class="review__image" src="images/image2.jpg" alt="user1" width="48" height="48">
+        <button class="review__likes" type="button">2</button>
+      </div>
+      <div class="review__column--right">
+        <div class="review__name">Патрисия Стёклышкова</div>
+        <div class="review__time">Неделю назад</div>
+        <p class="review__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
+      </div>
+    </li>
+  </ul>
+</div>
+            </div>
+            <div class="details__rules-row">
+              <div class="details__rules">
+<div class="rules">
+  <h2 class="rules__header header--second">Правила</h2>
+  <ul class="rules__list">
+    <li class="rules__item">Нельзя с питомцами</li>
+    <li class="rules__item">Без вечеринок и мероприятий</li>
+    <li class="rules__item">Время прибытия — после 13:00, а выезд до 12:00</li>
+  </ul>
+</div>
+              </div>
+              <div class="details__cancel">
+<div class="cancel">
+  <h2 class="cancel__header header--second">Отмена</h2>
+  <p class="cancel__text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="details__column--right">
+            <form class="booking-form" id="booking-form">
+              <div class="booking-form__row">
+                <div class="booking-form__number-group"> <span class="booking-form__number-symbol">&#8470;&nbsp;</span><span class="booking-form__number">888</span><span class="booking-form__luxury"> Люкс</span></div>
+                <div class="booking-form__price">9 990₽<span class="booking-form__price-text"> в сутки</span></div>
+              </div>
+              <div class="booking-form__datepicker">
+                <script>
+                    $.extend($.datepicker, {
 
     // Reference the orignal function so we can override it and call it later
     _inlineDatepicker2: $.datepicker._inlineDatepicker,
@@ -284,28 +429,28 @@ $(function() {
     $(calendar).find('.dp-enddate').removeClass('dp-enddate');
   }
 });
-              </script>
-              <div class="datepicker" id="datepicker">
-                <div class="datepicker__group datepicker__group--left">
-                  <label class="datepicker__label header--third" for="start-date-date-input">Прибытие</label>
-                                <div class="input-dropdown">
-                                  <input class="input-dropdown__field datepicker__input" type="text" id="start-date-input" name="start-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly">
-                                  <div class="input-dropdown__toggle"></div>
-                                </div>
+                </script>
+                <div class="datepicker" id="datepicker">
+                  <div class="datepicker__group datepicker__group--left">
+                    <label class="datepicker__label header--third" for="start-date-date-input">Прибытие</label>
+                        <div class="input-dropdown">
+                          <input class="input-dropdown__field datepicker__input" type="text" id="start-date-input" name="start-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly">
+                          <div class="input-dropdown__toggle"></div>
+                        </div>
+                  </div>
+                  <div class="datepicker__group datepicker__group--right">
+                    <label class="datepicker__label header--third" for="end-date-input">Выезд</label>
+                        <div class="input-dropdown">
+                          <input class="input-dropdown__field datepicker__input" type="text" id="end-date-input" name="end-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly">
+                          <div class="input-dropdown__toggle"></div>
+                        </div>
+                  </div>
+                  <div class="datepicker__calendar" id="datepicker-calendar"></div>
                 </div>
-                <div class="datepicker__group datepicker__group--right">
-                  <label class="datepicker__label header--third" for="end-date-input">Выезд</label>
-                                <div class="input-dropdown">
-                                  <input class="input-dropdown__field datepicker__input" type="text" id="end-date-input" name="end-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly">
-                                  <div class="input-dropdown__toggle"></div>
-                                </div>
-                </div>
-                <div class="datepicker__calendar" id="datepicker-calendar"></div>
               </div>
-            </div>
-            <div class="search-form-short__guests-dropdown">
-              <script>
-                 $(function () {
+              <div class="booking-form__guests-dropdown">
+                <script>
+                   $(function () {
   const guestsInput = $('#guests-input');
   const guestsClear = $('#guests-clear');
   const guestsDone = $('#guests-done');
@@ -516,52 +661,73 @@ $(function() {
   checkAdultsAmount();
   setGuestsAmount();
 });
-              </script>
-              <div class="guests-dropdown dropdown" id="guests-dropdown">
-                <label class="guests-dropdown__label dropdown__label header--third" for="guests-input">Гости</label>
-                <div class="dropdown__group" id="dropdown-group">
-                                <div class="input-dropdown">
-                                  <input class="input-dropdown__field guests-dropdown__input" type="text" id="guests-input" name="guests-amount" placeholder="Сколько гостей" autocomplete="off" readonly="readonly">
-                                  <div class="input-dropdown__toggle"></div>
-                                </div>
-                  <div class="quests-dropdown__box dropdown__box" id="guests-dropdown-box"> 
-                    <ul class="dropdown__list">
-                      <li class="dropdown__item"> 
-                        <div class="dropdown__item-title header--third">Взрослые</div>
-                        <div class="dropdown__amount-box"> 
-                          <button class="dropdown__amount-btn dropdown__discrete" id="adults-discrete">-</button>
-                          <div class="dropdown__amount" id="adults-amount">2</div>
-                          <button class="dropdown__amount-btn dropdown__amount-add" id="adults-add">+</button>
+                </script>
+                <div class="guests-dropdown dropdown" id="guests-dropdown">
+                  <label class="guests-dropdown__label dropdown__label header--third" for="guests-input">Гости</label>
+                  <div class="dropdown__group" id="dropdown-group">
+                        <div class="input-dropdown">
+                          <input class="input-dropdown__field guests-dropdown__input" type="text" id="guests-input" name="guests-amount" placeholder="Сколько гостей" autocomplete="off" readonly="readonly">
+                          <div class="input-dropdown__toggle"></div>
                         </div>
-                      </li>
-                      <li class="dropdown__item"> 
-                        <div class="dropdown__item-title header--third">Дети</div>
-                        <div class="dropdown__amount-box"> 
-                          <button class="dropdown__amount-btn dropdown__discrete" id="children-discrete">-</button>
-                          <div class="dropdown__amount" id="children-amount">1</div>
-                          <button class="dropdown__amount-btn dropdown__amount-add" id="children-add">+</button>
-                        </div>
-                      </li>
-                      <li class="dropdown__item"> 
-                        <div class="dropdown__item-title header--third">Младенцы</div>
-                        <div class="dropdown__amount-box"> 
-                          <button class="dropdown__amount-btn dropdown__discrete" id="babies-discrete">-</button>
-                          <div class="dropdown__amount" id="babies-amount">1</div>
-                          <button class="dropdown__amount-btn dropdown__amount-add" id="babies-add">+ </button>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="dropdown__btn-row">
-                      <button class="dropdown__btn header--third dropdown__btn--clear" id="guests-clear">Очистить</button>
-                      <button class="dropdown__btn header--third dropdown__btn--done" id="guests-done">Применить</button>
+                    <div class="quests-dropdown__box dropdown__box" id="guests-dropdown-box"> 
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item"> 
+                          <div class="dropdown__item-title header--third">Взрослые</div>
+                          <div class="dropdown__amount-box"> 
+                            <button class="dropdown__amount-btn dropdown__discrete" id="adults-discrete">-</button>
+                            <div class="dropdown__amount" id="adults-amount">2</div>
+                            <button class="dropdown__amount-btn dropdown__amount-add" id="adults-add">+</button>
+                          </div>
+                        </li>
+                        <li class="dropdown__item"> 
+                          <div class="dropdown__item-title header--third">Дети</div>
+                          <div class="dropdown__amount-box"> 
+                            <button class="dropdown__amount-btn dropdown__discrete" id="children-discrete">-</button>
+                            <div class="dropdown__amount" id="children-amount">1</div>
+                            <button class="dropdown__amount-btn dropdown__amount-add" id="children-add">+</button>
+                          </div>
+                        </li>
+                        <li class="dropdown__item"> 
+                          <div class="dropdown__item-title header--third">Младенцы</div>
+                          <div class="dropdown__amount-box"> 
+                            <button class="dropdown__amount-btn dropdown__discrete" id="babies-discrete">-</button>
+                            <div class="dropdown__amount" id="babies-amount">1</div>
+                            <button class="dropdown__amount-btn dropdown__amount-add" id="babies-add">+ </button>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="dropdown__btn-row">
+                        <button class="dropdown__btn header--third dropdown__btn--clear" id="guests-clear">Очистить</button>
+                        <button class="dropdown__btn header--third dropdown__btn--done" id="guests-done">Применить</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-                      <button class="button button--blue button--high button--wide" type="submit">Подобрать номер</button>
-          </form>
-          <p class="main__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+              <div class="booking-form__costs-text">
+                <div class="booking-form__text-row">
+                  <div class="booking-form__text">9 990₽ x&nbsp;<span class="booking-form__days" id="booking-form-days">0 суток</span></div>
+                  <div class="booking-form__days-cost" id="booking-form-days-cost">0₽</div>
+                </div>
+                <div class="booking-form__text-row">
+                  <div class="booking-form__text booking-form__text--has-info">Сбор за услуги: скидка 2 179₽</div>
+                  <div class="booking-form__info-icon" title="скидка действует до 01.09.2019">i</div>
+                  <div class="booking-form__service-cost">0₽</div>
+                </div>
+                <div class="booking-form__text-row">
+                  <div class="booking-form__text booking-form__text--has-info">Сбор за дополнительные услуги </div>
+                  <div class="booking-form__info-icon" title="дополнительный сбор за каждого взрослого в номере - 100р">i</div>
+                  <div class="booking-form__additional-service-cost">300₽      </div>
+                </div>
+              </div>
+              <div class="booking-form__total">
+                <div class="booking-form__total-text">Итого</div>
+                <div class="booking-form__total-line"></div>
+                <div class="booking-form__total-cost" id="booking-form-total-cost">0₽</div>
+              </div>
+              <button class="button button--blue button--high button--wide" type="submit">Забронировать</button>
+            </form>
+          </div>
         </div>
       </main>
       <footer class="footer">

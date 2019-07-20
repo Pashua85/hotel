@@ -43,6 +43,8 @@ mixin header(isLoggedIn, userName)
               + button('Зарегистрироваться', 'blue', 'low', 'narrow', 'button')
         if isLoggedIn
           .header__user-block--logged= userName
+  script
+    include header.js
 
 
             

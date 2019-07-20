@@ -57,8 +57,8 @@
               </li>
             </ul>
             <div class="header__user-block--unlogged"><a class="header__link" href="#">
-                <button class="button button--white button--low button--narrow">Войти</button></a><a class="header__link" href="#">
-                <button class="button button--blue button--low button--narrow">Зарегистрироваться</button></a></div>
+                <button class="button button--white button--low button--narrow" type="button">Войти</button></a><a class="header__link" href="register.html">
+                <button class="button button--blue button--low button--narrow" type="button">Зарегистрироваться</button></a></div>
           </nav>
         </div>
       </header>
@@ -872,27 +872,315 @@ $(function() {
           </aside>
           <div class="search__content">
             <h1 class="search__header header--first">Номера, которые мы для вас подобрали</h1>
-            <div class="search-rooms">
-                          <div class="room-card">
-                            <div class="room-card__image-box"><img class="room-card__image" src="./images/image.jpg" alt="room-image">
-                              <div class="room-card__photo-indicator room-card__photo-indicator--first">
-                                <div class="room-card__photo-cyrcle"></div>
-                                <div class="room-card__photo-cyrcle"></div>
-                                <div class="room-card__photo-cyrcle"></div>
-                                <div class="room-card__photo-cyrcle"></div>
-                              </div>
-                            </div>
-                            <div class="room-card__row">
-                              <div class="room-card__number">№ 12<span class="room-card__luxury">Люкс</span></div>
-                            </div>
-                            <div class="room-card__reviews">
-                              <div class="room-card__stars">
-                                <div class="room-card__star room-card__star--filled"></div>
-                                <div class="room-card__star room-card__star--filled"></div>
-                                <div class="room-card__star room-card__star--filled"></div>
-                              </div>
-                            </div>
-                          </div>
+            <div class="search__rooms-container">
+              <div class="search-rooms"> 
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-888.jpg" alt="room888">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">888</span><span class="room-card__luxury"> Люкс</span></div>
+                                      <div class="room-card__price">9 900₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">145<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-840.jpg" alt="room840">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">840</span></div>
+                                      <div class="room-card__price">9 900₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">65<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-980.jpg" alt="room980">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">980</span><span class="room-card__luxury"> Люкс</span></div>
+                                      <div class="room-card__price">8 500₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                        <div class="room-card__star"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">35<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-856.jpg" alt="room856">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">856</span></div>
+                                      <div class="room-card__price">7 300₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">19<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-740.jpg" alt="room740">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">740</span></div>
+                                      <div class="room-card__price">6 000₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">44<span class="room-card__reviews-word"> Отзыва</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-982.jpg" alt="room982">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">982</span></div>
+                                      <div class="room-card__price">5 800₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">56<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-678.jpg" alt="room678">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">678</span></div>
+                                      <div class="room-card__price">5 500₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">45<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-450.jpg" alt="room450">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">450</span></div>
+                                      <div class="room-card__price">5 300₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">39<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-350.jpg" alt="room350">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">350</span></div>
+                                      <div class="room-card__price">5 000₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">77<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-666.jpg" alt="room666">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">666</span></div>
+                                      <div class="room-card__price">5 000₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">25<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-444.jpg" alt="room444">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">444</span></div>
+                                      <div class="room-card__price">5 000₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">15<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+                              <div class="room-card"><a class="room-card__link" href="details.html">
+                                  <div class="room-card__image-box"><img class="room-card__image" src="images/room-352.jpg" alt="room352">
+                                    <div class="room-card__photo-nav">
+                                      <div class="room-card__photo-cyrcle room-card__photo-cyrcle--active"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                      <div class="room-card__photo-cyrcle"></div>
+                                    </div>
+                                  </div>
+                                  <div class="room-card__info">
+                                    <div class="room-card__row">
+                                      <div class="room-card__number-group"> <span class="room-card__number-symbol">&#8470;&nbsp;</span><span class="room-card__number">352</span></div>
+                                      <div class="room-card__price">5 000₽<span class="room-card__price-text"> в сутки</span></div>
+                                    </div>
+                                    <div class="room-card__reviews">
+                                      <div class="room-card__stars">
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star room-card__star--filled"></div>
+                                        <div class="room-card__star"></div>
+                                        <div class="room-card__star"></div>
+                                      </div>
+                                      <div class="room-card__reviews-number">55<span class="room-card__reviews-word"> Отзывов</span></div>
+                                    </div>
+                                  </div></a></div>
+              </div>
+            </div>
+            <div class="pagination">
+              <div class="pagination__row"><a class="pagination__page pagination__page--current">1</a><a class="pagination__page" href="#">2</a><a class="pagination__page" href="#">3</a>
+                <div class="pagination__dots">...</div><a class="pagination__page" href="#">15</a><a class="pagination__forward" href="#"></a>
+              </div>
+              <div class="pagination__text">1 – 12 из 100+ вариантов аренды</div>
             </div>
           </div>
         </div>
@@ -979,6 +1267,6 @@ $(function() {
           </div>
         </div>
       </footer>
-    <script type="text/javascript" src="./js/common.js"></script><script type="text/javascript" src="./js/index.js"></script><script type="text/javascript" src="./js/search-room.js"></script></body>
-  <link rel="apple-touch-icon" sizes="57x57" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="hotel-ui"><link rel="icon" type="image/png" sizes="32x32" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-16x16.png"><link rel="shortcut icon" href="icons-20be3e7a017279e9731149174cb51cbf/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="hotel-ui"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1536x2008.png"><link href="./css/common.css" rel="stylesheet"></head>
+    <script type="text/javascript" src="./js/index.js"></script></body>
+  <link rel="apple-touch-icon" sizes="57x57" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="hotel-ui"><link rel="icon" type="image/png" sizes="32x32" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-16x16.png"><link rel="shortcut icon" href="icons-20be3e7a017279e9731149174cb51cbf/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="hotel-ui"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1536x2008.png"><link href="./css/index.css" rel="stylesheet"></head>
 </html>
