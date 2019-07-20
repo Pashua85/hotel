@@ -18,4 +18,8 @@
   @include placeholder {
     color: $light-grey-color;
   }
+
+  &:hover, &:focus {
+    border-color: $grey-color;
+  }
 }
