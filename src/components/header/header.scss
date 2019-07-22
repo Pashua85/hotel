@@ -48,12 +48,19 @@
         line-height: 2.1rem;
         vertical-align: middle;
         color: $grey-color;
+        transition: transform .2s;
       }
 
       &:hover::after,
       &:focus-within::after {
         color: $grey-blue-color;
       }
+    }
+
+    &--open.header__nav-item--expandable::after {
+      transform: rotate(180deg);
+      transform-origin: center;
+      transition: transform .2s;
     }
   }
 
@@ -69,6 +76,7 @@
   }
 
   &__expand-list {
+    @include light-shadow;
     position: absolute;
     left: 0;
     top: 100%;

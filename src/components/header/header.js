@@ -1,5 +1,5 @@
 $(() => {
-  const items = document.querySelectorAll('.header__nav-item--expandable');
+  const items = document.querySelectorAll('.header__nav-toggle');
   items.forEach(item => {
     item.addEventListener('click', event => {
       event.preventDefault();

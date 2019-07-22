@@ -12,7 +12,7 @@ mixin header(isLoggedIn, userName)
           li.header__nav-item
             a.header__nav-link(href="empty-page.html") О нас
           li.header__nav-item.header__nav-item--expandable
-            a.header__nav-link(href="empty-page.html") Услуги
+            a.header__nav-toggle.header__nav-link(href="empty-page.html") Услуги
             ul.header__expand-list
               li.header__expand-item
                 a.header__expand-link(href="empty-page.html") Услуга 1
@@ -27,7 +27,7 @@ mixin header(isLoggedIn, userName)
           li.header__nav-item
             a.header__nav-link(href="empty-page.html") Новости
           li.header__nav-item.header__nav-item--expandable
-            a.header__nav-link(href="empty-page.html") Соглашения
+            a.header__nav-toggle.header__nav-link(href="empty-page.html") Соглашения
             ul.header__expand-list
               li.header__expand-item
                 a.header__expand-link(href="empty-page.html") Соглашение 1
