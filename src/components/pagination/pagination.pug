@@ -18,9 +18,9 @@ mixin pagination(currentPage, itemsAmount)
   .pagination
     .pagination__row
       a.pagination__page.pagination__page--current 1
-      a.pagination__page(href="#") 2
-      a.pagination__page(href="#") 3
+      a.pagination__page(href="empty-page.html") 2
+      a.pagination__page(href="empty-page.html") 3
       .pagination__dots ...
-      a.pagination__page(href="#") 15
-      a.pagination__forward(href="#")
+      a.pagination__page(href="empty-page.html") 15
+      a.pagination__forward(href="empty-page.html")
     .pagination__text= paginationText
