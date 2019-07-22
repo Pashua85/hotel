@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
   overflow-y: overlay;
   height: 100%;
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1 rem = 12px;
+  }
 }
 
 body {

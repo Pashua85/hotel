@@ -2,6 +2,7 @@
   
   &__container {
     width: $grid-width;
+    max-width: $max-content-width;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

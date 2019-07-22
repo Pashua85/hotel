@@ -6,6 +6,7 @@
   &__container {
     display: flex;
     width: $grid-width;
+    max-width: $max-content-width;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;

@@ -42,6 +42,7 @@
 
   &__container {
     width: $grid-width;
+    max-width: $max-content-width;
     padding-top: 7rem;
     margin: 0 auto;
     display: flex;

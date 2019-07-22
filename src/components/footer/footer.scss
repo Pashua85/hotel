@@ -3,6 +3,7 @@
 
   &__container {
     width: $grid-width;
+    max-width: $max-content-width;
     margin: 0 auto;
     display: flex;
     padding-top: 10.4rem;
@@ -71,6 +72,7 @@
   &__container {
     min-height: 7rem;
     width: $grid-width;
+    max-width: $max-content-width;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
