@@ -6,13 +6,16 @@ mixin header(isLoggedIn, userName)
   - userName = userName || 'Гость'
   header(class="header")
     .header__container
+      input(type="checkbox" class="header__checkbox" id="header-burger")
+      label(for="header-burger" class="header__burger")
+        span(class="header__burger-icon") &nbsp;
       + logo('header__logo')
       nav.header__nav
         ul.header__nav-list
           li.header__nav-item
             a.header__nav-link(href="empty-page.html") О нас
-          li.header__nav-item.header__nav-item--expandable
-            a.header__nav-toggle.header__nav-link(href="empty-page.html") Услуги
+          li.header__nav-item.header__nav-item--expandable.header__nav-toggle
+            a.header__nav-link(href="empty-page.html") Услуги
             ul.header__expand-list
               li.header__expand-item
                 a.header__expand-link(href="empty-page.html") Услуга 1
@@ -26,8 +29,8 @@ mixin header(isLoggedIn, userName)
             a.header__nav-link(href="empty-page.html") Вакансии
           li.header__nav-item
             a.header__nav-link(href="empty-page.html") Новости
-          li.header__nav-item.header__nav-item--expandable
-            a.header__nav-toggle.header__nav-link(href="empty-page.html") Соглашения
+          li.header__nav-item.header__nav-item--expandable.header__nav-toggle
+            a.header__nav-link(href="empty-page.html") Соглашения
             ul.header__expand-list
               li.header__expand-item
                 a.header__expand-link(href="empty-page.html") Соглашение 1
