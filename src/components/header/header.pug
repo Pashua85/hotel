@@ -35,14 +35,14 @@ mixin header(isLoggedIn, userName)
                 a.header__expand-link(href="empty-page.html") Соглашение 2
               li.header__expand-item
                 a.header__expand-link(href="empty-page.html") Соглашение 3
-        if !isLoggedIn 
-          .header__user-block--unlogged
-            a.header__link(href="sign-in.html")
-              + button('Войти', 'white', 'low', 'narrow', 'button')
-            a.header__link(href="register.html")
-              + button('Зарегистрироваться', 'blue', 'low', 'narrow', 'button')
-        if isLoggedIn
-          .header__user-block--logged= userName
+      if !isLoggedIn 
+        .header__user-block--unlogged
+          a.header__link(href="sign-in.html")
+            + button('Войти', 'white', 'low', 'narrow', 'button')
+          a.header__link(href="register.html")
+            + button('Зарегистрироваться', 'blue', 'low', 'narrow', 'button')
+      if isLoggedIn
+        .header__user-block--logged= userName
   script
     include header.js
 

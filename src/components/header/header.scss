@@ -16,6 +16,7 @@
   &__nav {
     display: flex;
     align-items: center;
+    margin-left: auto;
   }
   
   &__nav-list {
@@ -24,7 +25,7 @@
   }
 
   &__nav-item {
-    margin-right: 2rem;
+    margin-right: 2.1rem;
 
     &:last-child {
       margin-right: 2.2rem;
@@ -136,7 +137,7 @@
     text-decoration: none;
 
     &:not(:last-child) {
-      margin-right: 1.6rem;
+      margin-right: 1.8rem;
     }
   }
 

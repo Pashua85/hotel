@@ -11,6 +11,14 @@ html {
   overflow-y: overlay;
   height: 100%;
 
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1 rem = 9px;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1 rem = 8px; 
+  }
+
   @include respond(big-desktop) {
     font-size: 75%; // 1 rem = 12px;
   }

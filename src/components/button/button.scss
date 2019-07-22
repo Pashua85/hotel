@@ -12,27 +12,47 @@
     font-size: 1.2rem;
     height: 3.4rem;
     border-radius: 1.7rem;
-    line-height: 3rem;
+    line-height: 3.4rem;
+
+    &.button--white {
+      height: 3rem;
+      border-radius: 1.5rem;
+      line-height: 3rem;
+
+      &::before {
+        border-radius: 1.7rem;
+      }
+
+      &.button--narrow {
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+      }
+    }
 
     &.button--narrow {
-      padding: 0 2rem;
-
-      &.button--white {
-        width: 8.7rem;
-        text-align: center;
-        padding: 0;
-      }
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
   &--high {
     height: 4.4rem;
     border-radius: 2.2rem;
-    line-height: 4rem;
+    line-height: 4.4rem;
 
-    &.button--narrow {
-      width: 9.9rem;
-      text-align: center;
+    &.button--white {
+      height: 4rem;
+      border-radius: 2rem;
+      line-height: 4rem;
+
+      &.button--narrow {
+        padding-left: 1.8rem;
+        padding-right: 1.6rem;
+      }
+
+      &::before {
+        border-radius: 2.2rem;
+      }
     }
   }
 
@@ -61,12 +81,25 @@
 
 
   &--white {
-    border: 2px solid $purple-color;
     background-color: white;
     color: $purple-color;
 
-    &:hover {
-      border-color: rgba($purple-color, .5);
+    &::before {
+      display: table;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-left: -2px;
+      margin-top: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      background-image: $blue-gradient;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      opacity: .5;
     }
 
     &:active {
