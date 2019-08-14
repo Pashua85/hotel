@@ -2,7 +2,19 @@
   display: flex;
   width: 26rem;
   height: 4.4rem;
-  
+
+  @include respond(tab-port) {
+    width: 18rem;
+  }
+
+  @include respond(tab-port-narrow) {
+    width: 13rem;
+  }
+
+  @include respond(phone) {
+    width: 18rem;
+    margin: 0 auto;
+  }
 
   &__input {
     outline: none;
@@ -12,6 +24,18 @@
     border: 1px solid $light-grey-color;
     border-radius: .4rem 0 0 .4rem;
     border-right: none;
+
+    @include respond(tab-port) {
+      width: 13rem;
+    }
+
+    @include respond(tab-port-narrow) {
+      width: 10rem;
+    }
+
+    @include respond(phone) {
+      width: 13rem;
+    }
 
     &::placeholder {
       color: $light-grey-color;

@@ -8,12 +8,31 @@
     display: flex;
     padding-top: 10.4rem;
     padding-bottom: 7.9rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+    }
   }
 
   &__brand {
     margin-top: -.4rem;
     width: 26rem;
     margin-right: 3.4482759%;
+
+    @include respond(phone) {
+      margin-left: -10%;
+      // background: red;
+      width: auto;
+    }
+  }
+
+  &__brand-text {
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__logo {
@@ -23,6 +42,11 @@
   &__subscription {
     margin-left: auto;
     width: 26rem;
+
+    @include respond(phone) {
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
   &__header {
@@ -33,8 +57,11 @@
     margin-bottom: 2.3rem;
   }
 
-  &__group {
-    display: flex;
+  &__group-item {
+    
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -52,6 +79,11 @@
     text-decoration: none;
     color: $grey-color;
 
+    @include respond(tab-port) {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+
     &:hover {
       color: $grey-blue-color;
     }
@@ -63,6 +95,10 @@
 
   &__about {
     margin-right: 7.9310345%;
+  }
+
+  &__support-service {
+    margin-right: 5%;
   }
 }
 
@@ -77,11 +113,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(phone) {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      flex-direction: column-reverse;
+    }
   }
 
   &__social {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
+    }
   }
 
 
@@ -92,6 +138,7 @@
     height: 2.4rem;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
     &:not(:first-child) {
       margin-left: 2rem;

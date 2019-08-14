@@ -28,20 +28,22 @@
 
     @include respond(tab-port) {
       display: block;
-      position: fixed;
+      position: absolute;
       width: 4.4rem;
       height: 4.4rem;
       border-radius: 50%;
       background: white;
       @include box-shadow;
       top: 1.2rem;
-      right: calc(9.72% - 2rem);
+      // right: calc(9.72% - 2rem);
+      right: 0;
     }
   }
 
   &__burger-icon {
     position: relative;
-    margin-top: 2.1rem;
+    margin-top: 2.2rem;
+    margin-left: .3rem;
 
     &,
     &::before,
@@ -274,8 +276,59 @@
     &:not(:last-child) {
       margin-right: 1.8rem;
     }
+    
+    // изменяет стили компонента button, используеиого в хэдере
+    & .button {
+      @include respond(phone) {
+        font-size: 0;
+        padding: 0;
+      }
+    }
+
+    & .button--white {
+      @include respond(phone) {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+      }
+
+      &::after {
+        @include respond(phone) {
+          font-family: "Material Icons";
+          content: "\e879";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    & .button--blue {
+      @include respond(phone) {
+        position: relative;
+        height: 3.4rem;
+        width: 3.4rem;
+        border-radius: 50%;
+      } 
+
+      &::after {
+        @include respond(phone) {
+          font-family: "Material Icons";
+          content: "\e7fe";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          font-size: 2rem;
+          text-align: center;
+          line-height: 3.6rem;
+          vertical-align: middle;
+        }
+      }
+    }
   }
-
-
-
 }
