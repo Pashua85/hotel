@@ -1,14 +1,18 @@
 .search-form-short {
   background-color: white;
   width: 38rem;
-  padding: 4rem 3rem 3rem 3rem;
+  padding: 3.9rem 2.9rem 2.9rem 2.9rem;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: .4rem;
   @include box-shadow;
 
   &__header {
     margin: 0;
-    margin-bottom: 1.7rem;
-    line-height: 3rem;
-    letter-spacing: .11rem;
+    margin-bottom: 1.5rem;
+
+    &--stretched {
+      letter-spacing: .13rem;
+    }
   }
 
   &__datepicker {
@@ -16,6 +20,6 @@
   }
 
   &__guests-dropdown {
-    margin-bottom: 3rem;
+    margin-bottom: 3.1rem;
   }
 }

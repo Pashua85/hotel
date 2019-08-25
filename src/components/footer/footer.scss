@@ -1,5 +1,5 @@
 .footer {
-  border-top: 1px solid rgba(31, 32, 65, 0.1);
+  // border-top: 1px solid rgba(31, 32, 65, 0.1);
 
   &__container {
     width: $grid-width;
@@ -7,7 +7,7 @@
     margin: 0 auto;
     display: flex;
     padding-top: 10.4rem;
-    padding-bottom: 7.9rem;
+    padding-bottom: 8rem;
 
     @include respond(phone) {
       flex-direction: column;
@@ -20,7 +20,7 @@
   &__brand {
     margin-top: -.4rem;
     width: 26rem;
-    margin-right: 3.4482759%;
+    margin-right: 3.5%;
 
     @include respond(phone) {
       margin-left: -10%;
@@ -58,6 +58,11 @@
   }
 
   &__group-item {
+    white-space: nowrap;
+
+    @media (max-width: 1400px) {
+      white-space: normal;
+    }
     
     @include respond(phone) {
       text-align: center;
@@ -90,11 +95,12 @@
   }
 
   &__navigation {
-    margin-right: 4.9137931%;
+    // margin-right: 4.9137931%;
+    margin-right: 4.9%;
   }
 
   &__about {
-    margin-right: 7.9310345%;
+    margin-right: 8%;
   }
 
   &__support-service {
@@ -106,7 +112,7 @@
   border-top: 1px solid rgba(31, 32, 65, 0.1);
 
   &__container {
-    min-height: 7rem;
+    min-height: 6.9rem;
     width: $grid-width;
     max-width: $max-content-width;
     margin: 0 auto;
