@@ -1,4 +1,8 @@
 .search {
+
+  &__main {
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  }
   
   &__container {
     width: $grid-width;
@@ -7,25 +11,38 @@
     display: flex;
     justify-content: space-between;
     padding-top: 2.5rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__sidebar {
     width: 22.93%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__content {
     width: 71.896%;
     padding-bottom: 7rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
-  &__header {
+  &__header.header--first {
     padding: .5rem 0;
     margin: 0;
     margin-bottom: 1.5rem;
+    letter-spacing: .08rem;
   }
 
   &__rooms-container {
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
   }
 }
 

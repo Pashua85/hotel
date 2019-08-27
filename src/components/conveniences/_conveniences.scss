@@ -1,6 +1,12 @@
 .dropdown {
 
-  position: relative;
+  &__label {
+    
+  }
+
+  &__group {
+    position: relative;
+  }
 
   & .input-dropdown--open {
     border: 1px solid $grey-color;

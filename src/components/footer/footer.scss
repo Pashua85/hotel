@@ -20,7 +20,7 @@
   &__brand {
     margin-top: -.4rem;
     width: 26rem;
-    margin-right: 3.5%;
+    margin-right: 3.6%;
 
     @include respond(phone) {
       margin-left: -10%;
@@ -104,7 +104,10 @@
   }
 
   &__support-service {
-    margin-right: 5%;
+
+    @media(max-width: 1400px) {
+      margin-right: 5%;
+    }
   }
 }
 

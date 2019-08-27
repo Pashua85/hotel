@@ -1,4 +1,9 @@
 .pagination {
+  padding-right: 1.8rem;
+
+  @include respond(tab-land) {
+    padding-right: 0;
+  }
 
   &__row {
     display: flex;

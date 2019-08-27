@@ -1,6 +1,12 @@
 .search-form {
   padding-bottom: 3rem;
 
+  @include respond(phone) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &__datepicker-single {
     margin-bottom: 1.6rem;
   }
@@ -14,11 +20,11 @@
   }
 
   &__permissions {
-    margin-bottom: 3.1rem;
+    margin-bottom: 3rem;
   }
 
   &__rich-checkbox-buttons {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.4rem;
   }
 
   &__conveniences {
