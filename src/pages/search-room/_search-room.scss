@@ -17,11 +17,41 @@
     }
   }
 
+  &__sidebar-toggle {
+    display: none;
+
+    @include respond(phone) {
+      font-family: 'Material Icons';
+      font-size: 4rem;
+      line-height: 5rem;
+      vertical-align: middle;
+      // text-align: center;
+      display: block;
+      width: 5rem;
+      margin-left: auto;
+      background: $blue-gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    &:active {
+      color: rgba(255,255,255,.3)
+    }
+  }
+
   &__sidebar {
     width: 22.93%;
 
     @include respond(phone) {
       width: 100%;
+      display: none;
+    }
+
+    &--open {
+      display: block;
+      animation-duration: .5s;
+      animation-name: moveDown;
     }
   }
 

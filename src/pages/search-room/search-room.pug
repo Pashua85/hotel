@@ -6,6 +6,7 @@ block title
 block main
   main(class="search__main")
     .search__container
+      .search__sidebar-toggle(id="sidebar-toggle") &#xe8b8;
       aside.search__sidebar 
         include ../../components/search-form/search-form
       .search__content
@@ -13,3 +14,5 @@ block main
         .search__rooms-container
           include ../../components/search-rooms/search-rooms
         + pagination(1, 150)
+  script
+    include search-room.js
