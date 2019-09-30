@@ -7,7 +7,8 @@
   padding-top: 3.8rem;
   padding-left: 2.9rem;
   padding-right: 2.9rem;
-  padding-bottom: 3.1rem;
+  padding-bottom: 3.3rem;
+  z-index: 1;
 
   &__header {
     margin-bottom: 2.1rem;
@@ -22,17 +23,22 @@
   }
 
   &__submit-btn {
-    margin-bottom: 3rem;
+    margin-bottom: 3.2rem;
   }
 
   &__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & .button {
+      left: -2px;
+    }
   }
 
   &__link {
     display: inline-block;
     text-decoration: none;
   }
+
 }
