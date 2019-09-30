@@ -3,6 +3,10 @@
   &__header {
     padding-left: 2rem;
     margin-bottom: 1.8rem;
+
+    @include respond(phone) {
+      padding-left: 0;
+    }
   }
 
   &__list {

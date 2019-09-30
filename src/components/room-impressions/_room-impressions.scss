@@ -1,11 +1,23 @@
 .room-impressions {
 
+  @include respond(tab-land) {
+    padding-left: 1rem;
+  }
+
   &__header {
     margin-bottom: 2rem;
   }
 
   &__row {
     display: flex;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+
+    // @include respond(tab-port) {
+    //   flex-direction: row;
+    // }
   }
 
   &__list {
@@ -13,6 +25,18 @@
     align-self: flex-end;
     margin-left: 3rem;
     padding-bottom: .5rem;
+
+    @include respond(tab-land) {
+      align-self: flex-start;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+
+    // @include respond(tab-port) {
+    //   align-self: flex-end;
+    //   margin-left: 3rem;
+    //   margin-top: 0;
+    // }
   }
 
   &__item {
@@ -76,3 +100,5 @@
     transform: translateY(1.7rem);
   }
 }
+
+

@@ -16,6 +16,10 @@
     &:not(:last-child) {
       border-bottom: 1px solid rgba(31, 32, 65, 0.1);
     }
+
+    @include respond(tab-land) {
+      width: 26rem;
+    }
   }
 
   &__icon {
