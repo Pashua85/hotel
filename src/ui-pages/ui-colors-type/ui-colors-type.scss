@@ -1,0 +1,80 @@
+.ui-colors-type {
+
+  &__header {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  &__main {
+    display: flex;
+    padding-left: 15rem;
+  }
+}
+
+.ui-colors {
+  margin-right: 20rem;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__sample {
+    width: 7rem;
+    height: 7rem;
+    border-radius: .6rem;
+    margin-right: 4rem;
+    
+    &--dark-blue {
+      background: $dark-blue-color;
+    }
+
+    &--grey-blue {
+      background: $grey-blue-color;
+    }
+
+    &--grey {
+      background: $grey-color;
+    }
+
+    &--light-grey {
+      background: $light-grey-color;
+    }
+
+    &--smoke-white {
+      background: $smoke-white-color;
+    }
+
+    &--purple {
+      background: $purple-color;
+    }
+
+    &--green {
+      background: $green-color;
+    }
+  }
+
+  &__text {
+    align-self: center;
+    color: $dark-blue-color;
+  }
+
+  &__title {
+    line-height: 2.9rem;
+  }
+
+  &__hexcode {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.9rem;
+    line-height: 2.9rem;
+    letter-spacing: -.04rem;
+  }
+}
