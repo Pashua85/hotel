@@ -58,6 +58,11 @@ const common = merge([
         filename: 'empty-page.html',
         chunk: ['empty-page'],
         template: PATHS.source + '/pages/empty-page/empty-page.pug',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'ui-colors-type.html',
+        chunk: ['empty-page'],
+        template: PATHS.source + '/ui-pages/ui-colors-type/ui-colors-type.pug',
       })
     ],
     optimization: {
