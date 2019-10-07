@@ -8,7 +8,9 @@
 
   &__main {
     display: flex;
-    padding-left: 15rem;
+    width: 79.1666667%;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }
 
@@ -76,5 +78,57 @@
     font-size: 1.9rem;
     line-height: 2.9rem;
     letter-spacing: -.04rem;
+  }
+}
+
+.ui-type {
+  padding-right: 2.8rem;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+
+    &--third {
+      margin-bottom: 4.7rem;
+    }
+  }
+
+  &__tag {
+    text-transform: uppercase;
+    color: $light-grey-color;
+    text-align: right;
+
+    &--first {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+    }
+
+    &--second {
+      font-size: 1.9rem;
+      line-height: 2.3rem;
+    }
+
+    &--third {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
+    &--body {
+      text-transform: none;
+    }
+  }
+
+  &__text {
+    width: 35rem;
+    margin-left: 2.9rem;
+  }
+
+  & .header--first {
+    letter-spacing: normal;
   }
 }
