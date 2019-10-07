@@ -61,8 +61,13 @@ const common = merge([
       }),
       new HtmlWebpackPlugin({
         filename: 'ui-colors-type.html',
-        chunk: ['empty-page'],
+        chunk: ['ui-colors-type'],
         template: PATHS.source + '/ui-pages/ui-colors-type/ui-colors-type.pug',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'ui-form-elements.html',
+        chunk: ['ui-form-elements'],
+        template: PATHS.source + '/ui-pages/ui-form-elements/ui-form-elements.pug',
       })
     ],
     optimization: {
