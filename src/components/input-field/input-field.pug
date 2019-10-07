@@ -1,6 +1,7 @@
-mixin input-field(id, name, placeholder)
+mixin input-field(id, name, placeholder, value)
   - id = id || '';
   - name = name || '';
   - placeholder = placeholder || '';
-  input.input-field(id=id, name=name, placeholder=placeholder, autocomplete="off")
+  - value = value || '';
+  input.input-field(id=id, name=name, placeholder=placeholder, autocomplete="off", value=value)
     

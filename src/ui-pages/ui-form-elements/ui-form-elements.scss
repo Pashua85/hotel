@@ -1,0 +1,46 @@
+.ui-form-elements {
+
+  &__header {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 5.8rem;
+  }
+
+  &__container {
+    width: 80.42%;
+    margin: 0 auto;
+  }
+
+  &__section {
+    width: 32rem;
+  }
+
+  &__section--one &__item {
+    margin-bottom: 2rem;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+  }
+
+  & .header--third {
+    line-height: 1.5rem;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+
+    &--upper {
+      // для пиксельперфекта с ui-китом
+      margin-top: -.3rem
+    }
+  }
+
+  &__input--focused .input-field {
+    border-color: $grey-color;
+  }
+}
