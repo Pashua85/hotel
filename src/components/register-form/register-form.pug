@@ -2,6 +2,11 @@ include ../input-field/input-field
 include ../radio-buttons/radio-buttons
 include ../button/button
 
+script
+  //- include ../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js
+  include ../../../node_modules/inputmask/dist/jquery.inputmask.bundle.js
+script
+  include ./register-form.js
 form.register-form
   h2.register-form__header.header--first Регистрация аккаунта
   .register-form__input.register-form__input--first-name

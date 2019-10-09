@@ -32,10 +32,6 @@
   &__input--birthday {
     position: relative;
     margin-bottom: 2rem;
-
-    &:focus-within .register-form__subtitle {
-      display: block;
-    }
   }
 
   &__subtitle {
@@ -125,3 +121,5 @@
     // background: red;
   }
 }
+
+

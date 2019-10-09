@@ -32,6 +32,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "inputmask": "^4.0.9",
     "normalize.css": "^8.0.1"
   }
 }
