@@ -1,4 +1,5 @@
 include ../../components/input-field/input-field
+include ../../components/input-dropdown/input-dropdown
 
 doctype html
 html(lang="en")
@@ -6,6 +7,17 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Form Elements
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    script(src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous")
+    script 
+      include ../../../node_modules/inputmask/dist/jquery.inputmask.bundle.js
+    script
+      include ./ui-form-elements.js
   body
     header.ui-form-elements__header
       .ui-form-elements__logo-container
@@ -21,10 +33,23 @@ html(lang="en")
             .ui-form-elements__title.header--third Text field
             .ui-form-elements__subtitle.ui-form-elements__subtitle--upper Default
           .ui-form-elements__input
-            + input-field("user-email", "email", "Email", '', '')
+            + input-field("user-email", "email", "Email", "", "")
         .ui-form-elements__item
           .ui-form-elements__label
             .ui-form-elements__title.header--third Text field
             .ui-form-elements__subtitle Hover / focus
           .ui-form-elements__input.ui-form-elements__input--focused
-            + input-field("user-email", "email", '', 'This is pretty awesome', 'autofocus')
+            + input-field("user-email", "email", "", "This is pretty awesome")
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Dropdown
+            .ui-form-elements__subtitle Default
+          .ui-form-elements__input-dropdown
+            + input-dropdown('ui-input-dropdown')
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Masked text field
+            .ui-form-elements__subtitle.ui-form-elements__subtitle--upper Default
+          .ui-form-elements__input-dropdown
+            + input-field("ui-masked-input", "date", "ДД.ММ.ГГГГ")         
+
