@@ -24,6 +24,23 @@
     margin-bottom: 2.3rem;
   }
 
+  &__section--one &__item:nth-child(4) {
+    margin-bottom: 3.5rem;
+  }
+
+  &__section--one &__item:nth-child(5) {
+    margin-bottom: 3.5rem;
+  }
+
+  &__section--one &__item:nth-child(6) {
+    width: 26.6rem;
+    margin-bottom: 4rem;
+  }
+
+  &__section--one &__item:nth-child(7) &__label {
+    margin-bottom: .6rem;
+  }
+
   &__label {
     display: flex;
     justify-content: space-between;
@@ -47,5 +64,13 @@
 
   &__input--focused .input-field {
     border-color: $grey-color;
+  }
+
+  & .subscription-form {
+    width: 26.6rem;
+  }
+
+  & .subscription-form__icon-box {
+    margin-right: -.2rem;
   }
 }

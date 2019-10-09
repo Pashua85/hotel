@@ -18,7 +18,7 @@ html(lang="en")
       include ../../../node_modules/inputmask/dist/jquery.inputmask.bundle.js
     script
       include ./ui-form-elements.js
-  body
+  body.ui-form-elements
     header.ui-form-elements__header
       .ui-form-elements__logo-container
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,5 +51,13 @@ html(lang="en")
             .ui-form-elements__title.header--third Masked text field
             .ui-form-elements__subtitle.ui-form-elements__subtitle--upper Default
           .ui-form-elements__input-dropdown
-            + input-field("ui-masked-input", "date", "ДД.ММ.ГГГГ")         
+            + input-field("ui-masked-input", "date", "ДД.ММ.ГГГГ")  
+        .ui-form-elements__item
+          include ../../components/datepicker/datepicker
+        .ui-form-elements__item
+          include ../../components/datepicker-single/datepicker-single
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Subscription text field
+          include ../../components/subscription-form/subscription-form
 
