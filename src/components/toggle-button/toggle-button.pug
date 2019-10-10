@@ -1,7 +1,7 @@
-mixin toggle-button(label)
+mixin toggle-button(label, isChecked)
   - label = label || ''
+  - isChecked = isChecked || false
   .toggle
-    input(type="checkbox" id="toggle-checkbox").toggle__input
-    //- .toggle__slider
+    input(type="checkbox" id="toggle-checkbox" checked=isChecked).toggle__input
     label.toggle__label(for="toggle-checkbox")= label
       .toggle__slider

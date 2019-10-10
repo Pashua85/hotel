@@ -1,0 +1,44 @@
+.like-button {
+  display: block;
+  width: 4rem;
+  height: 2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: $light-grey-color;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 1rem;
+  color: $light-grey-color;
+  // margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+  outline: none;
+
+  &::before {
+    font-family: 'Material Icons';
+    content: '\e87e';
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: .4rem;
+  }
+
+  &:hover {
+    border-color: $purple-color;
+    color: $purple-color;
+    cursor: pointer;
+  }
+
+  &.like-button--liked {
+    border-color: $purple-color;
+    color: $purple-color;
+
+    &::before {
+      content: '\e87d';
+      margin-top: -.1rem;
+    }
+  }
+}

@@ -59,6 +59,10 @@
     margin-bottom: 1.4rem;
   }
 
+  &__section--two &__item:nth-child(3) &__label {
+    margin-bottom: 1.2rem;
+  }
+
   &__label {
     display: flex;
     justify-content: space-between;
@@ -90,5 +94,9 @@
 
   & .subscription-form__icon-box {
     margin-right: -.2rem;
+  }
+
+  &__toggle {
+    margin-bottom: 1rem;
   }
 }

@@ -1,0 +1,4 @@
+mixin like-button( likes, isLiked)
+  - likes = likes || 0;
+  - var isLikedClass = isLiked ? 'like-button--liked' : '';
+  button(type="button" class=`like-button ${isLikedClass}`)= likes
