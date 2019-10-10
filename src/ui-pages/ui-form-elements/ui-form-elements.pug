@@ -1,6 +1,7 @@
 include ../../components/input-field/input-field
 include ../../components/input-dropdown/input-dropdown
 include ../../components/datepicker/datepicker
+include ../../components/radio-buttons/radio-buttons
 
 //- некоторые компоненты использованы в виде своих копий без скриптов
 include ../../ui-components/ui-datepicker-single/ui-datepicker-single
@@ -65,4 +66,15 @@ html(lang="en")
           .ui-form-elements__label
             .ui-form-elements__title.header--third Subscription text field
           include ../../components/subscription-form/subscription-form
+      .ui-form-elements__section.ui-form-elements__section--two
+        .ui-form-elements__item
+          include ../../components/permissions/permissions
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Radio Buttons
+          + radio-buttons("gender", "male", "Мужчина", "female", "Женщина")
+      .ui-form-elements__section.ui-form-selements__section--three
+        .ui-form-elements__item
+          include ../../components/price-range/price-range
+       
 

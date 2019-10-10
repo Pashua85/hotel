@@ -1,0 +1,7 @@
+mixin toggle-button(label)
+  - label = label || ''
+  .toggle
+    input(type="checkbox" id="toggle-checkbox").toggle__input
+    //- .toggle__slider
+    label.toggle__label(for="toggle-checkbox")= label
+      .toggle__slider

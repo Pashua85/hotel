@@ -1,6 +1,7 @@
 include ../input-field/input-field
 include ../radio-buttons/radio-buttons
 include ../button/button
+include ../toggle-button/toggle-button
 
 script
   //- include ../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js
@@ -25,10 +26,7 @@ form.register-form
   .register-form__input.register-form__input--password
     + input-field("new-user-password", "password", "Пароль")
   .register-form__toggle
-    .toggle
-      input(type="checkbox" id="toggle-checkbox").toggle__input
-      .toggle__slider
-      label.toggle__label(for="toggle-checkbox") Получать спецпредложения
+    + toggle-button('Получать спецпредложения')
   .register-form__submit-btn
     + button("Зарегистрироваться", "blue", "high", "wide")
   .register-form__row
