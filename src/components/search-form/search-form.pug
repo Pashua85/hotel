@@ -1,6 +1,8 @@
+include ../datepicker-single/datepicker-single
+
 form.search-form
   .search-form__datepicker-single
-    include ../datepicker-single/datepicker-single
+    + datepicker-single('Даты пребывания в отеле')
   .search-form__guests-dropdown
     include ../guests-dropdown/guests-dropdown
   .search-form__price-range

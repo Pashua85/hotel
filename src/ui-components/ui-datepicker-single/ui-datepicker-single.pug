@@ -1,9 +1,7 @@
-include ../input-dropdown/input-dropdown
+include ../../components/input-dropdown/input-dropdown
 
-mixin datepicker-single(title)
+mixin ui-datepicker-single(title)
   - title = title || '';
-  script
-    include datepicker-single.js
   .datepicker-single(id="datepicker-single")
     label.datepicker-single__label.header--third= title
     .datepicker-single__group
