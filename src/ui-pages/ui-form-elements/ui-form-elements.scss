@@ -116,4 +116,12 @@
     margin-right: 1rem;
   }
 
+  &__stars {
+    display: flex;
+
+    & .rating-stars:first-child {
+      margin-right: 2rem;
+    }
+  }
+
 }

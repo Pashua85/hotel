@@ -4,6 +4,7 @@ include ../../components/datepicker/datepicker
 include ../../components/radio-buttons/radio-buttons
 include ../../components/toggle-button/toggle-button
 include ../../components/like-button/like-button
+include ../../components/rating-stars/rating-stars
 
 //- некоторые компоненты использованы в виде своих копий без скриптов
 include ../../ui-components/ui-datepicker-single/ui-datepicker-single
@@ -91,7 +92,9 @@ html(lang="en")
         .ui-form-elements__item
           .ui-form-elements__label
             .ui-form-elements__title.header--third Rate button
-          
+          .ui-form-elements__stars
+            + rating-stars(4)
+            + rating-stars(5)
       .ui-form-elements__section.ui-form-selements__section--three
         .ui-form-elements__item
           include ../../components/price-range/price-range
