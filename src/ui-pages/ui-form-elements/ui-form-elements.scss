@@ -123,5 +123,88 @@
       margin-right: 2rem;
     }
   }
+  
+  &__section--three &__item:first-child {
+    width: 26.6rem;
+  }
+
+  &__section--three &__item {
+    margin-bottom: 1.5rem;
+  }
+
+  &__section--three &__item:nth-child(2) {
+    margin-bottom: 4rem;
+  }
+
+  &__section--three &__label {
+    margin-bottom: 1.6rem;
+  }
+
+  &__button-row .button {
+    font-size: 1.2rem;
+  }
+
+  &__button-row .button:first-child {
+    margin-right: 1.4rem;
+  }
+
+  &__button-row .button--blue:last-child {
+    opacity: .5;
+  }
+
+  &__button-row:nth-child(2) {
+    margin-bottom: 3.2rem;
+  }
+
+  &__button-row .button--white:first-child {
+    margin-left: .2rem;
+    margin-right: 2rem;
+  }
+
+  &__button-row:nth-child(3) {
+    margin-bottom: 2.9rem;
+  }
+
+  &__button-row:nth-child(4) {
+    display: flex;
+    margin-bottom: 2.5rem;
+  }
+
+  &__link {
+    font-family: 'Montserrat Bold';
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $purple-color;
+
+    &:first-child {
+      margin-right: 2.3rem;
+    }
+
+    &--active {
+      color: $grey-color;
+    }
+  }
+
+  &__pagination .pagination {
+    padding-right: 0;
+
+    &__row {
+      justify-content: flex-start;
+    }
+
+    &__text {
+      text-align: left;
+      padding-left: .5rem;
+    }
+  }
+
+  // &__pagination .pagination__row {
+  //   justify-content: flex-start;
+  // }
+
+  // &__pagination .pagination__text {
+  //   text-align: left;
+  //   padding-left:
+  // }
 
 }

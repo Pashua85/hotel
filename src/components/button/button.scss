@@ -54,6 +54,11 @@
         border-radius: 2.2rem;
       }
     }
+
+    &.button--narrow {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
   &--wide {

@@ -5,6 +5,8 @@ include ../../components/radio-buttons/radio-buttons
 include ../../components/toggle-button/toggle-button
 include ../../components/like-button/like-button
 include ../../components/rating-stars/rating-stars
+include ../../components/button/button
+include ../../components/pagination/pagination
 
 //- некоторые компоненты использованы в виде своих копий без скриптов
 include ../../ui-components/ui-datepicker-single/ui-datepicker-single
@@ -95,9 +97,28 @@ html(lang="en")
           .ui-form-elements__stars
             + rating-stars(4)
             + rating-stars(5)
-      .ui-form-elements__section.ui-form-selements__section--three
+      .ui-form-elements__section.ui-form-elements__section--three
         .ui-form-elements__item
           include ../../components/price-range/price-range
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Buttons
+          .ui-form-elements__button-row
+            + button('click me', 'blue', 'high', 'narrow', 'button')
+            + button('click me', 'blue', 'high', 'narrow', 'button')
+          .ui-form-elements__button-row
+            + button('click me', 'white', 'high', 'narrow', 'button')
+            + button('click me', 'white', 'high', 'narrow', 'button')
+          .ui-form-elements__button-row
+            .ui-form-elements__link click me
+            .ui-form-elements__link.ui-form-elements__link--active click me
+          .ui-form-elements__button-row
+            + button("Перейти к оплате", "blue", "high", "wide")
+        .ui-form-elements__item.ui-form-elements__pagination
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Pagination
+          + pagination(1,150)
+
 
        
 
