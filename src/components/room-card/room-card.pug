@@ -1,3 +1,5 @@
+include ../rating-stars/rating-stars
+
 mixin room-card(room) 
   -
     var roomPrice = room['price'].toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 '); 
@@ -38,12 +40,6 @@ mixin room-card(room)
             | #{roomPrice}₽
             span.room-card__price-text  в сутки
         .room-card__reviews
-          .room-card__stars
-            - var i = room.rating
-            - var rest = 5 - room.rating
-            - while (i--)
-              div.room-card__star.room-card__star--filled
-            - while(rest--)
-              div.room-card__star
+          + rating-stars(room.rating)
           .room-card__reviews-number= room.reviewsNumber 
             span.room-card__reviews-word= reviewsWord

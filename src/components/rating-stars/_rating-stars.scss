@@ -1,0 +1,16 @@
+.rating-stars {
+  display: flex;
+
+  &__star {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./components/rating-stars/images/star_border.svg');
+
+    &--filled {
+      background-image: url('./components/rating-stars/images/star.svg');
+    }
+  }
+}

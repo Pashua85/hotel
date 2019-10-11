@@ -1,0 +1,9 @@
+mixin rating-stars(rating)
+  - rating = rating || 0;
+  - var rest = 5 - rating;
+  .rating-stars
+    - while (rating--)
+      div.rating-stars__star.rating-stars__star--filled
+    - while (rest--)
+      div.rating-stars__star
+
