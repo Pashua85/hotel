@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     // justify-content: space-between;
-    padding-bottom: 40rem;
+    padding-bottom: 13.2rem;
   }
 
   &__section {
@@ -253,4 +253,47 @@
   &__section--four .room-info__item {
     border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   }
+
+  &__section--four {
+    margin-right: 18rem;
+  }
+
+  &__section--five {
+    margin-right: auto;
+  }
+
+  &__section--five &__item:first-child {
+    margin-bottom: 25.6rem;
+  }
+
+  &__section--five &__item:nth-child(2) {
+    width: 26.6rem;
+  }
+
+  &__section--six &__item:first-child {
+    margin-bottom: 25.6rem;
+  }
+
+  &__section--six &__item:nth-child(2) {
+    width: 26.6rem;
+  }
+
+  &__section--six .rules__header {
+    padding-left: 0;
+    margin-bottom: 1.2rem;
+  }
+
+  &__section--seven {
+    display: flex;
+    width: 100%;
+  }
+
+  &__section--seven &__item:first-child {
+    margin-right: 16.6rem;
+  }
+
+  &__section--seven &__item:last-child {
+    padding-top: 3rem;
+  }
+
 }

@@ -66,21 +66,21 @@ $(function () {
     if(adultsAmountNumber === 0) {
       childrenAmount.text('0');
       babiesAmount.text('0');
-      guestsClear.addClass('dropdown__btn--hidden');
-      addChildrenButton.addClass('dropdown__amount-btn--disabled');
-      discreteChildrenButton.addClass('dropdown__amount-btn--disabled');
-      addBabiesButton.addClass('dropdown__amount-btn--disabled');
-      discreteBabiesButton.addClass('dropdown__amount-btn--disabled');
-      childrenAmount.addClass('dropdown__amount--disabled');
-      babiesAmount.addClass('dropdown__amount--disabled');
+      guestsClear.addClass('dropdown-btn__btn--hidden');
+      addChildrenButton.addClass('dropdown-btn__amount-btn--disabled');
+      discreteChildrenButton.addClass('dropdown-btn__amount-btn--disabled');
+      addBabiesButton.addClass('dropdown-btn__amount-btn--disabled');
+      discreteBabiesButton.addClass('dropdown-btn__amount-btn--disabled');
+      childrenAmount.addClass('dropdown-btn__amount--disabled');
+      babiesAmount.addClass('dropdown-btn__amount--disabled');
     } else {
-      guestsClear.removeClass('dropdown__btn--hidden');
-      addChildrenButton.removeClass('dropdown__amount-btn--disabled');
-      discreteChildrenButton.removeClass('dropdown__amount-btn--disabled');
-      addBabiesButton.removeClass('dropdown__amount-btn--disabled');
-      discreteBabiesButton.removeClass('dropdown__amount-btn--disabled');
-      childrenAmount.removeClass('dropdown__amount--disabled');
-      babiesAmount.removeClass('dropdown__amount--disabled');
+      guestsClear.removeClass('dropdown-btn__btn--hidden');
+      addChildrenButton.removeClass('dropdown-btn__amount-btn--disabled');
+      discreteChildrenButton.removeClass('dropdown-btn__amount-btn--disabled');
+      addBabiesButton.removeClass('dropdown-btn__amount-btn--disabled');
+      discreteBabiesButton.removeClass('dropdown-btn__amount-btn--disabled');
+      childrenAmount.removeClass('dropdown-btn__amount--disabled');
+      babiesAmount.removeClass('dropdown-btn__amount--disabled');
     }
   };
 
@@ -146,12 +146,12 @@ $(function () {
   }
 
   guestsInput.focus(() => {
-    guestsBox.addClass('dropdown__box--visible');
+    guestsBox.addClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').addClass('input-dropdown--open');
   });
 
   inputToggle.click(() => {
-    guestsBox.toggleClass('dropdown__box--visible');
+    guestsBox.toggleClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').toggleClass('input-dropdown--open');
   });
 
@@ -190,7 +190,7 @@ $(function () {
   guestsDone.click(e => {
     e.preventDefault();
     setGuestsAmount();
-    guestsBox.removeClass('dropdown__box--visible');
+    guestsBox.removeClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').removeClass('input-dropdown--open');
   });
 
@@ -200,8 +200,8 @@ $(function () {
   });
 
   $(document).click(event => {
-    if($(event.target).closest('.dropdown__group').length) return;
-    guestsBox.removeClass('dropdown__box--visible');
+    if($(event.target).closest('.dropdown-btn__group').length) return;
+    guestsBox.removeClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').removeClass('input-dropdown--open');
     event.stopPropagation();
   });

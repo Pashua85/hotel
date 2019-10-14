@@ -2,31 +2,31 @@ include ../input-dropdown/input-dropdown
 
 script 
   include ./guests-dropdown.js
-.guests-dropdown.dropdown(id="guests-dropdown")
+.guests-dropdown.dropdown-btn(id="guests-dropdown")
   label.guests-dropdown__label.dropdown__label.header--third(for="guests-input") Гости
-  .dropdown__group(id="dropdown-group")
+  .dropdown-btn__group(id="dropdown-group")
     + input-dropdown("guests-dropdown__input", "text", "guests-input", "guests-amount", "Сколько гостей")
-    .quests-dropdown__box.dropdown__box(id="guests-dropdown-box") 
-      ul.dropdown__list
-        li.dropdown__item 
-          .dropdown__item-title.header--third Взрослые
-          .dropdown__amount-box 
-            button.dropdown__amount-btn.dropdown__discrete(id="adults-discrete") -
-            .dropdown__amount(id="adults-amount") 2
-            button.dropdown__amount-btn.dropdown__amount-add(id="adults-add") +
-        li.dropdown__item 
-          .dropdown__item-title.header--third Дети
-          .dropdown__amount-box 
-            button.dropdown__amount-btn.dropdown__discrete(id="children-discrete") -
-            .dropdown__amount(id="children-amount") 1
-            button.dropdown__amount-btn.dropdown__amount-add(id="children-add") +
-        li.dropdown__item 
-          .dropdown__item-title.header--third Младенцы
-          .dropdown__amount-box 
-            button.dropdown__amount-btn.dropdown__discrete(id="babies-discrete") -
-            .dropdown__amount(id="babies-amount") 1
-            button.dropdown__amount-btn.dropdown__amount-add(id="babies-add") + 
-      .dropdown__btn-row
-        button.dropdown__btn.header--third.dropdown__btn--clear(id="guests-clear") Очистить
-        button.dropdown__btn.header--third.dropdown__btn--done(id="guests-done") Применить
+    .quests-dropdown__box.dropdown-btn__box(id="guests-dropdown-box") 
+      ul.dropdown-btn__list
+        li.dropdown-btn__item 
+          .dropdown-btn__item-title.header--third Взрослые
+          .dropdown-btn__amount-box 
+            button.dropdown-btn__amount-btn.dropdown-btn__discrete(id="adults-discrete") -
+            .dropdown-btn__amount(id="adults-amount") 2
+            button.dropdown-btn__amount-btn.dropdown-btn__amount-add(id="adults-add") +
+        li.dropdown-btn__item 
+          .dropdown-btn__item-title.header--third Дети
+          .dropdown-btn__amount-box 
+            button.dropdown-btn__amount-btn.dropdown-btn__discrete(id="children-discrete") -
+            .dropdown-btn__amount(id="children-amount") 1
+            button.dropdown-btn__amount-btn.dropdown-btn__amount-add(id="children-add") +
+        li.dropdown-btn__item 
+          .dropdown-btn__item-title.header--third Младенцы
+          .dropdown-btn__amount-box 
+            button.dropdown-btn__amount-btn.dropdown-btn__discrete(id="babies-discrete") -
+            .dropdown-btn__amount(id="babies-amount") 1
+            button.dropdown-btn__amount-btn.dropdown-btn__amount-add(id="babies-add") + 
+      .dropdown-btn__btn-row
+        button.dropdown-btn__btn.header--third.dropdown-btn__btn--clear.dropdown-btn__btn--hidden(id="guests-clear") Очистить
+        button.dropdown-btn__btn.header--third.dropdown-btn__btn--done(id="guests-done") Применить
 

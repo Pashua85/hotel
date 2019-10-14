@@ -136,6 +136,21 @@ html(lang="en")
             .ui-form-elements__list-toggle
         .ui-form-elements__item
           include ../../ui-components/ui-expandable-list/ui-expandable-list
+      .ui-form-elements__section.ui-form-elements__section--five
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third dropdown
+          include ../../ui-components/ui-guests-dropdown-empty/ui-guests-dropdown-empty
+        .ui-form-elements__item
+          include ../../ui-components/ui-rich-checkbox-buttons/ui-rich-checkbox-buttons
+      .ui-form-elements__section.ui-form-elements__section--six
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third dropdown
+          include ../../ui-components/ui-guests-dropdown/ui-guests-dropdown
+        .ui-form-elements__item
+          include ../../ui-components/ui-rules/ui-rules
+      .ui-form-elements__section.ui-form-elements__section--seven
         .ui-form-elements__item
           ul.room-info__list
             li.room-info__item.room-info__item--comfort
@@ -148,6 +163,16 @@ html(lang="en")
               .room-info__item-text
                 .room-info__item-title Удобство
                 .room-info__item-text Окно в каждой из спален
+        .ui-form-elements__item
+          .room-reviews__item
+            .review__column--left
+              img.review__image(src=require("../../components/room-reviews/images/image1.jpg") alt="user1" width="48" height="48")
+              .review__likes
+                + like-button(12, true)
+            .review__column--right
+              .review__name Мурад Сарафанов
+              .review__time 5 дней назад
+              p.review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
 
 
 

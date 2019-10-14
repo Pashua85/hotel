@@ -1,0 +1,28 @@
+include ../../ui-components/ui-input-dropdown-open/ui-input-dropdown-open
+
+.guests-dropdown.dropdown-btn
+  .dropdown-btn__group
+    + input-dropdown-open("guests-dropdown__input", "text", "guests-input", "guests-amount", "Сколько гостей")
+    .quests-dropdown__box.dropdown-btn__box.dropdown-btn__box--visible
+      ul.dropdown-btn__list
+        li.dropdown-btn__item 
+          .dropdown-btn__item-title.header--third Взрослые
+          .dropdown-btn__amount-box 
+            button.dropdown-btn__amount-btn.dropdown-btn__discrete -
+            .dropdown-btn__amount 0
+            button.dropdown-btn__amount-btn.dropdown-btn__amount-add +
+        li.dropdown-btn__item 
+          .dropdown-btn__item-title.header--third Дети
+          .dropdown-btn__amount-box 
+            button.dropdown-btn__amount-btn.dropdown-btn__discrete -
+            .dropdown-btn__amount 0
+            button.dropdown-btn__amount-btn.dropdown-btn__amount-add +
+        li.dropdown-btn__item 
+          .dropdown-btn__item-title.header--third Младенцы
+          .dropdown-btn__amount-box 
+            button.dropdown-btn__amount-btn.dropdown-btn__discrete -
+            .dropdown-btn__amount 0
+            button.dropdown-btn__amount-btn.dropdown-btn__amount-add + 
+      .dropdown-btn__btn-row
+        button.dropdown-btn__btn.header--third.dropdown-btn__btn--clear.dropdown-btn__btn--hidden Очистить
+        button.dropdown-btn__btn.header--third.dropdown-btn__btn--done Применить
