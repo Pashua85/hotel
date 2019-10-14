@@ -1,0 +1,28 @@
+include ../../ui-components/ui-input-dropdown-open/ui-input-dropdown-open
+
+script 
+  //- include ./conveniences.js
+.dropdown(id="conveniences")
+  //- label.dropdown__label.header--third(for="conveniences-input") Удобства номера
+  .dropdown__group
+    + input-dropdown-open("conveniences__input", "text", "conveniences-input",  "conveniences", "", "2 спальни, 2 кровати")
+    .dropdown__box.dropdown__box--visible(id="conveniences-dropdown-box")
+      ul.dropdown__list
+        li.dropdown__item 
+          .dropdown__item-title.header--third Спальни
+          .dropdown__amount-box 
+            button.dropdown__amount-btn.dropdown__discrete(id="bedrooms-discrete") -
+            .dropdown__amount(id="bedrooms-amount") 2
+            button.dropdown__amount-btn.dropdown__amount-add(id="bedrooms-add") +
+        li.dropdown__item 
+          .dropdown__item-title.header--third Кровати
+          .dropdown__amount-box 
+            button.dropdown__amount-btn.dropdown__discrete(id="beds-discrete") -
+            .dropdown__amount(id="beds-amount") 2
+            button.dropdown__amount-btn.dropdown__amount-add(id="beds-add") +
+        li.dropdown__item 
+          .dropdown__item-title.header--third Ванные комнаты
+          .dropdown__amount-box 
+            button.dropdown__amount-btn.dropdown__discrete(id="bathrooms-discrete") -
+            .dropdown__amount(id="bathrooms-amount") 0
+            button.dropdown__amount-btn.dropdown__amount-add(id="bathrooms-add") +

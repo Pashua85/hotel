@@ -7,8 +7,9 @@ include ../../components/like-button/like-button
 include ../../components/rating-stars/rating-stars
 include ../../components/button/button
 include ../../components/pagination/pagination
+include ../../components/input-dropdown/input-dropdown
 
-//- некоторые компоненты использованы в виде своих копий без скриптов
+//- некоторые компоненты использованы в измененном виде
 include ../../ui-components/ui-datepicker-single/ui-datepicker-single
 
 
@@ -118,6 +119,36 @@ html(lang="en")
           .ui-form-elements__label
             .ui-form-elements__title.header--third Pagination
           + pagination(1,150)
+      .ui-form-elements__section.ui-form-elements__section--four
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Dropdown
+            .ui-form-elements__subtitle default
+          + input-dropdown('ui-form-elements__dropdown', 'text', '','','', '2 спальни, 2 кровати, 2 ванные комнаты')
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Dropdown
+            .ui-form-elements__subtitle expanded
+          include ../../ui-components/ui-conveniences/ui-conveniences
+        .ui-form-elements__item
+          .ui-form-elements__label
+            .ui-form-elements__title.header--third Expandable checkbox list
+            .ui-form-elements__list-toggle
+        .ui-form-elements__item
+          include ../../ui-components/ui-expandable-list/ui-expandable-list
+        .ui-form-elements__item
+          ul.room-info__list
+            li.room-info__item.room-info__item--comfort
+              .room-info__icon &#xE24E;
+              .room-info__item-text
+                .room-info__item-title Комфорт
+                .room-info__item-text Шумопоглошающие стены
+            li.room-info__item.room-info__item--convenience
+              .room-info__icon &#xe7f1;
+              .room-info__item-text
+                .room-info__item-title Удобство
+                .room-info__item-text Окно в каждой из спален
+
 
 
        

@@ -1,0 +1,19 @@
+include ../../components/checkbox-list/checkbox-list
+-
+  var features = [
+    { id: 'breakfast-checkbox', name: 'feature1', value: 'breakfast', label: 'Завтрак'},
+    { id: 'desk-checkbox', name: 'feature2', value: 'desk', label: 'Письменный стол'},
+    { id: 'highchair-checkbox', name: 'feature3', value: 'highchair', label: 'Стул для кормления'},
+    { id: 'baby-bed-checkbox', name: 'feature4', value: 'baby-bed', label: 'Кроватка'},
+    { id: 'tv-checkbox', name: 'feature5', value: 'tv', label: 'Телевизор'},
+    { id: 'shampoo-checkbox', name: 'feature5-6', value: 'shampoo', label: 'Шампунь'},
+    { id: 'tv-checkbox-1', name: 'feature7', value: 'tv', label: 'Телевизор'},
+    { id: 'shampoo-checkbox-1', name: 'feature8', value: 'shampoo', label: 'Шампунь'}
+  ]
+
+.ui-expandable-list.ui-expandable-list--open
+  .ui-expandable-list__row
+    .ui-expandable-list__title.header--third Expandable checkbox list
+    .ui-expandable-list__toggle.ui-expandable-list__toggle--open
+  + checkbox-list('ui-checkbox-list__list', features)
+

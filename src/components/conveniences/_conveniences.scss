@@ -10,7 +10,7 @@
 
   & .input-dropdown--open {
     border: 1px solid $grey-color;
-    border-radius: .4rem .4rem 0 0;
+    border-radius: .5rem .5rem 0 0;
     border-bottom: none;   
   }
 
@@ -24,9 +24,10 @@
     width: 100%;
     top: 100%;
     left: 0;
-    padding-bottom: 1.3rem;
+    margin-top: -.1rem;
     display: none;
     z-index: 90;
+    padding-bottom: .3rem;
 
     &--visible {
       display: block;
@@ -36,6 +37,7 @@
   &__list {
     list-style: none;
     padding-top: .14rem;
+    margin: 0;
   }
 
   &__item {

@@ -1,10 +1,10 @@
-mixin input-dropdown (className, type, id, name, placeholder, value)
+mixin input-dropdown-open (className, type, id, name, placeholder, value)
   - className = className || '';
   - type = type || 'text';
   - id = id || '';
   - name = name || '';
   - placeholder = placeholder || '';
   - value = value || '';
-  .input-dropdown
+  .input-dropdown.input-dropdown--open
     input.input-dropdown__field(class=className, type=type, id=id, name=name, placeholder=placeholder, autocomplete="off", readonly="readonly", value=value)
     .input-dropdown__toggle
