@@ -17,4 +17,21 @@
   &__item:not(:last-child) {
     margin-bottom: 4rem;
   }
+
+  &__column--one {
+    margin-right: 4rem;
+  }
+
+  &__column--three {
+    width: 32rem;
+    margin-left: auto;
+  }
+
+  &__column--three &__item:first-child {
+    position: relative;
+  }
+
+  &__column--three .datepicker__calendar {
+    top: 0;
+  }
 }

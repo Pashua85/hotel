@@ -1,3 +1,5 @@
+include ../../components/booking-form/booking-form
+
 doctype html
 html(lang="en")
   head
@@ -25,5 +27,21 @@ html(lang="en")
           include ../../components/search-form-short/search-form-short
         .ui-cards__item
           include ../../components/register-form/register-form
+      .ui-cards__column.ui-cards__column--two
+        .ui-cards__item
+          - 
+            var room = { 
+              number: 888,
+              price: 9990,
+              isLuxury: true
+            }
+          //- стоимость в booking-form меняется после выбора дат, но datepicker реализован так, что работает только один на странице, рабочий вариант на странице /details.html
+          + booking-form(room)
+        .ui-cards__item
+          include ../../components/sign-in-form/sign-in-form
+      .ui-cards__column.ui-cards__column--three
+        .ui-cards__item
+          include ../../ui-components/ui-kit-calendar/ui-kit-calendar.html
+
 
       

@@ -1,5 +1,7 @@
 include ../input-field/input-field
-include ../button/button
+include ../button-white/button-white
+include ../button-submit/button-submit
+
 
 form.sign-in-form
   h2.sign-in-form__header.header--first Войти
@@ -8,9 +10,9 @@ form.sign-in-form
   .sign-in-form__input.sign-in-form__input--password
     + input-field("user-password", "password", "Пароль")
   .sign-in-form__submit-btn
-    + button("Войти", "blue", "high", "wide")
+    + button-submit("Войти")
   .sign-in-form__row
     .sign-in-form__question Нет аккаунта на Toxin?
     .sign-in-form__question-btn
       a(href="register.html").sign-in-form__link
-        + button('Создать', 'white', 'high', 'narrow', 'button')
+        + button-white("Создать")

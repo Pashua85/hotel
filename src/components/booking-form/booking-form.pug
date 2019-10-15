@@ -1,4 +1,5 @@
-include ../button/button
+include ../button-submit/button-submit
+include ../datepicker/datepicker
 
 mixin booking-form(room)
   -
@@ -18,7 +19,7 @@ mixin booking-form(room)
         | #{roomPrice}₽
         span.booking-form__price-text  в сутки
     .booking-form__datepicker
-      include ../datepicker/datepicker
+      + datepicker('Прибытие', 'Выезд')
     .booking-form__guests-dropdown
       include ../guests-dropdown/guests-dropdown
     .booking-form__costs-text
@@ -43,6 +44,6 @@ mixin booking-form(room)
       .booking-form__total-text Итого
       .booking-form__total-line
       .booking-form__total-cost(id="booking-form-total-cost") 0₽
-    + button('Забронировать', 'blue', 'high', 'wide')
+    + button-submit('Забронировать')
 
 
