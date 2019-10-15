@@ -1,4 +1,6 @@
 .ui-cards {
+  background-color: #E5E5E5;
+  padding-bottom: 14rem;
 
   &__header {
     padding-top: 3rem;
@@ -9,5 +11,10 @@
   &__main {
     width: 80.42%;
     margin: 0 auto;
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 4rem;
   }
 }

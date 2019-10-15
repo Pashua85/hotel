@@ -1,12 +1,12 @@
-include ../button/button.pug
+include ../button-submit/button-submit
 include ../datepicker/datepicker
 
 form.search-form-short(action="/search-room.html")
   h1.search-form-short__header.header--first Найдём номера под 
     span.search-form-short__header--stretched ваши пожелания
   .search-form-short__datepicker
-    + datepicker('Приезд', 'Выезд')
+    + datepicker('Прибытие', 'Выезд')
   .search-form-short__guests-dropdown
     include ../guests-dropdown/guests-dropdown
-  + button('Подобрать номер', 'blue', 'high', 'wide')
+  + button-submit('Подобрать номер')
 

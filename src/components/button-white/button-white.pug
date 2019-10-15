@@ -1,0 +1,9 @@
+mixin button-white(title, height, type)
+  - title = title || 'click me';
+  - height = height || 'high';
+  - type = type || 'button';
+  - var heightClass = 'button-white--' + height;
+  - var heightContainerClass = 'button-white__container--' + height;
+  
+  div(class=`button-white__container ${heightContainerClass}`)
+    button(class=`button-white ${heightClass}` type=`${type}`)= title

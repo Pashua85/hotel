@@ -8,6 +8,9 @@ include ../../components/rating-stars/rating-stars
 include ../../components/button/button
 include ../../components/pagination/pagination
 include ../../components/input-dropdown/input-dropdown
+include ../../components/button-white/button-white
+include ../../components/button-blue/button-blue
+include ../../components/button-submit/button-submit
 
 //- некоторые компоненты использованы в измененном виде
 include ../../ui-components/ui-datepicker-single/ui-datepicker-single
@@ -105,16 +108,16 @@ html(lang="en")
           .ui-form-elements__label
             .ui-form-elements__title.header--third Buttons
           .ui-form-elements__button-row
-            + button('click me', 'blue', 'high', 'narrow', 'button')
-            + button('click me', 'blue', 'high', 'narrow', 'button')
+            + button-blue('click me', 'high')
+            + button-blue('click me', 'high')
           .ui-form-elements__button-row
-            + button('click me', 'white', 'high', 'narrow', 'button')
-            + button('click me', 'white', 'high', 'narrow', 'button')
+            + button-white('click me', 'high')
+            + button-white('click me', 'high')
           .ui-form-elements__button-row
             .ui-form-elements__link click me
             .ui-form-elements__link.ui-form-elements__link--active click me
           .ui-form-elements__button-row
-            + button("Перейти к оплате", "blue", "high", "wide")
+            + button-submit("Перейти к оплате")
         .ui-form-elements__item.ui-form-elements__pagination
           .ui-form-elements__label
             .ui-form-elements__title.header--third Pagination

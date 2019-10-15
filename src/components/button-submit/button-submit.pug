@@ -1,0 +1,5 @@
+mixin button-submit(title, type)
+  - title = title || 'click me';
+  - type = type || 'submit';
+
+  button.button-submit( type=`${type}`)= title

@@ -127,7 +127,7 @@
       margin-right: 2rem;
     }
   }
-  
+
   &__section--three &__item:first-child {
     width: 26.6rem;
   }
@@ -144,29 +144,33 @@
     margin-bottom: 1.6rem;
   }
 
-  &__button-row .button {
+  &__button-row .button-blue,
+  &__button-row .button-white {
     font-size: 1.2rem;
   }
 
-  &__button-row .button:first-child {
-    margin-right: 1.4rem;
+
+  &__button-row .button-blue:first-child,
+  &__button-row .button-white__container:first-child {
+    margin-right: 1.7rem;
   }
 
-  &__button-row .button--blue:last-child {
+  &__button-row .button-blue:last-child,
+  &__button-row .button-white__container:last-child {
     opacity: .5;
   }
 
   &__button-row:nth-child(2) {
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
   }
 
-  &__button-row .button--white:first-child {
-    margin-left: .2rem;
-    margin-right: 2rem;
-  }
+  // &__button-row .button--white:first-child {
+  //   margin-left: .2rem;
+  //   margin-right: 2rem;
+  // }
 
   &__button-row:nth-child(3) {
-    margin-bottom: 2.9rem;
+    margin-bottom: 2.7rem;
   }
 
   &__button-row:nth-child(4) {
@@ -176,12 +180,12 @@
 
   &__link {
     font-family: 'Montserrat Bold';
-    font-size: 1.2rem;
+    font-size: 1.225rem;
     text-transform: uppercase;
     color: $purple-color;
 
     &:first-child {
-      margin-right: 2.3rem;
+      margin-right: 2rem;
     }
 
     &--active {

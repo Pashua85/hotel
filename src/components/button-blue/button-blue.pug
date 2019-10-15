@@ -1,0 +1,7 @@
+mixin button-blue(title, height, type)
+  - title = title || 'click me';
+  - height = height || 'high';
+  - type = type || 'button';
+  - var heightClass = 'button-blue--' + height;
+
+  button(class=`button-blue ${heightClass}` type=`${type}`)= title

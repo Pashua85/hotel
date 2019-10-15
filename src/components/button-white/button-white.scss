@@ -1,0 +1,53 @@
+.button-white {
+  border: none;
+  outline: none;
+  font-family: 'Montserrat Bold';
+  font-size: 1.225rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: white;
+  color: $purple-color;
+
+  &:active {
+    color: rgba($purple-color, .5);
+  }
+
+  &__container {
+    position: relative;
+    background: $blue-gradient;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    display: inline-block;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__container--high {
+    height: 4.4rem;
+    border-radius: 2.2rem;
+  }
+
+  &__container--low {
+    height: 3.4rem;
+    border-radius: 1.7rem;
+  }
+
+  &--high {
+    height: calc(4.4rem - 4px);
+    border-radius: 2rem;
+    width: calc(9.9rem - 4px);
+    line-height: calc(4.4rem - 4px);
+  }
+
+  &--low {
+    heigh: calc(3.4rem - 4px);
+    border-radius: 1.5rem;
+    line-height: calc(3.4rem - 4px);
+  }
+
+
+}

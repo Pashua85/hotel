@@ -2,6 +2,8 @@ include ../input-field/input-field
 include ../radio-buttons/radio-buttons
 include ../button/button
 include ../toggle-button/toggle-button
+include ../button-white/button-white
+include ../button-submit/button-submit
 
 script
   include ../../../node_modules/inputmask/dist/jquery.inputmask.bundle.js
@@ -27,11 +29,11 @@ form.register-form
   .register-form__toggle
     + toggle-button('Получать спецпредложения')
   .register-form__submit-btn
-    + button("Зарегистрироваться", "blue", "high", "wide")
+    + button-submit("Зарегистрироваться", "blue", "high", "wide")
   .register-form__row
     .register-form__question Уже есть аккаунт на Toxin?
     .register-form__question-btn
       a(href="sign-in.html").register-form__link
-        + button('Войти', 'white', 'high', 'narrow', 'button')
+        + button-white('Войти','high')
         
 
