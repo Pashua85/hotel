@@ -68,6 +68,11 @@ const common = merge([
         filename: 'ui-form-elements.html',
         chunk: ['ui-form-elements'],
         template: PATHS.source + '/ui-pages/ui-form-elements/ui-form-elements.pug',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'ui-cards.html',
+        chunk: ['ui-cards'],
+        template: PATHS.source + '/ui-pages/ui-cards/ui-cards.pug',
       })
     ],
     optimization: {
