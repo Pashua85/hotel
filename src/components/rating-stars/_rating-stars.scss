@@ -2,12 +2,17 @@
   display: flex;
 
   &__star {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: .2rem;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('./components/rating-stars/images/star_border.svg');
+
+    &:first-child {
+      margin-left: .1rem;
+    }
 
     &--filled {
       background-image: url('./components/rating-stars/images/star.svg');

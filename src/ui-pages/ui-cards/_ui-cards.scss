@@ -9,9 +9,11 @@
   }
   
   &__main {
-    width: 80.42%;
+    // width: 80.42%;
+    max-width: 116rem;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item:not(:last-child) {
@@ -22,13 +24,14 @@
     margin-right: 4rem;
   }
 
-  &__column--three {
-    width: 32rem;
-    margin-left: auto;
+  &__column--two {
+    margin-right: auto;
   }
 
   &__column--three &__item:first-child {
     position: relative;
+    width: 32rem;
+    margin-bottom: 40.9rem;
   }
 
   &__column--three .datepicker__calendar {
