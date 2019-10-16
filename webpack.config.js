@@ -73,6 +73,11 @@ const common = merge([
         filename: 'ui-cards.html',
         chunk: ['ui-cards'],
         template: PATHS.source + '/ui-pages/ui-cards/ui-cards.pug',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'ui-headers-footers.html',
+        chunk: ['ui-headers-footers'],
+        template: PATHS.source + '/ui-pages/ui-headers-footers/ui-headers-footers.pug',
       })
     ],
     optimization: {
