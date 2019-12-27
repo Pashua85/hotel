@@ -3,85 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register
-    </title>
+    <title>Form Elements</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <body>
-      <div class="common__wrapper">
-        <header class="header">
-          <div class="header__container">
-            <input class="header__checkbox" type="checkbox" id="header-burger">
-            <label class="header__burger" for="header-burger"><span class="header__burger-icon">&nbsp;</span></label>
-            <div class="logo header__logo"><a class="logo__link" href="index.html"><svg class="logo__image" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M62.335 13.368C62.5567 13.368 62.7375 13.4438 62.8775 13.5955C63.0292 13.7355 63.105 13.9163 63.105 14.138C63.105 14.348 63.0292 14.5288 62.8775 14.6805C62.7375 14.8322 62.5567 14.908 62.335 14.908H58.5725V25.408C58.5725 25.6297 58.4967 25.8163 58.345 25.968C58.205 26.108 58.0242 26.178 57.8025 26.178C57.5925 26.178 57.4117 26.108 57.26 25.968C57.1083 25.8163 57.0325 25.6297 57.0325 25.408V14.908H53.27C53.06 14.908 52.8792 14.8322 52.7275 14.6805C52.5758 14.5288 52.5 14.348 52.5 14.138C52.5 13.9163 52.5758 13.7355 52.7275 13.5955C52.8792 13.4438 53.06 13.368 53.27 13.368H62.335Z" fill="#1F2041"/>
-<path d="M68.9076 13.368C69.7943 13.368 70.6285 13.5372 71.4101 13.8755C72.2035 14.2138 72.8918 14.6747 73.4751 15.258C74.0701 15.8413 74.5368 16.5297 74.8751 17.323C75.2134 18.1047 75.3826 18.9388 75.3826 19.8255C75.3826 20.8638 75.1609 21.8205 74.7176 22.6955C74.2743 23.5705 73.6735 24.3055 72.9151 24.9005C72.9151 24.9005 72.9035 24.9122 72.8801 24.9355C72.3201 25.3555 71.7076 25.688 71.0426 25.933C70.3776 26.1663 69.666 26.283 68.9076 26.283C68.0209 26.283 67.1868 26.1138 66.4051 25.7755C65.6234 25.4372 64.9351 24.9763 64.3401 24.393C63.7568 23.8097 63.296 23.1272 62.9576 22.3455C62.6193 21.5638 62.4501 20.7238 62.4501 19.8255C62.4501 18.8455 62.6484 17.9413 63.0451 17.113C63.4418 16.273 63.9843 15.5555 64.6726 14.9605L64.7426 14.8905C64.7543 14.8905 64.7718 14.8788 64.7951 14.8555C65.3551 14.3888 65.9851 14.0272 66.6851 13.7705C67.3851 13.5022 68.1259 13.368 68.9076 13.368ZM68.9076 24.743C69.351 24.743 69.771 24.6905 70.1676 24.5855C70.576 24.4688 70.961 24.3113 71.3226 24.113L65.1801 16.6405C64.8068 17.0722 64.5151 17.5622 64.3051 18.1105C64.0951 18.6472 63.9901 19.2188 63.9901 19.8255C63.9901 20.5022 64.1185 21.138 64.3751 21.733C64.6318 22.328 64.9818 22.853 65.4251 23.308C65.8801 23.7513 66.4051 24.1013 67.0001 24.358C67.5951 24.6147 68.231 24.743 68.9076 24.743ZM72.5301 23.1505C72.9384 22.7072 73.2535 22.2055 73.4751 21.6455C73.7085 21.0738 73.8251 20.4672 73.8251 19.8255C73.8251 19.1488 73.6968 18.513 73.4401 17.918C73.1834 17.323 72.8276 16.8038 72.3726 16.3605C71.9293 15.9055 71.4101 15.5497 70.8151 15.293C70.2201 15.0363 69.5843 14.908 68.9076 14.908C68.4409 14.908 67.9918 14.9722 67.5601 15.1005C67.1284 15.2172 66.7259 15.3922 66.3526 15.6255L72.5301 23.1505Z" fill="#1F2041"/>
-<path d="M82.351 20.6305C82.1177 20.6305 81.9194 20.5372 81.756 20.3505L77.2585 14.5755C77.1302 14.4122 77.0777 14.2313 77.101 14.033C77.1244 13.823 77.2177 13.6538 77.381 13.5255C77.5444 13.3972 77.7252 13.3505 77.9235 13.3855C78.1335 13.4088 78.3027 13.5022 78.431 13.6655L82.351 18.6705L86.1835 13.753C86.3119 13.5897 86.4752 13.4963 86.6735 13.473C86.8835 13.4497 87.0702 13.5022 87.2335 13.6305C87.3969 13.7588 87.4902 13.928 87.5135 14.138C87.5369 14.3363 87.4844 14.5172 87.356 14.6805L82.946 20.3505C82.7944 20.5372 82.596 20.6305 82.351 20.6305ZM87.2685 26.2655C87.2219 26.2655 87.146 26.2597 87.041 26.248C86.9477 26.2363 86.8369 26.2072 86.7085 26.1605C86.5802 26.1022 86.4402 26.0263 86.2885 25.933C86.1485 25.828 86.0085 25.688 85.8685 25.513L82.351 20.9805L78.5185 25.9155C78.3902 26.0788 78.221 26.1722 78.011 26.1955C77.8127 26.2188 77.6319 26.1663 77.4685 26.038C77.3052 25.9097 77.2119 25.7463 77.1885 25.548C77.1652 25.338 77.2177 25.1513 77.346 24.988L81.756 19.318C81.896 19.1313 82.0885 19.038 82.3335 19.038C82.5902 19.038 82.7944 19.1313 82.946 19.318L87.041 24.568C87.0994 24.6497 87.1519 24.7022 87.1985 24.7255C87.2452 24.7488 87.2802 24.7663 87.3035 24.778C87.5019 24.778 87.6652 24.848 87.7935 24.988C87.9335 25.1163 88.0094 25.2797 88.021 25.478C88.0444 25.688 87.986 25.8688 87.846 26.0205C87.706 26.1722 87.531 26.2538 87.321 26.2655H87.2685Z" fill="#1F2041"/>
-<path d="M91.7343 26.2655C91.5126 26.2655 91.326 26.1897 91.1743 26.038C91.0226 25.8863 90.9468 25.6997 90.9468 25.478V14.103C90.9468 13.893 91.0226 13.7122 91.1743 13.5605C91.326 13.4088 91.5126 13.333 91.7343 13.333C91.9443 13.333 92.1251 13.4088 92.2768 13.5605C92.4285 13.7122 92.5043 13.893 92.5043 14.103V25.478C92.5043 25.6997 92.4285 25.8863 92.2768 26.038C92.1251 26.1897 91.9443 26.2655 91.7343 26.2655Z" fill="#1F2041"/>
-<path d="M104.938 26.2305C104.681 26.2305 104.483 26.1313 104.343 25.933L97.0452 16.343V25.478C97.0452 25.688 96.9693 25.8688 96.8177 26.0205C96.6777 26.1605 96.5027 26.2305 96.2927 26.2305C96.0943 26.2305 95.9193 26.1605 95.7677 26.0205C95.616 25.8688 95.5402 25.688 95.5402 25.478V14.1205C95.5402 13.9572 95.5868 13.8113 95.6802 13.683C95.7735 13.5547 95.9018 13.4672 96.0652 13.4205C96.2168 13.3622 96.3685 13.3563 96.5202 13.403C96.6718 13.4497 96.8002 13.5372 96.9052 13.6655L104.185 23.273V14.1205C104.185 13.9222 104.255 13.7472 104.395 13.5955C104.547 13.4438 104.728 13.368 104.938 13.368C105.148 13.368 105.323 13.4438 105.463 13.5955C105.614 13.7472 105.69 13.9222 105.69 14.1205V25.478C105.69 25.6413 105.643 25.7872 105.55 25.9155C105.457 26.0438 105.334 26.1372 105.183 26.1955C105.066 26.2188 104.984 26.2305 104.938 26.2305Z" fill="#1F2041"/>
-<path d="M20.0003 27.0587C19.3533 27.0587 18.8239 26.5292 18.8239 25.8822C18.8239 21.3528 15.118 17.6469 10.5886 17.6469C9.94152 17.6469 9.41211 17.1175 9.41211 16.4704C9.41211 15.8234 9.94152 15.2939 10.5886 15.2939C16.4415 15.2939 21.1768 20.0292 21.1768 25.8822C21.1768 26.5292 20.6474 27.0587 20.0003 27.0587Z" fill="url(#paint0_linear)"/>
-<path d="M30.5884 16.4704C30.5884 17.1175 30.0589 17.6469 29.4119 17.6469C26.6178 17.6469 24.1178 19.0587 22.6472 21.2057C22.3236 20.3822 21.9413 19.6175 21.4707 18.9116C23.4119 16.6763 26.2648 15.2939 29.4119 15.2939C30.0589 15.2939 30.5884 15.8234 30.5884 16.4704Z" fill="url(#paint1_linear)"/>
-<path d="M20 40C8.97059 40 0 31.0294 0 20C0 8.97059 8.97059 0 20 0C31.0294 0 40 8.97059 40 20C40 31.0294 31.0294 40 20 40ZM20 2.35294C10.2647 2.35294 2.35294 10.2647 2.35294 20C2.35294 29.7353 10.2647 37.6471 20 37.6471C29.7353 37.6471 37.6471 29.7353 37.6471 20C37.6471 10.2647 29.7353 2.35294 20 2.35294Z" fill="url(#paint2_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="15.2945" y1="15.2939" x2="15.2945" y2="27.0587" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BC9CFF"/>
-<stop offset="1" stop-color="#8BA4F9"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="26.0295" y1="15.2939" x2="26.0295" y2="21.2057" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6FCF97"/>
-<stop offset="1" stop-color="#66D2EA"/>
-</linearGradient>
-<linearGradient id="paint2_linear" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BC9CFF"/>
-<stop offset="1" stop-color="#8BA4F9"/>
-</linearGradient>
-</defs>
-</svg></a></div>
-            <nav class="header__nav">
-              <ul class="header__nav-list">
-                <li class="header__nav-item"><a class="header__nav-link" href="empty-page.html">О нас</a></li>
-                <li class="header__nav-item header__nav-item--expandable header__nav-toggle"><a class="header__nav-link" href="empty-page.html">Услуги</a>
-                  <ul class="header__expand-list">
-                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 1</a></li>
-                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 2</a></li>
-                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 3</a></li>
-                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 4</a></li>
-                  </ul>
-                </li>
-                <li class="header__nav-item"><a class="header__nav-link" href="empty-page.html">Вакансии</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="empty-page.html">Новости</a></li>
-                <li class="header__nav-item header__nav-item--expandable header__nav-toggle"><a class="header__nav-link" href="empty-page.html">Соглашения</a>
-                  <ul class="header__expand-list">
-                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Соглашение 1</a></li>
-                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Соглашение 2</a></li>
-                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Соглашение 3</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__user-block--unlogged"><a class="header__link" href="sign-in.html">
-                <div class="button-white__container button-white__container--low">
-                  <button class="button-white button-white--low" type="button">Войти</button>
-                </div></a><a class="header__link" href="register.html">
-                <button class="button-blue button-blue--low" type="button">Зарегистрироваться</button></a></div>
-          </div>
-        </header>
-        <script>$(() => {
-  const items = document.querySelectorAll('.header__nav-toggle');
-  items.forEach(item => {
-    item.addEventListener('click', event => {
-      if(!event.target.closest('.header__expand-link')) {
-        event.preventDefault();
-      }
-      event.target.closest('.header__nav-item').classList.toggle('header__nav-item--open');
-    });
-  })
-});
-        </script>
-        <main class="register__main">
-          <div class="register__form-container">
-            <script>/*!
+    <script>
+       /*!
 * jquery.inputmask.bundle.js
 * https://github.com/RobinHerbots/Inputmask
 * Copyright (c) 2010 - 2019 Robin Herbots
@@ -3948,122 +3875,318 @@
         return $.fn.inputmask;
     });
 } ]);
-            </script>
-            <script>$(function() {
-  $('#new-user-birthday').inputmask({
+    </script>
+    <script>$(function() {
+  $('#ui-masked-input').inputmask({
     'mask': '99.99.9999', 
     'placeholder': 'ДД.ММ.ГГГГ'
   });
 });
-            </script>
-            <form class="register-form">
-              <h2 class="register-form__header header--first">Регистрация аккаунта</h2>
-              <div class="register-form__input register-form__input--first-name">
-                            <input class="input-field" id="new-user-first-name" name="first-name" placeholder="Имя" autocomplete="off" value="" spellcheck="false">
-              </div>
-              <div class="register-form__input register-form__input--last-name">
-                            <input class="input-field" id="new-user-last-name" name="last-name" placeholder="Фамилия" autocomplete="off" value="" spellcheck="false">
-              </div>
-              <div class="register-form__radio-buttons">
-                            <div class="radio-buttons">
-                              <input class="radio-buttons__input" type="radio" name="gender" id="radio-input-1" checked="true">
-                              <label class="radio-buttons__label radio-buttons__label--left" for="radio-input-1">Мужчина</label>
-                              <input class="radio-buttons__input" type="radio" name="gender" id="radio-input-2">
-                              <label class="radio-buttons__label" for="radio-input-2">Женщина</label>
-                            </div>
-              </div>
-              <div class="register-form__label header--third">Дата рождения</div>
-              <div class="register-form__input register-form__input--birthday">
-                            <input class="input-field" id="new-user-birthday" name="birthday" placeholder="ДД.ММ.ГГГГ" autocomplete="off" value="" spellcheck="false">
-                <div class="register-form__subtitle">Дату вводите в формате "ДД.ММ.ГГГГ"</div>
-              </div>
-              <div class="register-form__label header--third">Данные для входа в сервис</div>
-              <div class="register-form__input register-form__input--email">
-                            <input class="input-field" id="new-user-email" name="email" placeholder="Email" autocomplete="off" value="" spellcheck="false">
-              </div>
-              <div class="register-form__input register-form__input--password">
-                            <input class="input-field" id="new-user-password" name="password" placeholder="Пароль" autocomplete="off" value="" spellcheck="false">
-              </div>
-              <div class="register-form__toggle">
-                            <div class="toggle">
-                              <input class="toggle__input" type="checkbox" id="toggle-checkbox">
-                              <label class="toggle__label" for="toggle-checkbox">Получать спецпредложения
-                                <div class="toggle__slider"></div>
-                              </label>
-                            </div>
-              </div>
-              <div class="register-form__submit-btn">
-                            <button class="button-submit" type="blue">Зарегистрироваться</button>
-              </div>
-              <div class="register-form__row">
-                <div class="register-form__question">Уже есть аккаунт на Toxin?</div>
-                <div class="register-form__question-btn"><a class="register-form__link" href="sign-in.html">
-                                <div class="button-white__container button-white__container--high">
-                                  <button class="button-white button-white--high" type="button">Войти</button>
-                                </div></a></div>
-              </div>
-            </form>
+    </script>
+  <link rel="apple-touch-icon" sizes="57x57" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="hotel-ui"><link rel="icon" type="image/png" sizes="32x32" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-16x16.png"><link rel="shortcut icon" href="icons-20be3e7a017279e9731149174cb51cbf/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="hotel-ui"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1536x2008.png"><link href="./css/index.css" rel="stylesheet"></head>
+  <body class="ui-form-elements">
+    <header class="ui-form-elements__header">
+      <div class="ui-form-elements__logo-container"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"/>
+<path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"/>
+<path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"/>
+</svg>
+      </div>
+    </header>
+    <main class="ui-form-elements__container">
+      <div class="ui-form-elements__section ui-form-elements__section--one">
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Text field</div>
+            <div class="ui-form-elements__subtitle ui-form-elements__subtitle--upper">Default</div>
           </div>
-        </main>
-        <div class="common__footer">
-          <footer class="footer">
-            <div class="footer__container">
-              <div class="footer__brand">
-                          <div class="logo footer__logo"><a class="logo__link" href="index.html"><svg class="logo__image" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M62.335 13.368C62.5567 13.368 62.7375 13.4438 62.8775 13.5955C63.0292 13.7355 63.105 13.9163 63.105 14.138C63.105 14.348 63.0292 14.5288 62.8775 14.6805C62.7375 14.8322 62.5567 14.908 62.335 14.908H58.5725V25.408C58.5725 25.6297 58.4967 25.8163 58.345 25.968C58.205 26.108 58.0242 26.178 57.8025 26.178C57.5925 26.178 57.4117 26.108 57.26 25.968C57.1083 25.8163 57.0325 25.6297 57.0325 25.408V14.908H53.27C53.06 14.908 52.8792 14.8322 52.7275 14.6805C52.5758 14.5288 52.5 14.348 52.5 14.138C52.5 13.9163 52.5758 13.7355 52.7275 13.5955C52.8792 13.4438 53.06 13.368 53.27 13.368H62.335Z" fill="#1F2041"/>
-<path d="M68.9076 13.368C69.7943 13.368 70.6285 13.5372 71.4101 13.8755C72.2035 14.2138 72.8918 14.6747 73.4751 15.258C74.0701 15.8413 74.5368 16.5297 74.8751 17.323C75.2134 18.1047 75.3826 18.9388 75.3826 19.8255C75.3826 20.8638 75.1609 21.8205 74.7176 22.6955C74.2743 23.5705 73.6735 24.3055 72.9151 24.9005C72.9151 24.9005 72.9035 24.9122 72.8801 24.9355C72.3201 25.3555 71.7076 25.688 71.0426 25.933C70.3776 26.1663 69.666 26.283 68.9076 26.283C68.0209 26.283 67.1868 26.1138 66.4051 25.7755C65.6234 25.4372 64.9351 24.9763 64.3401 24.393C63.7568 23.8097 63.296 23.1272 62.9576 22.3455C62.6193 21.5638 62.4501 20.7238 62.4501 19.8255C62.4501 18.8455 62.6484 17.9413 63.0451 17.113C63.4418 16.273 63.9843 15.5555 64.6726 14.9605L64.7426 14.8905C64.7543 14.8905 64.7718 14.8788 64.7951 14.8555C65.3551 14.3888 65.9851 14.0272 66.6851 13.7705C67.3851 13.5022 68.1259 13.368 68.9076 13.368ZM68.9076 24.743C69.351 24.743 69.771 24.6905 70.1676 24.5855C70.576 24.4688 70.961 24.3113 71.3226 24.113L65.1801 16.6405C64.8068 17.0722 64.5151 17.5622 64.3051 18.1105C64.0951 18.6472 63.9901 19.2188 63.9901 19.8255C63.9901 20.5022 64.1185 21.138 64.3751 21.733C64.6318 22.328 64.9818 22.853 65.4251 23.308C65.8801 23.7513 66.4051 24.1013 67.0001 24.358C67.5951 24.6147 68.231 24.743 68.9076 24.743ZM72.5301 23.1505C72.9384 22.7072 73.2535 22.2055 73.4751 21.6455C73.7085 21.0738 73.8251 20.4672 73.8251 19.8255C73.8251 19.1488 73.6968 18.513 73.4401 17.918C73.1834 17.323 72.8276 16.8038 72.3726 16.3605C71.9293 15.9055 71.4101 15.5497 70.8151 15.293C70.2201 15.0363 69.5843 14.908 68.9076 14.908C68.4409 14.908 67.9918 14.9722 67.5601 15.1005C67.1284 15.2172 66.7259 15.3922 66.3526 15.6255L72.5301 23.1505Z" fill="#1F2041"/>
-<path d="M82.351 20.6305C82.1177 20.6305 81.9194 20.5372 81.756 20.3505L77.2585 14.5755C77.1302 14.4122 77.0777 14.2313 77.101 14.033C77.1244 13.823 77.2177 13.6538 77.381 13.5255C77.5444 13.3972 77.7252 13.3505 77.9235 13.3855C78.1335 13.4088 78.3027 13.5022 78.431 13.6655L82.351 18.6705L86.1835 13.753C86.3119 13.5897 86.4752 13.4963 86.6735 13.473C86.8835 13.4497 87.0702 13.5022 87.2335 13.6305C87.3969 13.7588 87.4902 13.928 87.5135 14.138C87.5369 14.3363 87.4844 14.5172 87.356 14.6805L82.946 20.3505C82.7944 20.5372 82.596 20.6305 82.351 20.6305ZM87.2685 26.2655C87.2219 26.2655 87.146 26.2597 87.041 26.248C86.9477 26.2363 86.8369 26.2072 86.7085 26.1605C86.5802 26.1022 86.4402 26.0263 86.2885 25.933C86.1485 25.828 86.0085 25.688 85.8685 25.513L82.351 20.9805L78.5185 25.9155C78.3902 26.0788 78.221 26.1722 78.011 26.1955C77.8127 26.2188 77.6319 26.1663 77.4685 26.038C77.3052 25.9097 77.2119 25.7463 77.1885 25.548C77.1652 25.338 77.2177 25.1513 77.346 24.988L81.756 19.318C81.896 19.1313 82.0885 19.038 82.3335 19.038C82.5902 19.038 82.7944 19.1313 82.946 19.318L87.041 24.568C87.0994 24.6497 87.1519 24.7022 87.1985 24.7255C87.2452 24.7488 87.2802 24.7663 87.3035 24.778C87.5019 24.778 87.6652 24.848 87.7935 24.988C87.9335 25.1163 88.0094 25.2797 88.021 25.478C88.0444 25.688 87.986 25.8688 87.846 26.0205C87.706 26.1722 87.531 26.2538 87.321 26.2655H87.2685Z" fill="#1F2041"/>
-<path d="M91.7343 26.2655C91.5126 26.2655 91.326 26.1897 91.1743 26.038C91.0226 25.8863 90.9468 25.6997 90.9468 25.478V14.103C90.9468 13.893 91.0226 13.7122 91.1743 13.5605C91.326 13.4088 91.5126 13.333 91.7343 13.333C91.9443 13.333 92.1251 13.4088 92.2768 13.5605C92.4285 13.7122 92.5043 13.893 92.5043 14.103V25.478C92.5043 25.6997 92.4285 25.8863 92.2768 26.038C92.1251 26.1897 91.9443 26.2655 91.7343 26.2655Z" fill="#1F2041"/>
-<path d="M104.938 26.2305C104.681 26.2305 104.483 26.1313 104.343 25.933L97.0452 16.343V25.478C97.0452 25.688 96.9693 25.8688 96.8177 26.0205C96.6777 26.1605 96.5027 26.2305 96.2927 26.2305C96.0943 26.2305 95.9193 26.1605 95.7677 26.0205C95.616 25.8688 95.5402 25.688 95.5402 25.478V14.1205C95.5402 13.9572 95.5868 13.8113 95.6802 13.683C95.7735 13.5547 95.9018 13.4672 96.0652 13.4205C96.2168 13.3622 96.3685 13.3563 96.5202 13.403C96.6718 13.4497 96.8002 13.5372 96.9052 13.6655L104.185 23.273V14.1205C104.185 13.9222 104.255 13.7472 104.395 13.5955C104.547 13.4438 104.728 13.368 104.938 13.368C105.148 13.368 105.323 13.4438 105.463 13.5955C105.614 13.7472 105.69 13.9222 105.69 14.1205V25.478C105.69 25.6413 105.643 25.7872 105.55 25.9155C105.457 26.0438 105.334 26.1372 105.183 26.1955C105.066 26.2188 104.984 26.2305 104.938 26.2305Z" fill="#1F2041"/>
-<path d="M20.0003 27.0587C19.3533 27.0587 18.8239 26.5292 18.8239 25.8822C18.8239 21.3528 15.118 17.6469 10.5886 17.6469C9.94152 17.6469 9.41211 17.1175 9.41211 16.4704C9.41211 15.8234 9.94152 15.2939 10.5886 15.2939C16.4415 15.2939 21.1768 20.0292 21.1768 25.8822C21.1768 26.5292 20.6474 27.0587 20.0003 27.0587Z" fill="url(#paint0_linear)"/>
-<path d="M30.5884 16.4704C30.5884 17.1175 30.0589 17.6469 29.4119 17.6469C26.6178 17.6469 24.1178 19.0587 22.6472 21.2057C22.3236 20.3822 21.9413 19.6175 21.4707 18.9116C23.4119 16.6763 26.2648 15.2939 29.4119 15.2939C30.0589 15.2939 30.5884 15.8234 30.5884 16.4704Z" fill="url(#paint1_linear)"/>
-<path d="M20 40C8.97059 40 0 31.0294 0 20C0 8.97059 8.97059 0 20 0C31.0294 0 40 8.97059 40 20C40 31.0294 31.0294 40 20 40ZM20 2.35294C10.2647 2.35294 2.35294 10.2647 2.35294 20C2.35294 29.7353 10.2647 37.6471 20 37.6471C29.7353 37.6471 37.6471 29.7353 37.6471 20C37.6471 10.2647 29.7353 2.35294 20 2.35294Z" fill="url(#paint2_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="15.2945" y1="15.2939" x2="15.2945" y2="27.0587" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BC9CFF"/>
-<stop offset="1" stop-color="#8BA4F9"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="26.0295" y1="15.2939" x2="26.0295" y2="21.2057" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6FCF97"/>
-<stop offset="1" stop-color="#66D2EA"/>
-</linearGradient>
-<linearGradient id="paint2_linear" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BC9CFF"/>
-<stop offset="1" stop-color="#8BA4F9"/>
-</linearGradient>
-</defs>
-</svg></a></div>
-                <p class="footer__brand-text">Бронирование номеров в&nbsp;лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          <div class="ui-form-elements__input">
+            <input class="input-field" id="user-email" name="email" placeholder="Email" autocomplete="off" value="" spellcheck="false">
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Text field</div>
+            <div class="ui-form-elements__subtitle">Hover / focus</div>
+          </div>
+          <div class="ui-form-elements__input ui-form-elements__input--focused">
+            <input class="input-field" id="user-email" name="email" placeholder="" autocomplete="off" value="This is pretty awesome" spellcheck="false">
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Dropdown</div>
+            <div class="ui-form-elements__subtitle">Default</div>
+          </div>
+          <div class="ui-form-elements__input-dropdown">
+            <div class="input-dropdown">
+              <input class="input-dropdown__field ui-input-dropdown" type="text" id="" name="" placeholder="" autocomplete="off" readonly="readonly" value="">
+              <div class="input-dropdown__toggle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Masked text field</div>
+            <div class="ui-form-elements__subtitle ui-form-elements__subtitle--upper">Default</div>
+          </div>
+          <div class="ui-form-elements__input-dropdown">
+            <input class="input-field" id="ui-masked-input" name="date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" value="" spellcheck="false">
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <script>
+              $.extend($.datepicker, {
+
+    // Reference the orignal function so we can override it and call it later
+    _inlineDatepicker2: $.datepicker._inlineDatepicker,
+
+    // Override the _inlineDatepicker method
+    _inlineDatepicker: function (target, inst) {
+
+        // Call the original
+        this._inlineDatepicker2(target, inst);
+
+        var beforeShow = $.datepicker._get(inst, 'beforeShow');
+
+        if (beforeShow) {
+            beforeShow.apply(target, [target, inst]);
+        }
+    }
+});
+
+( function( factory ) {
+  if ( typeof define === "function" && define.amd ) {
+
+    // AMD. Register as an anonymous module.
+    define( [ "../widgets/datepicker" ], factory );
+  } else {
+
+    // Browser globals
+    factory( jQuery.datepicker );
+  }
+}( function( datepicker ) {
+
+datepicker.regional.ru = {
+  closeText: "Закрыть",
+  prevText: "&#x3C;Пред",
+  nextText: "След&#x3E;",
+  currentText: "Сегодня",
+  monthNames: [ "Январь","Февраль","Март","Апрель","Май","Июнь",
+  "Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь" ],
+  monthNamesShort: [ "Янв","Фев","Мар","Апр","Май","Июн",
+  "Июл","Авг","Сен","Окт","Ноя","Дек" ],
+  dayNames: [ "воскресенье","понедельник","вторник","среда","четверг","пятница","суббота" ],
+  dayNamesShort: [ "вск","пнд","втр","срд","чтв","птн","сбт" ],
+  dayNamesMin: [ "Вс","Пн","Вт","Ср","Чт","Пт","Сб" ],
+  weekHeader: "Нед",
+  dateFormat: "dd.mm.yy",
+  firstDay: 1,
+  isRTL: false,
+  showMonthAfterYear: false,
+  yearSuffix: "" };
+datepicker.setDefaults( datepicker.regional.ru );
+
+return datepicker.regional.ru;
+
+} ) );
+
+$.datepicker.setDefaults($.datepicker.regional["ru"]);
+
+
+$(function() {
+
+  // у данного компонента есть ограничение на использование - его нельзя использовать 
+  // на одной странице одновременно и в booking-form, и в не его. Это связано с реализацией
+  // посчёта стоимости номера автоматически при выборе дат. При необходимости можно создать 
+  // два варианта datepicker с разным поведением.
+
+
+  function daysBetween(dateOne, dateTwo) {
+    var diff = dateTwo.getTime() - dateOne.getTime();
+    var day = 1000*60*60*24;
+    var days = Math.floor(diff/day);
+    if(days == 0) {
+      // в случае выезда в день заезда гость платит за 1 сутки полностью
+      setDaysPeriod(1);
+      setDaysCost(1);
+      setTotalCost(1);
+    } else {
+      setDaysPeriod(days);
+      setDaysCost(days);
+      setTotalCost(days);
+    }
+  }
+
+  function setDaysPeriod(days) {
+    var bookingForm = $('#booking-form');
+    if(bookingForm) {
+      var daysText;
+      var lastDigit = days % 10;
+      if(days === 1) {
+        daysText = 'сутки';
+      } else if (lastDigit === 1 && days !== 11) {
+        daysText = 'сутки';
+      } else {
+        daysText = 'суток';
+      }
+      $('#booking-form #booking-form-days').text(`${days} ${daysText}`);
+    }
+  }
+
+  function setTotalCost(days) {
+    var bookingForm = $('#booking-form');
+    if(bookingForm) {
+      var total = 9990 * days + 300;
+      var totalString = total.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 '); 
+      $('#booking-form #booking-form-total-cost').text(`${totalString}₽`);
+    }
+  }
+
+  function setDaysCost(days) {
+    var bookingForm = $('#booking-form');
+    if(bookingForm) {
+      // здесь захардкодена цена
+      var cost = 9990 * days;
+      $('#booking-form #booking-form-days-cost').text(`${cost}₽`);
+    }
+  }
+
+  var eventObject = {
+    focus: function () {
+      $('#datepicker-calendar').addClass('datepicker__calendar--visible');
+      $('#datepicker .input-dropdown').addClass('input-dropdown--open');
+    }
+  };
+
+  $('#start-date-input').bind(eventObject);
+  $('#end-date-input').bind(eventObject);
+
+  $('#datepicker .input-dropdown__toggle').click(() => {
+    $('#datepicker-calendar').toggleClass('datepicker__calendar--visible');
+    $('#datepicker .input-dropdown').toggleClass('input-dropdown--open');
+  });
+
+
+  $("#datepicker-calendar").datepicker({
+    showOtherMonths: true,
+    selectOtherMonths: true,
+    showButtonPanel: true,
+    minDate: 0,
+    beforeShow: function(calendar, inst) {
+      addButtons(calendar);
+    },
+    onChangeMonthYear: function (yy, mm, inst) { 
+      addButtons(inst.input); 
+    },
+    beforeShowDay: function(date) {
+      var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#start-date-input").val());
+      var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#end-date-input").val());
+      if(date1 && !date2 && date.getTime() == date1.getTime()) {
+        return [true, 'dp-startdate-alone'];
+      } else if(date1 && date2 && date1.getTime() == date.getTime() && date2.getTime() == date.getTime()) {
+        return [true, 'dp-startdate-alone'];
+      } else if(date1 && date2 && date.getTime() == date1.getTime()) {
+        return [true, 'dp-startdate'];
+      } else if(date2 && date.getTime() == date2.getTime()){
+        return [true, 'dp-enddate'];
+      }
+      return [true, date1 && ((date.getTime() == date1.getTime()) || (date2 && date > date1 && date < date2)) ? "dp-highlight" : ""];
+    },
+    onSelect: function(dateText, inst) {
+      var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#start-date-input").val());
+      var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#end-date-input").val());
+      var selectedDate = $.datepicker.parseDate($.datepicker._defaults.dateFormat, dateText);
+      
+      addButtons(inst.input);
+
+      if (!date1 || date2) {
+          $("#start-date-input").val(dateText);
+          $("#end-date-input").val("");
+          $(this).datepicker();
+      } else if( selectedDate < date1 ) {
+          $("#end-date-input").val( $("#start-date-input").val() );
+          $("#start-date-input").val( dateText );
+          daysBetween(selectedDate, date1);
+          $(this).datepicker();
+      } else {
+          $("#end-date-input").val(dateText);
+          daysBetween(date1, selectedDate);         
+          $(this).datepicker();
+      }
+    }
+  });
+
+
+  function addButtons( calendar ) {
+    setTimeout(function() {
+      var buttonPane = $(calendar).find( ".ui-datepicker-buttonpane" );
+
+      $("<button>", {
+          text: "Очистить",
+          click: function(event) {
+            removeDates(event, calendar);
+          }
+      }).appendTo(buttonPane).addClass("ui-datepicker-clear ui-state-default ui-priority-primary ui-corner-all");
+
+      $("<button>", {
+          text: "Применить",
+          click: function(event) { removeCalendar(event) }
+      }).appendTo(buttonPane).addClass("ui-datepicker-done ui-state-default ui-priority-primary ui-corner-all");
+    }, 1);
+  };
+
+  function removeCalendar(event) {
+    event.preventDefault();
+    $('#datepicker-calendar').removeClass('datepicker__calendar--visible');
+    $('#datepicker .input-dropdown').removeClass('input-dropdown--open');
+    document.getElementById("start-date-input").blur();
+    document.getElementById("end-date-input").blur();
+  }
+
+  function removeDates(event, calendar) {
+    event.preventDefault();
+    $('#start-date-input').add('#end-date-input').val('');
+    $(calendar).find('.dp-highlight').removeClass('dp-highlight');
+    $(calendar).find('.dp-startdate').removeClass('dp-startdate');
+    $(calendar).find('.dp-enddate').removeClass('dp-enddate');
+  }
+});
+          </script>
+          <div class="datepicker" id="datepicker">
+            <div class="datepicker__group datepicker__group--left">
+              <label class="datepicker__label header--third" for="start-date-date-input">Date dropdown</label>
+              <div class="input-dropdown">
+                <input class="input-dropdown__field datepicker__input" type="text" id="start-date-input" name="start-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly" value="">
+                <div class="input-dropdown__toggle"></div>
               </div>
-              <div class="footer__group-item footer__navigation">
-                <h3 class="footer__header header--third">Навигация</h3>
-                <ul class="footer__list">
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">О нас</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Новости</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Служба поддержки</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Услуги</a></li>
-                </ul>
+            </div>
+            <div class="datepicker__group datepicker__group--right">
+              <label class="datepicker__label header--third" for="end-date-input">Date dropdown</label>
+              <div class="input-dropdown">
+                <input class="input-dropdown__field datepicker__input" type="text" id="end-date-input" name="end-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly" value="">
+                <div class="input-dropdown__toggle"></div>
               </div>
-              <div class="footer__group-item footer__about">
-                <h3 class="footer__header header--third">О нас</h3>
-                <ul class="footer__list">
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">О сервисе</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Наша команда</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Вакансии</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Инвесторы</a></li>
-                </ul>
+            </div>
+            <div class="datepicker__calendar" id="datepicker-calendar"></div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="datepicker-single" id="datepicker-single">
+            <label class="datepicker-single__label header--third">Filter date dropdown</label>
+            <div class="datepicker-single__group">
+              <div class="input-dropdown">
+                <input class="input-dropdown__field datepicker-single__input" type="text" id="dates-input" name="dates" placeholder="Даты прибывания" autocomplete="off" readonly="readonly" value="">
+                <div class="input-dropdown__toggle"></div>
               </div>
-              <div class="footer__group-item footer__support-service">
-                <h3 class="footer__header header--third">Служба поддержки</h3>
-                <ul class="footer__list">
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Соглашения</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Сообщества</a></li>
-                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Связь с нами</a></li>
-                </ul>
-              </div>
-              <div class="footer__subscription">
-                <h3 class="footer__header header--third">Подписка</h3>
-                <p class="footer__subscription-text">Получайте специальные предложения и новости сервиса</p>
+              <div class="datepicker-single__calendar" id="datepicker-single-calendar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Subscription text field</div>
+          </div>
 <form class="subscription-form">
   <input class="subscription-form__input" type="email" placeholder="Email">
   <button class="subscription-form__button" type="submit">
@@ -4079,17 +4202,417 @@
     </div>
   </button>
 </form>
-              </div>
-            </div>
-            <div class="footer-bar">
-              <div class="footer-bar__container">
-                <p class="footer-bar__copyright-text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
-                <div class="footer-bar__social"><a class="social__link social__link--twitter" href="empty-page.html"></a><a class="social__link social__link--facebook" href="empty-page.html"></a><a class="social__link social__link--instagram" href="empty-page.html"></a></div>
-              </div>
-            </div>
-          </footer>
         </div>
       </div>
-    <script type="text/javascript" src="./js/index.js"></script></body>
-  <link rel="apple-touch-icon" sizes="57x57" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="hotel-ui"><link rel="icon" type="image/png" sizes="32x32" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-16x16.png"><link rel="shortcut icon" href="icons-20be3e7a017279e9731149174cb51cbf/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="hotel-ui"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1536x2008.png"><link href="./css/index.css" rel="stylesheet"></head>
+      <div class="ui-form-elements__section ui-form-elements__section--two">
+        <div class="ui-form-elements__item">
+          <div class="permissions">
+            <div class="permissions__title header--third">Checkbox buttons</div>
+                      <ul class="checkbox-list">
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="smocking-checkbox" name="permission1" value="smocking">
+                          <label class="checkbox-list__label" for="smocking-checkbox">Можно курить</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="pets-checkbox" name="permission2" value="pets">
+                          <label class="checkbox-list__label" for="pets-checkbox">Можно с питомцами</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="guests-checkbox" name="permission3" value="guests">
+                          <label class="checkbox-list__label" for="guests-checkbox">Moжно пригласть гостей
+ (до 10 человек)</label>
+                        </li>
+                      </ul>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Radio Buttons</div>
+          </div>
+          <div class="radio-buttons">
+            <input class="radio-buttons__input" type="radio" name="gender" id="radio-input-1" checked="true">
+            <label class="radio-buttons__label radio-buttons__label--left" for="radio-input-1">Мужчина</label>
+            <input class="radio-buttons__input" type="radio" name="gender" id="radio-input-2">
+            <label class="radio-buttons__label" for="radio-input-2">Женщина</label>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Toggle</div>
+          </div>
+          <div class="ui-form-elements__toggle">
+            <div class="toggle">
+              <input class="toggle__input" type="checkbox" id="toggle-checkbox" checked>
+              <label class="toggle__label" for="toggle-checkbox">Получать уведомления
+                <div class="toggle__slider"></div>
+              </label>
+            </div>
+          </div>
+          <div class="ui-form-elements__toggle">
+            <div class="toggle">
+              <input class="toggle__input" type="checkbox" id="toggle-checkbox">
+              <label class="toggle__label" for="toggle-checkbox">Получать уведомления
+                <div class="toggle__slider"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Like button</div>
+          </div>
+          <div class="ui-form-elements__likes">
+            <button class="like-button " type="button">2</button>
+            <button class="like-button like-button--liked" type="button">12</button>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Rate button</div>
+          </div>
+          <div class="ui-form-elements__stars">
+            <div class="rating-stars">
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star"></div>
+            </div>
+            <div class="rating-stars">
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+              <div class="rating-stars__star rating-stars__star--filled"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui-form-elements__section ui-form-elements__section--three">
+        <div class="ui-form-elements__item">
+<script>$(function () {
+  $('#price-range-slider').slider({
+    range: true,
+    min: 1000,
+    max: 14900,
+    values: [5000, 10000],
+    slide: function(event, ui) {
+      new Intl.NumberFormat('ru-RU').format($('#price-range-slider').slider('values', 0))
+      $('#price-range-input').val(
+        new Intl.NumberFormat('ru-RU').format(ui.values[0]) + 
+          '₽ - ' + new Intl.NumberFormat('ru-RU').format(ui.values[1]) + '₽'
+      );
+    }
+  });
+  $('#price-range-input').val(
+    new Intl.NumberFormat('ru-RU').format($('#price-range-slider').slider('values', 0)) + '₽ - ' + 
+    new Intl.NumberFormat('ru-RU').format($('#price-range-slider').slider('values', 1)) + '₽'
+  );
+});
+</script>
+<div class="price-range">
+  <div class="price-range__text">
+    <label class="price-range__label header--third" for="price-range-input">Диапазон цены</label>
+    <input class="price-range__input" id="price-range-input">
+  </div>
+  <div class="price-range__slider" id="price-range-slider"> </div>
+  <p class="price-range__subtitle">Стоимость за сутки пребывания в номере</p>
+</div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Buttons</div>
+          </div>
+          <div class="ui-form-elements__button-row">
+            <button class="button-blue button-blue--high" type="button">click me</button>
+            <button class="button-blue button-blue--high" type="button">click me</button>
+          </div>
+          <div class="ui-form-elements__button-row">
+            <div class="button-white__container button-white__container--high">
+              <button class="button-white button-white--high" type="button">click me</button>
+            </div>
+            <div class="button-white__container button-white__container--high">
+              <button class="button-white button-white--high" type="button">click me</button>
+            </div>
+          </div>
+          <div class="ui-form-elements__button-row">
+            <div class="ui-form-elements__link">click me</div>
+            <div class="ui-form-elements__link ui-form-elements__link--active">click me</div>
+          </div>
+          <div class="ui-form-elements__button-row">
+            <button class="button-submit" type="submit">Перейти к оплате</button>
+          </div>
+        </div>
+        <div class="ui-form-elements__item ui-form-elements__pagination">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Pagination</div>
+          </div>
+          <div class="pagination">
+            <div class="pagination__row"><a class="pagination__page pagination__page--current">1</a><a class="pagination__page" href="empty-page.html">2</a><a class="pagination__page" href="empty-page.html">3</a>
+              <div class="pagination__dots">...</div><a class="pagination__page" href="empty-page.html">15</a><a class="pagination__forward" href="empty-page.html"></a>
+            </div>
+            <div class="pagination__text">1 – 12 из 100+ вариантов аренды</div>
+          </div>
+        </div>
+      </div>
+      <div class="ui-form-elements__section ui-form-elements__section--four">
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Dropdown</div>
+            <div class="ui-form-elements__subtitle">default</div>
+          </div>
+          <div class="input-dropdown">
+            <input class="input-dropdown__field ui-form-elements__dropdown" type="text" id="" name="" placeholder="" autocomplete="off" readonly="readonly" value="2 спальни, 2 кровати, 2 ванные комнаты">
+            <div class="input-dropdown__toggle"></div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Dropdown</div>
+            <div class="ui-form-elements__subtitle">expanded</div>
+          </div>
+          <script> </script>
+          <div class="dropdown" id="conveniences">
+            <div class="dropdown__group">
+                        <div class="input-dropdown input-dropdown--open">
+                          <input class="input-dropdown__field conveniences__input" type="text" id="conveniences-input" name="conveniences" placeholder="" autocomplete="off" readonly="readonly" value="2 спальни, 2 кровати">
+                          <div class="input-dropdown__toggle"></div>
+                        </div>
+              <div class="dropdown__box dropdown__box--visible" id="conveniences-dropdown-box">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item"> 
+                    <div class="dropdown__item-title header--third">Спальни</div>
+                    <div class="dropdown__amount-box"> 
+                      <button class="dropdown__amount-btn dropdown__discrete" id="bedrooms-discrete">-</button>
+                      <div class="dropdown__amount" id="bedrooms-amount">2</div>
+                      <button class="dropdown__amount-btn dropdown__amount-add" id="bedrooms-add">+</button>
+                    </div>
+                  </li>
+                  <li class="dropdown__item"> 
+                    <div class="dropdown__item-title header--third">Кровати</div>
+                    <div class="dropdown__amount-box"> 
+                      <button class="dropdown__amount-btn dropdown__discrete" id="beds-discrete">-</button>
+                      <div class="dropdown__amount" id="beds-amount">2</div>
+                      <button class="dropdown__amount-btn dropdown__amount-add" id="beds-add">+</button>
+                    </div>
+                  </li>
+                  <li class="dropdown__item"> 
+                    <div class="dropdown__item-title header--third">Ванные комнаты</div>
+                    <div class="dropdown__amount-box"> 
+                      <button class="dropdown__amount-btn dropdown__discrete" id="bathrooms-discrete">-</button>
+                      <div class="dropdown__amount" id="bathrooms-amount">0</div>
+                      <button class="dropdown__amount-btn dropdown__amount-add" id="bathrooms-add">+</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">Expandable checkbox list</div>
+            <div class="ui-form-elements__list-toggle"></div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="ui-expandable-list ui-expandable-list--open">
+            <div class="ui-expandable-list__row">
+              <div class="ui-expandable-list__title header--third">Expandable checkbox list</div>
+              <div class="ui-expandable-list__toggle ui-expandable-list__toggle--open"></div>
+            </div>
+                      <ul class="checkbox-list ui-checkbox-list__list">
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="breakfast-checkbox" name="feature1" value="breakfast">
+                          <label class="checkbox-list__label" for="breakfast-checkbox">Завтрак</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="desk-checkbox" name="feature2" value="desk">
+                          <label class="checkbox-list__label" for="desk-checkbox">Письменный стол</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="highchair-checkbox" name="feature3" value="highchair">
+                          <label class="checkbox-list__label" for="highchair-checkbox">Стул для кормления</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="baby-bed-checkbox" name="feature4" value="baby-bed">
+                          <label class="checkbox-list__label" for="baby-bed-checkbox">Кроватка</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="tv-checkbox" name="feature5" value="tv">
+                          <label class="checkbox-list__label" for="tv-checkbox">Телевизор</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="shampoo-checkbox" name="feature5-6" value="shampoo">
+                          <label class="checkbox-list__label" for="shampoo-checkbox">Шампунь</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="tv-checkbox-1" name="feature7" value="tv">
+                          <label class="checkbox-list__label" for="tv-checkbox-1">Телевизор</label>
+                        </li>
+                        <li class="checkbox-list__item">
+                          <input class="checkbox-list__input" type="checkbox" id="shampoo-checkbox-1" name="feature8" value="shampoo">
+                          <label class="checkbox-list__label" for="shampoo-checkbox-1">Шампунь</label>
+                        </li>
+                      </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ui-form-elements__section ui-form-elements__section--five">
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">dropdown</div>
+          </div>
+          <div class="guests-dropdown dropdown-btn">
+            <div class="dropdown-btn__group">
+                        <div class="input-dropdown input-dropdown--open">
+                          <input class="input-dropdown__field guests-dropdown__input" type="text" id="guests-input" name="guests-amount" placeholder="Сколько гостей" autocomplete="off" readonly="readonly" value="">
+                          <div class="input-dropdown__toggle"></div>
+                        </div>
+              <div class="quests-dropdown__box dropdown-btn__box dropdown-btn__box--visible">
+                <ul class="dropdown-btn__list">
+                  <li class="dropdown-btn__item"> 
+                    <div class="dropdown-btn__item-title header--third">Взрослые</div>
+                    <div class="dropdown-btn__amount-box"> 
+                      <button class="dropdown-btn__amount-btn dropdown-btn__discrete">-</button>
+                      <div class="dropdown-btn__amount">0</div>
+                      <button class="dropdown-btn__amount-btn dropdown-btn__amount-add">+</button>
+                    </div>
+                  </li>
+                  <li class="dropdown-btn__item"> 
+                    <div class="dropdown-btn__item-title header--third">Дети</div>
+                    <div class="dropdown-btn__amount-box"> 
+                      <button class="dropdown-btn__amount-btn dropdown-btn__discrete">-</button>
+                      <div class="dropdown-btn__amount">0</div>
+                      <button class="dropdown-btn__amount-btn dropdown-btn__amount-add">+</button>
+                    </div>
+                  </li>
+                  <li class="dropdown-btn__item"> 
+                    <div class="dropdown-btn__item-title header--third">Младенцы</div>
+                    <div class="dropdown-btn__amount-box"> 
+                      <button class="dropdown-btn__amount-btn dropdown-btn__discrete">-</button>
+                      <div class="dropdown-btn__amount">0</div>
+                      <button class="dropdown-btn__amount-btn dropdown-btn__amount-add">+ </button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="dropdown-btn__btn-row">
+                  <button class="dropdown-btn__btn header--third dropdown-btn__btn--clear dropdown-btn__btn--hidden">Очистить</button>
+                  <button class="dropdown-btn__btn header--third dropdown-btn__btn--done">Применить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+<div class="rich-chechbox-buttons">
+  <div class="rich-checkbox-buttons__title header--third">Rich checkbox buttons</div>
+  <ul class="rich-checkbox-buttons__list">
+    <li class="rich-checkbox-buttons__item">
+      <input class="rich-checkbox-buttons__input" type="checkbox" id="wide-hall-input" name="accessibility1" value="wide-hall">
+      <label class="rich-checkbox-buttons__label" for="wide-hall-input">Широкий коридор</label>
+      <div class="rich-checkbox-buttons__text">Ширина коридоров в номере не&nbsp;менее 91 см.</div>
+    </li>
+    <li class="rich-checkbox-buttons__item">
+      <input class="rich-checkbox-buttons__input" type="checkbox" id="assistant-input" name="accessibility2" value="wide-hall">
+      <label class="rich-checkbox-buttons__label" for="assistant-input">Помощник для инвалидов</label>
+      <div class="rich-checkbox-buttons__text">На 1 этаже вас встретит специалист и проводит до номера.</div>
+    </li>
+  </ul>
+</div>
+        </div>
+      </div>
+      <div class="ui-form-elements__section ui-form-elements__section--six">
+        <div class="ui-form-elements__item">
+          <div class="ui-form-elements__label">
+            <div class="ui-form-elements__title header--third">dropdown</div>
+          </div>
+          <div class="guests-dropdown dropdown-btn">
+            <div class="dropdown-btn__group">
+                        <div class="input-dropdown input-dropdown--open">
+                          <input class="input-dropdown__field guests-dropdown__input" type="text" id="guests-input" name="guests-amount" placeholder="" autocomplete="off" readonly="readonly" value="3 гостя">
+                          <div class="input-dropdown__toggle"></div>
+                        </div>
+              <div class="quests-dropdown__box dropdown-btn__box dropdown-btn__box--visible">
+                <ul class="dropdown-btn__list">
+                  <li class="dropdown-btn__item"> 
+                    <div class="dropdown-btn__item-title header--third">Взрослые</div>
+                    <div class="dropdown-btn__amount-box"> 
+                      <button class="dropdown-btn__amount-btn dropdown-btn__discrete">-</button>
+                      <div class="dropdown-btn__amount">2</div>
+                      <button class="dropdown-btn__amount-btn dropdown-btn__amount-add">+</button>
+                    </div>
+                  </li>
+                  <li class="dropdown-btn__item"> 
+                    <div class="dropdown-btn__item-title header--third">Дети</div>
+                    <div class="dropdown-btn__amount-box"> 
+                      <button class="dropdown-btn__amount-btn dropdown-btn__discrete">-</button>
+                      <div class="dropdown-btn__amount">1</div>
+                      <button class="dropdown-btn__amount-btn dropdown-btn__amount-add">+</button>
+                    </div>
+                  </li>
+                  <li class="dropdown-btn__item"> 
+                    <div class="dropdown-btn__item-title header--third">Младенцы</div>
+                    <div class="dropdown-btn__amount-box"> 
+                      <button class="dropdown-btn__amount-btn dropdown-btn__discrete">-</button>
+                      <div class="dropdown-btn__amount">0</div>
+                      <button class="dropdown-btn__amount-btn dropdown-btn__amount-add">+ </button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="dropdown-btn__btn-row">
+                  <button class="dropdown-btn__btn header--third dropdown-btn__btn--clear">Очистить</button>
+                  <button class="dropdown-btn__btn header--third dropdown-btn__btn--done">Применить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-form-elements__item">
+<div class="rules">
+  <h2 class="rules__header header--third">Bullet List</h2>
+  <ul class="rules__list">
+    <li class="rules__item">Нельзя с питомцами</li>
+    <li class="rules__item">Без вечеринок и мероприятий</li>
+    <li class="rules__item">Время прибытия — после 13:00, а&nbsp;выезд до 12:00</li>
+  </ul>
+</div>
+        </div>
+      </div>
+      <div class="ui-form-elements__section ui-form-elements__section--seven">
+        <div class="ui-form-elements__item">
+          <ul class="room-info__list">
+            <li class="room-info__item room-info__item--comfort">
+              <div class="room-info__icon">&#xE24E;</div>
+              <div class="room-info__item-text">
+                <div class="room-info__item-title">Комфорт</div>
+                <div class="room-info__item-text">Шумопоглошающие стены</div>
+              </div>
+            </li>
+            <li class="room-info__item room-info__item--convenience">
+              <div class="room-info__icon">&#xe7f1;</div>
+              <div class="room-info__item-text">
+                <div class="room-info__item-title">Удобство</div>
+                <div class="room-info__item-text">Окно в каждой из спален</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="ui-form-elements__item">
+          <div class="room-reviews__item">
+            <div class="review__column--left"><img class="review__image" src="images/image1.jpg" alt="user1" width="48" height="48">
+              <div class="review__likes">
+                <button class="like-button like-button--liked" type="button">12</button>
+              </div>
+            </div>
+            <div class="review__column--right">
+              <div class="review__name">Мурад Сарафанов</div>
+              <div class="review__time">5 дней назад</div>
+              <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  <script type="text/javascript" src="./js/index.js"></script></body>
 </html>
