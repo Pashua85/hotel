@@ -9,9 +9,12 @@
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <body>
-      <header class="header">
-        <div class="header__container">
-          <div class="logo header__logo"><a class="logo__link" href="index.html"><svg width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="common__wrapper">
+        <header class="header">
+          <div class="header__container">
+            <input class="header__checkbox" type="checkbox" id="header-burger">
+            <label class="header__burger" for="header-burger"><span class="header__burger-icon">&nbsp;</span></label>
+            <div class="logo header__logo"><a class="logo__link" href="index.html"><svg class="logo__image" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M62.335 13.368C62.5567 13.368 62.7375 13.4438 62.8775 13.5955C63.0292 13.7355 63.105 13.9163 63.105 14.138C63.105 14.348 63.0292 14.5288 62.8775 14.6805C62.7375 14.8322 62.5567 14.908 62.335 14.908H58.5725V25.408C58.5725 25.6297 58.4967 25.8163 58.345 25.968C58.205 26.108 58.0242 26.178 57.8025 26.178C57.5925 26.178 57.4117 26.108 57.26 25.968C57.1083 25.8163 57.0325 25.6297 57.0325 25.408V14.908H53.27C53.06 14.908 52.8792 14.8322 52.7275 14.6805C52.5758 14.5288 52.5 14.348 52.5 14.138C52.5 13.9163 52.5758 13.7355 52.7275 13.5955C52.8792 13.4438 53.06 13.368 53.27 13.368H62.335Z" fill="#1F2041"/>
 <path d="M68.9076 13.368C69.7943 13.368 70.6285 13.5372 71.4101 13.8755C72.2035 14.2138 72.8918 14.6747 73.4751 15.258C74.0701 15.8413 74.5368 16.5297 74.8751 17.323C75.2134 18.1047 75.3826 18.9388 75.3826 19.8255C75.3826 20.8638 75.1609 21.8205 74.7176 22.6955C74.2743 23.5705 73.6735 24.3055 72.9151 24.9005C72.9151 24.9005 72.9035 24.9122 72.8801 24.9355C72.3201 25.3555 71.7076 25.688 71.0426 25.933C70.3776 26.1663 69.666 26.283 68.9076 26.283C68.0209 26.283 67.1868 26.1138 66.4051 25.7755C65.6234 25.4372 64.9351 24.9763 64.3401 24.393C63.7568 23.8097 63.296 23.1272 62.9576 22.3455C62.6193 21.5638 62.4501 20.7238 62.4501 19.8255C62.4501 18.8455 62.6484 17.9413 63.0451 17.113C63.4418 16.273 63.9843 15.5555 64.6726 14.9605L64.7426 14.8905C64.7543 14.8905 64.7718 14.8788 64.7951 14.8555C65.3551 14.3888 65.9851 14.0272 66.6851 13.7705C67.3851 13.5022 68.1259 13.368 68.9076 13.368ZM68.9076 24.743C69.351 24.743 69.771 24.6905 70.1676 24.5855C70.576 24.4688 70.961 24.3113 71.3226 24.113L65.1801 16.6405C64.8068 17.0722 64.5151 17.5622 64.3051 18.1105C64.0951 18.6472 63.9901 19.2188 63.9901 19.8255C63.9901 20.5022 64.1185 21.138 64.3751 21.733C64.6318 22.328 64.9818 22.853 65.4251 23.308C65.8801 23.7513 66.4051 24.1013 67.0001 24.358C67.5951 24.6147 68.231 24.743 68.9076 24.743ZM72.5301 23.1505C72.9384 22.7072 73.2535 22.2055 73.4751 21.6455C73.7085 21.0738 73.8251 20.4672 73.8251 19.8255C73.8251 19.1488 73.6968 18.513 73.4401 17.918C73.1834 17.323 72.8276 16.8038 72.3726 16.3605C71.9293 15.9055 71.4101 15.5497 70.8151 15.293C70.2201 15.0363 69.5843 14.908 68.9076 14.908C68.4409 14.908 67.9918 14.9722 67.5601 15.1005C67.1284 15.2172 66.7259 15.3922 66.3526 15.6255L72.5301 23.1505Z" fill="#1F2041"/>
 <path d="M82.351 20.6305C82.1177 20.6305 81.9194 20.5372 81.756 20.3505L77.2585 14.5755C77.1302 14.4122 77.0777 14.2313 77.101 14.033C77.1244 13.823 77.2177 13.6538 77.381 13.5255C77.5444 13.3972 77.7252 13.3505 77.9235 13.3855C78.1335 13.4088 78.3027 13.5022 78.431 13.6655L82.351 18.6705L86.1835 13.753C86.3119 13.5897 86.4752 13.4963 86.6735 13.473C86.8835 13.4497 87.0702 13.5022 87.2335 13.6305C87.3969 13.7588 87.4902 13.928 87.5135 14.138C87.5369 14.3363 87.4844 14.5172 87.356 14.6805L82.946 20.3505C82.7944 20.5372 82.596 20.6305 82.351 20.6305ZM87.2685 26.2655C87.2219 26.2655 87.146 26.2597 87.041 26.248C86.9477 26.2363 86.8369 26.2072 86.7085 26.1605C86.5802 26.1022 86.4402 26.0263 86.2885 25.933C86.1485 25.828 86.0085 25.688 85.8685 25.513L82.351 20.9805L78.5185 25.9155C78.3902 26.0788 78.221 26.1722 78.011 26.1955C77.8127 26.2188 77.6319 26.1663 77.4685 26.038C77.3052 25.9097 77.2119 25.7463 77.1885 25.548C77.1652 25.338 77.2177 25.1513 77.346 24.988L81.756 19.318C81.896 19.1313 82.0885 19.038 82.3335 19.038C82.5902 19.038 82.7944 19.1313 82.946 19.318L87.041 24.568C87.0994 24.6497 87.1519 24.7022 87.1985 24.7255C87.2452 24.7488 87.2802 24.7663 87.3035 24.778C87.5019 24.778 87.6652 24.848 87.7935 24.988C87.9335 25.1163 88.0094 25.2797 88.021 25.478C88.0444 25.688 87.986 25.8688 87.846 26.0205C87.706 26.1722 87.531 26.2538 87.321 26.2655H87.2685Z" fill="#1F2041"/>
@@ -35,47 +38,61 @@
 </linearGradient>
 </defs>
 </svg></a></div>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item"><a class="header__nav-link" href="#">О нас</a></li>
-              <li class="header__nav-item header__nav-item--expandable"><a class="header__nav-link" href="#">Услуги</a>
-                <ul class="header__expand-list">
-                  <li class="header__expand-item"><a class="header__expand-link" href="#">Услуга 1</a></li>
-                  <li class="header__expand-item"><a class="header__expand-link" href="#">Услуга 2</a></li>
-                  <li class="header__expand-item"><a class="header__expand-link" href="#">Услуга 3</a></li>
-                  <li class="header__expand-item"><a class="header__expand-link" href="#">Услуга 4</a></li>
-                </ul>
-              </li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Вакансии</a></li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Новости</a></li>
-              <li class="header__nav-item header__nav-item--expandable"><a class="header__nav-link" href="#">Соглашения</a>
-                <ul class="header__expand-list">
-                  <li class="header__expand-item"><a class="header__expand-link" href="#">Соглашение 1</a></li>
-                  <li class="header__expand-item"><a class="header__expand-link" href="#">Соглашение 2</a></li>
-                  <li class="header__expand-item"><a class="header__expand-link" href="#">Соглашение 3</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="header__user-block--unlogged"><a class="header__link" href="#">
-                <button class="button button--white button--low button--narrow" type="button">Войти</button></a><a class="header__link" href="register.html">
-                <button class="button button--blue button--low button--narrow" type="button">Зарегистрироваться</button></a></div>
-          </nav>
-        </div>
-      </header>
-      <main class="details__main">
-        <div class="details__photos">
-          <div class="details__photo-column--left">
-            <div class="details__photo details__photo--1"></div>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="empty-page.html">О нас</a></li>
+                <li class="header__nav-item header__nav-item--expandable header__nav-toggle"><a class="header__nav-link" href="empty-page.html">Услуги</a>
+                  <ul class="header__expand-list">
+                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 1</a></li>
+                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 2</a></li>
+                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 3</a></li>
+                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Услуга 4</a></li>
+                  </ul>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="empty-page.html">Вакансии</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="empty-page.html">Новости</a></li>
+                <li class="header__nav-item header__nav-item--expandable header__nav-toggle"><a class="header__nav-link" href="empty-page.html">Соглашения</a>
+                  <ul class="header__expand-list">
+                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Соглашение 1</a></li>
+                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Соглашение 2</a></li>
+                    <li class="header__expand-item"><a class="header__expand-link" href="empty-page.html">Соглашение 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__user-block--unlogged"><a class="header__link" href="sign-in.html">
+                <div class="button-white__container button-white__container--low">
+                  <button class="button-white button-white--low" type="button">Войти</button>
+                </div></a><a class="header__link" href="register.html">
+                <button class="button-blue button-blue--low" type="button">Зарегистрироваться</button></a></div>
           </div>
-          <div class="details__photo-column--right">
-            <div class="details__photo details__photo--2"></div>
-            <div class="details__photo details__photo--3"></div>
+        </header>
+        <script>$(() => {
+  const items = document.querySelectorAll('.header__nav-toggle');
+  items.forEach(item => {
+    item.addEventListener('click', event => {
+      if(!event.target.closest('.header__expand-link')) {
+        event.preventDefault();
+      }
+      event.target.closest('.header__nav-item').classList.toggle('header__nav-item--open');
+    });
+  })
+});
+        </script>
+        <main class="details__main">
+          <div class="details__photos">
+            <div class="details__photo-column--left">
+              <div class="details__photo details__photo--1"></div>
+            </div>
+            <div class="details__photo-column--right">
+              <div class="details__photo details__photo--2"></div>
+              <div class="details__photo details__photo--3"></div>
+            </div>
           </div>
-        </div>
-        <div class="details__container">
-          <div class="details__column--left">
-            <div class="details__info-row">
-              <div class="details__info">
+          <div class="details__container">
+            <div class="details__column--left">
+              <div class="details__info-row">
+                <div class="details__info">
 <div class="room-info">
   <h2 class="room-info__title header--second">Сведения о намере</h2>
   <ul class="room-info__list">
@@ -102,8 +119,8 @@
     </li>
   </ul>
 </div>
-              </div>
-              <div class="details__impressions">
+                </div>
+                <div class="details__impressions">
 <div class="room-impressions">
   <h2 class="room-impressions__header header--second">Впечатления от номера</h2>
   <div class="room-impressions__row">
@@ -154,40 +171,44 @@
     </ul>
   </div>
 </div>
+                </div>
               </div>
-            </div>
-            <div class="details__reviews">
-<div class="room-reviews">
-  <div class="room-reviews__header-row">
-    <h2 class="room-reviews__header header--second">Отзывы посетителей номера</h2>
-    <div class="room-reviews__amount">2 отзыва</div>
-  </div>
-  <ul class="room-reviews__list">
-    <li class="room-reviews__item">
-      <div class="review__column--left"><img class="review__image" src="images/image1.jpg" alt="user1" width="48" height="48">
-        <button class="review__likes review__likes--liked" type="button">12</button>
-      </div>
-      <div class="review__column--right">
-        <div class="review__name">Мурад Сарафанов</div>
-        <div class="review__time">5 дней назад</div>
-        <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
-      </div>
-    </li>
-    <li class="room-reviews__item">
-      <div class="review__column--left"><img class="review__image" src="images/image2.jpg" alt="user1" width="48" height="48">
-        <button class="review__likes" type="button">2</button>
-      </div>
-      <div class="review__column--right">
-        <div class="review__name">Патрисия Стёклышкова</div>
-        <div class="review__time">Неделю назад</div>
-        <p class="review__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
-      </div>
-    </li>
-  </ul>
-</div>
-            </div>
-            <div class="details__rules-row">
-              <div class="details__rules">
+              <div class="details__reviews">
+                <div class="room-reviews">
+                  <div class="room-reviews__header-row">
+                    <h2 class="room-reviews__header header--second">Отзывы посетителей номера</h2>
+                    <div class="room-reviews__amount">2 отзыва</div>
+                  </div>
+                  <ul class="room-reviews__list">
+                    <li class="room-reviews__item">
+                      <div class="review__column--left"><img class="review__image" src="images/image1.jpg" alt="user1" width="48" height="48">
+                        <div class="review__likes">
+                                          <button class="like-button like-button--liked" type="button">12</button>
+                        </div>
+                      </div>
+                      <div class="review__column--right">
+                        <div class="review__name">Мурад Сарафанов</div>
+                        <div class="review__time">5 дней назад</div>
+                        <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+                      </div>
+                    </li>
+                    <li class="room-reviews__item">
+                      <div class="review__column--left"><img class="review__image" src="images/image2.jpg" alt="user1" width="48" height="48">
+                        <div class="review__likes">
+                                          <button class="like-button " type="button">2</button>
+                        </div>
+                      </div>
+                      <div class="review__column--right">
+                        <div class="review__name">Патрисия Стёклышкова</div>
+                        <div class="review__time">Неделю назад</div>
+                        <p class="review__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="details__rules-row">
+                <div class="details__rules">
 <div class="rules">
   <h2 class="rules__header header--second">Правила</h2>
   <ul class="rules__list">
@@ -196,24 +217,24 @@
     <li class="rules__item">Время прибытия — после 13:00, а выезд до 12:00</li>
   </ul>
 </div>
-              </div>
-              <div class="details__cancel">
+                </div>
+                <div class="details__cancel">
 <div class="cancel">
   <h2 class="cancel__header header--second">Отмена</h2>
   <p class="cancel__text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p>
 </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="details__column--right">
-            <form class="booking-form" id="booking-form">
-              <div class="booking-form__row">
-                <div class="booking-form__number-group"> <span class="booking-form__number-symbol">&#8470;&nbsp;</span><span class="booking-form__number">888</span><span class="booking-form__luxury"> Люкс</span></div>
-                <div class="booking-form__price">9 990₽<span class="booking-form__price-text"> в сутки</span></div>
-              </div>
-              <div class="booking-form__datepicker">
-                <script>
-                    $.extend($.datepicker, {
+            <div class="details__column--right">
+              <form class="booking-form" id="booking-form">
+                <div class="booking-form__row">
+                  <div class="booking-form__number-group"> <span class="booking-form__number-symbol">&#8470;&nbsp;</span><span class="booking-form__number">888</span><span class="booking-form__luxury"> Люкс</span></div>
+                  <div class="booking-form__price">9 990₽<span class="booking-form__price-text"> в сутки</span></div>
+                </div>
+                <div class="booking-form__datepicker">
+                  <script>
+                      $.extend($.datepicker, {
 
     // Reference the orignal function so we can override it and call it later
     _inlineDatepicker2: $.datepicker._inlineDatepicker,
@@ -429,28 +450,28 @@ $(function() {
     $(calendar).find('.dp-enddate').removeClass('dp-enddate');
   }
 });
-                </script>
-                <div class="datepicker" id="datepicker">
-                  <div class="datepicker__group datepicker__group--left">
-                    <label class="datepicker__label header--third" for="start-date-date-input">Прибытие</label>
-                        <div class="input-dropdown">
-                          <input class="input-dropdown__field datepicker__input" type="text" id="start-date-input" name="start-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly">
-                          <div class="input-dropdown__toggle"></div>
-                        </div>
+                  </script>
+                  <div class="datepicker" id="datepicker">
+                    <div class="datepicker__group datepicker__group--left">
+                      <label class="datepicker__label header--third" for="start-date-date-input">Прибытие</label>
+                      <div class="input-dropdown">
+                        <input class="input-dropdown__field datepicker__input" type="text" id="start-date-input" name="start-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly" value="">
+                        <div class="input-dropdown__toggle"></div>
+                      </div>
+                    </div>
+                    <div class="datepicker__group datepicker__group--right">
+                      <label class="datepicker__label header--third" for="end-date-input">Выезд</label>
+                      <div class="input-dropdown">
+                        <input class="input-dropdown__field datepicker__input" type="text" id="end-date-input" name="end-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly" value="">
+                        <div class="input-dropdown__toggle"></div>
+                      </div>
+                    </div>
+                    <div class="datepicker__calendar" id="datepicker-calendar"></div>
                   </div>
-                  <div class="datepicker__group datepicker__group--right">
-                    <label class="datepicker__label header--third" for="end-date-input">Выезд</label>
-                        <div class="input-dropdown">
-                          <input class="input-dropdown__field datepicker__input" type="text" id="end-date-input" name="end-date" placeholder="ДД.ММ.ГГГГ" autocomplete="off" readonly="readonly">
-                          <div class="input-dropdown__toggle"></div>
-                        </div>
-                  </div>
-                  <div class="datepicker__calendar" id="datepicker-calendar"></div>
                 </div>
-              </div>
-              <div class="booking-form__guests-dropdown">
-                <script>
-                   $(function () {
+                <div class="booking-form__guests-dropdown">
+                  <script>
+                     $(function () {
   const guestsInput = $('#guests-input');
   const guestsClear = $('#guests-clear');
   const guestsDone = $('#guests-done');
@@ -518,21 +539,21 @@ $(function() {
     if(adultsAmountNumber === 0) {
       childrenAmount.text('0');
       babiesAmount.text('0');
-      guestsClear.addClass('dropdown__btn--hidden');
-      addChildrenButton.addClass('dropdown__amount-btn--disabled');
-      discreteChildrenButton.addClass('dropdown__amount-btn--disabled');
-      addBabiesButton.addClass('dropdown__amount-btn--disabled');
-      discreteBabiesButton.addClass('dropdown__amount-btn--disabled');
-      childrenAmount.addClass('dropdown__amount--disabled');
-      babiesAmount.addClass('dropdown__amount--disabled');
+      guestsClear.addClass('dropdown-btn__btn--hidden');
+      addChildrenButton.addClass('dropdown-btn__amount-btn--disabled');
+      discreteChildrenButton.addClass('dropdown-btn__amount-btn--disabled');
+      addBabiesButton.addClass('dropdown-btn__amount-btn--disabled');
+      discreteBabiesButton.addClass('dropdown-btn__amount-btn--disabled');
+      childrenAmount.addClass('dropdown-btn__amount--disabled');
+      babiesAmount.addClass('dropdown-btn__amount--disabled');
     } else {
-      guestsClear.removeClass('dropdown__btn--hidden');
-      addChildrenButton.removeClass('dropdown__amount-btn--disabled');
-      discreteChildrenButton.removeClass('dropdown__amount-btn--disabled');
-      addBabiesButton.removeClass('dropdown__amount-btn--disabled');
-      discreteBabiesButton.removeClass('dropdown__amount-btn--disabled');
-      childrenAmount.removeClass('dropdown__amount--disabled');
-      babiesAmount.removeClass('dropdown__amount--disabled');
+      guestsClear.removeClass('dropdown-btn__btn--hidden');
+      addChildrenButton.removeClass('dropdown-btn__amount-btn--disabled');
+      discreteChildrenButton.removeClass('dropdown-btn__amount-btn--disabled');
+      addBabiesButton.removeClass('dropdown-btn__amount-btn--disabled');
+      discreteBabiesButton.removeClass('dropdown-btn__amount-btn--disabled');
+      childrenAmount.removeClass('dropdown-btn__amount--disabled');
+      babiesAmount.removeClass('dropdown-btn__amount--disabled');
     }
   };
 
@@ -598,12 +619,12 @@ $(function() {
   }
 
   guestsInput.focus(() => {
-    guestsBox.addClass('dropdown__box--visible');
+    guestsBox.addClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').addClass('input-dropdown--open');
   });
 
   inputToggle.click(() => {
-    guestsBox.toggleClass('dropdown__box--visible');
+    guestsBox.toggleClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').toggleClass('input-dropdown--open');
   });
 
@@ -642,7 +663,7 @@ $(function() {
   guestsDone.click(e => {
     e.preventDefault();
     setGuestsAmount();
-    guestsBox.removeClass('dropdown__box--visible');
+    guestsBox.removeClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').removeClass('input-dropdown--open');
   });
 
@@ -651,9 +672,9 @@ $(function() {
     clearGuestsAmount();
   });
 
-  $(document).click(e => {
-    if($(event.target).closest('.dropdown__group').length) return;
-    guestsBox.removeClass('dropdown__box--visible');
+  $(document).click(event => {
+    if($(event.target).closest('.dropdown-btn__group').length) return;
+    guestsBox.removeClass('dropdown-btn__box--visible');
     $('#guests-dropdown .input-dropdown').removeClass('input-dropdown--open');
     event.stopPropagation();
   });
@@ -661,79 +682,80 @@ $(function() {
   checkAdultsAmount();
   setGuestsAmount();
 });
-                </script>
-                <div class="guests-dropdown dropdown" id="guests-dropdown">
-                  <label class="guests-dropdown__label dropdown__label header--third" for="guests-input">Гости</label>
-                  <div class="dropdown__group" id="dropdown-group">
-                        <div class="input-dropdown">
-                          <input class="input-dropdown__field guests-dropdown__input" type="text" id="guests-input" name="guests-amount" placeholder="Сколько гостей" autocomplete="off" readonly="readonly">
-                          <div class="input-dropdown__toggle"></div>
+                  </script>
+                  <div class="guests-dropdown dropdown-btn" id="guests-dropdown">
+                    <label class="guests-dropdown__label dropdown__label header--third" for="guests-input">Гости</label>
+                    <div class="dropdown-btn__group" id="dropdown-group">
+                          <div class="input-dropdown">
+                            <input class="input-dropdown__field guests-dropdown__input" type="text" id="guests-input" name="guests-amount" placeholder="Сколько гостей" autocomplete="off" readonly="readonly" value="">
+                            <div class="input-dropdown__toggle"></div>
+                          </div>
+                      <div class="quests-dropdown__box dropdown-btn__box" id="guests-dropdown-box"> 
+                        <ul class="dropdown-btn__list">
+                          <li class="dropdown-btn__item"> 
+                            <div class="dropdown-btn__item-title header--third">Взрослые</div>
+                            <div class="dropdown-btn__amount-box"> 
+                              <button class="dropdown-btn__amount-btn dropdown-btn__discrete" id="adults-discrete">-</button>
+                              <div class="dropdown-btn__amount" id="adults-amount">2</div>
+                              <button class="dropdown-btn__amount-btn dropdown-btn__amount-add" id="adults-add">+</button>
+                            </div>
+                          </li>
+                          <li class="dropdown-btn__item"> 
+                            <div class="dropdown-btn__item-title header--third">Дети</div>
+                            <div class="dropdown-btn__amount-box"> 
+                              <button class="dropdown-btn__amount-btn dropdown-btn__discrete" id="children-discrete">-</button>
+                              <div class="dropdown-btn__amount" id="children-amount">1</div>
+                              <button class="dropdown-btn__amount-btn dropdown-btn__amount-add" id="children-add">+</button>
+                            </div>
+                          </li>
+                          <li class="dropdown-btn__item"> 
+                            <div class="dropdown-btn__item-title header--third">Младенцы</div>
+                            <div class="dropdown-btn__amount-box"> 
+                              <button class="dropdown-btn__amount-btn dropdown-btn__discrete" id="babies-discrete">-</button>
+                              <div class="dropdown-btn__amount" id="babies-amount">1</div>
+                              <button class="dropdown-btn__amount-btn dropdown-btn__amount-add" id="babies-add">+ </button>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="dropdown-btn__btn-row">
+                          <button class="dropdown-btn__btn header--third dropdown-btn__btn--clear dropdown-btn__btn--hidden" id="guests-clear">Очистить</button>
+                          <button class="dropdown-btn__btn header--third dropdown-btn__btn--done" id="guests-done">Применить</button>
                         </div>
-                    <div class="quests-dropdown__box dropdown__box" id="guests-dropdown-box"> 
-                      <ul class="dropdown__list">
-                        <li class="dropdown__item"> 
-                          <div class="dropdown__item-title header--third">Взрослые</div>
-                          <div class="dropdown__amount-box"> 
-                            <button class="dropdown__amount-btn dropdown__discrete" id="adults-discrete">-</button>
-                            <div class="dropdown__amount" id="adults-amount">2</div>
-                            <button class="dropdown__amount-btn dropdown__amount-add" id="adults-add">+</button>
-                          </div>
-                        </li>
-                        <li class="dropdown__item"> 
-                          <div class="dropdown__item-title header--third">Дети</div>
-                          <div class="dropdown__amount-box"> 
-                            <button class="dropdown__amount-btn dropdown__discrete" id="children-discrete">-</button>
-                            <div class="dropdown__amount" id="children-amount">1</div>
-                            <button class="dropdown__amount-btn dropdown__amount-add" id="children-add">+</button>
-                          </div>
-                        </li>
-                        <li class="dropdown__item"> 
-                          <div class="dropdown__item-title header--third">Младенцы</div>
-                          <div class="dropdown__amount-box"> 
-                            <button class="dropdown__amount-btn dropdown__discrete" id="babies-discrete">-</button>
-                            <div class="dropdown__amount" id="babies-amount">1</div>
-                            <button class="dropdown__amount-btn dropdown__amount-add" id="babies-add">+ </button>
-                          </div>
-                        </li>
-                      </ul>
-                      <div class="dropdown__btn-row">
-                        <button class="dropdown__btn header--third dropdown__btn--clear" id="guests-clear">Очистить</button>
-                        <button class="dropdown__btn header--third dropdown__btn--done" id="guests-done">Применить</button>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="booking-form__costs-text">
-                <div class="booking-form__text-row">
-                  <div class="booking-form__text">9 990₽ x&nbsp;<span class="booking-form__days" id="booking-form-days">0 суток</span></div>
-                  <div class="booking-form__days-cost" id="booking-form-days-cost">0₽</div>
+                <div class="booking-form__costs-text">
+                  <div class="booking-form__text-row">
+                    <div class="booking-form__text">9 990₽ x&nbsp;<span class="booking-form__days" id="booking-form-days">0 суток</span></div>
+                    <div class="booking-form__days-cost" id="booking-form-days-cost">0₽</div>
+                  </div>
+                  <div class="booking-form__text-row">
+                    <div class="booking-form__text booking-form__text--has-info">Сбор за услуги: скидка 2 179₽</div>
+                    <div class="booking-form__info-icon" title="скидка действует до 01.09.2019">i</div>
+                    <div class="booking-form__service-cost">0₽</div>
+                  </div>
+                  <div class="booking-form__text-row">
+                    <div class="booking-form__text booking-form__text--has-info">Сбор за дополнительные услуги </div>
+                    <div class="booking-form__info-icon" title="дополнительный сбор за каждого взрослого в номере - 100р">i</div>
+                    <div class="booking-form__additional-service-cost">300₽      </div>
+                  </div>
                 </div>
-                <div class="booking-form__text-row">
-                  <div class="booking-form__text booking-form__text--has-info">Сбор за услуги: скидка 2 179₽</div>
-                  <div class="booking-form__info-icon" title="скидка действует до 01.09.2019">i</div>
-                  <div class="booking-form__service-cost">0₽</div>
+                <div class="booking-form__total">
+                  <div class="booking-form__total-text">Итого</div>
+                  <div class="booking-form__total-line"></div>
+                  <div class="booking-form__total-cost" id="booking-form-total-cost">0₽</div>
                 </div>
-                <div class="booking-form__text-row">
-                  <div class="booking-form__text booking-form__text--has-info">Сбор за дополнительные услуги </div>
-                  <div class="booking-form__info-icon" title="дополнительный сбор за каждого взрослого в номере - 100р">i</div>
-                  <div class="booking-form__additional-service-cost">300₽      </div>
-                </div>
-              </div>
-              <div class="booking-form__total">
-                <div class="booking-form__total-text">Итого</div>
-                <div class="booking-form__total-line"></div>
-                <div class="booking-form__total-cost" id="booking-form-total-cost">0₽</div>
-              </div>
-              <button class="button button--blue button--high button--wide" type="submit">Забронировать</button>
-            </form>
+                <button class="button-submit" type="submit">Забронировать</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__brand">
-                  <div class="logo footer__logo"><a class="logo__link" href="index.html"><svg width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </main>
+        <div class="common__footer">
+          <footer class="footer">
+            <div class="footer__container">
+              <div class="footer__brand">
+                          <div class="logo footer__logo"><a class="logo__link" href="index.html"><svg class="logo__image" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M62.335 13.368C62.5567 13.368 62.7375 13.4438 62.8775 13.5955C63.0292 13.7355 63.105 13.9163 63.105 14.138C63.105 14.348 63.0292 14.5288 62.8775 14.6805C62.7375 14.8322 62.5567 14.908 62.335 14.908H58.5725V25.408C58.5725 25.6297 58.4967 25.8163 58.345 25.968C58.205 26.108 58.0242 26.178 57.8025 26.178C57.5925 26.178 57.4117 26.108 57.26 25.968C57.1083 25.8163 57.0325 25.6297 57.0325 25.408V14.908H53.27C53.06 14.908 52.8792 14.8322 52.7275 14.6805C52.5758 14.5288 52.5 14.348 52.5 14.138C52.5 13.9163 52.5758 13.7355 52.7275 13.5955C52.8792 13.4438 53.06 13.368 53.27 13.368H62.335Z" fill="#1F2041"/>
 <path d="M68.9076 13.368C69.7943 13.368 70.6285 13.5372 71.4101 13.8755C72.2035 14.2138 72.8918 14.6747 73.4751 15.258C74.0701 15.8413 74.5368 16.5297 74.8751 17.323C75.2134 18.1047 75.3826 18.9388 75.3826 19.8255C75.3826 20.8638 75.1609 21.8205 74.7176 22.6955C74.2743 23.5705 73.6735 24.3055 72.9151 24.9005C72.9151 24.9005 72.9035 24.9122 72.8801 24.9355C72.3201 25.3555 71.7076 25.688 71.0426 25.933C70.3776 26.1663 69.666 26.283 68.9076 26.283C68.0209 26.283 67.1868 26.1138 66.4051 25.7755C65.6234 25.4372 64.9351 24.9763 64.3401 24.393C63.7568 23.8097 63.296 23.1272 62.9576 22.3455C62.6193 21.5638 62.4501 20.7238 62.4501 19.8255C62.4501 18.8455 62.6484 17.9413 63.0451 17.113C63.4418 16.273 63.9843 15.5555 64.6726 14.9605L64.7426 14.8905C64.7543 14.8905 64.7718 14.8788 64.7951 14.8555C65.3551 14.3888 65.9851 14.0272 66.6851 13.7705C67.3851 13.5022 68.1259 13.368 68.9076 13.368ZM68.9076 24.743C69.351 24.743 69.771 24.6905 70.1676 24.5855C70.576 24.4688 70.961 24.3113 71.3226 24.113L65.1801 16.6405C64.8068 17.0722 64.5151 17.5622 64.3051 18.1105C64.0951 18.6472 63.9901 19.2188 63.9901 19.8255C63.9901 20.5022 64.1185 21.138 64.3751 21.733C64.6318 22.328 64.9818 22.853 65.4251 23.308C65.8801 23.7513 66.4051 24.1013 67.0001 24.358C67.5951 24.6147 68.231 24.743 68.9076 24.743ZM72.5301 23.1505C72.9384 22.7072 73.2535 22.2055 73.4751 21.6455C73.7085 21.0738 73.8251 20.4672 73.8251 19.8255C73.8251 19.1488 73.6968 18.513 73.4401 17.918C73.1834 17.323 72.8276 16.8038 72.3726 16.3605C71.9293 15.9055 71.4101 15.5497 70.8151 15.293C70.2201 15.0363 69.5843 14.908 68.9076 14.908C68.4409 14.908 67.9918 14.9722 67.5601 15.1005C67.1284 15.2172 66.7259 15.3922 66.3526 15.6255L72.5301 23.1505Z" fill="#1F2041"/>
 <path d="M82.351 20.6305C82.1177 20.6305 81.9194 20.5372 81.756 20.3505L77.2585 14.5755C77.1302 14.4122 77.0777 14.2313 77.101 14.033C77.1244 13.823 77.2177 13.6538 77.381 13.5255C77.5444 13.3972 77.7252 13.3505 77.9235 13.3855C78.1335 13.4088 78.3027 13.5022 78.431 13.6655L82.351 18.6705L86.1835 13.753C86.3119 13.5897 86.4752 13.4963 86.6735 13.473C86.8835 13.4497 87.0702 13.5022 87.2335 13.6305C87.3969 13.7588 87.4902 13.928 87.5135 14.138C87.5369 14.3363 87.4844 14.5172 87.356 14.6805L82.946 20.3505C82.7944 20.5372 82.596 20.6305 82.351 20.6305ZM87.2685 26.2655C87.2219 26.2655 87.146 26.2597 87.041 26.248C86.9477 26.2363 86.8369 26.2072 86.7085 26.1605C86.5802 26.1022 86.4402 26.0263 86.2885 25.933C86.1485 25.828 86.0085 25.688 85.8685 25.513L82.351 20.9805L78.5185 25.9155C78.3902 26.0788 78.221 26.1722 78.011 26.1955C77.8127 26.2188 77.6319 26.1663 77.4685 26.038C77.3052 25.9097 77.2119 25.7463 77.1885 25.548C77.1652 25.338 77.2177 25.1513 77.346 24.988L81.756 19.318C81.896 19.1313 82.0885 19.038 82.3335 19.038C82.5902 19.038 82.7944 19.1313 82.946 19.318L87.041 24.568C87.0994 24.6497 87.1519 24.7022 87.1985 24.7255C87.2452 24.7488 87.2802 24.7663 87.3035 24.778C87.5019 24.778 87.6652 24.848 87.7935 24.988C87.9335 25.1163 88.0094 25.2797 88.021 25.478C88.0444 25.688 87.986 25.8688 87.846 26.0205C87.706 26.1722 87.531 26.2538 87.321 26.2655H87.2685Z" fill="#1F2041"/>
@@ -757,37 +779,37 @@ $(function() {
 </linearGradient>
 </defs>
 </svg></a></div>
-            <p class="footer__brand-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
-          </div>
-          <div class="footer__group-item footer__navigation">
-            <h3 class="footer__header header--third">Навигация</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item"><a class="footer__list-link" href="#">О нас</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Новости</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Служба поддержки</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Услуги</a></li>
-            </ul>
-          </div>
-          <div class="footer__group-item footer__about">
-            <h3 class="footer__header header--third">О нас</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item"><a class="footer__list-link" href="#">О сервисе</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Наша команда</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Вакансии</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Инвесторы</a></li>
-            </ul>
-          </div>
-          <div class="footer__group-item footer__support-service">
-            <h3 class="footer__header header--third">Служба поддержки</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Соглашения</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Сообщества</a></li>
-              <li class="footer__list-item"><a class="footer__list-link" href="#">Связь с нами</a></li>
-            </ul>
-          </div>
-          <div class="footer__subscription">
-            <h3 class="footer__header header--third">Подписка</h3>
-            <p class="footer__subscription-text">Получайте специальные предложения и новости сервиса</p>
+                <p class="footer__brand-text">Бронирование номеров в&nbsp;лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+              </div>
+              <div class="footer__group-item footer__navigation">
+                <h3 class="footer__header header--third">Навигация</h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">О нас</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Новости</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Служба поддержки</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Услуги</a></li>
+                </ul>
+              </div>
+              <div class="footer__group-item footer__about">
+                <h3 class="footer__header header--third">О нас</h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">О сервисе</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Наша команда</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Вакансии</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Инвесторы</a></li>
+                </ul>
+              </div>
+              <div class="footer__group-item footer__support-service">
+                <h3 class="footer__header header--third">Служба поддержки</h3>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Соглашения</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Сообщества</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="empty-page.html">Связь с нами</a></li>
+                </ul>
+              </div>
+              <div class="footer__subscription">
+                <h3 class="footer__header header--third">Подписка</h3>
+                <p class="footer__subscription-text">Получайте специальные предложения и новости сервиса</p>
 <form class="subscription-form">
   <input class="subscription-form__input" type="email" placeholder="Email">
   <button class="subscription-form__button" type="submit">
@@ -803,15 +825,17 @@ $(function() {
     </div>
   </button>
 </form>
-          </div>
+              </div>
+            </div>
+            <div class="footer-bar">
+              <div class="footer-bar__container">
+                <p class="footer-bar__copyright-text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+                <div class="footer-bar__social"><a class="social__link social__link--twitter" href="empty-page.html"></a><a class="social__link social__link--facebook" href="empty-page.html"></a><a class="social__link social__link--instagram" href="empty-page.html"></a></div>
+              </div>
+            </div>
+          </footer>
         </div>
-        <div class="footer-bar">
-          <div class="footer-bar__container">
-            <p class="footer-bar__copyright-text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
-            <div class="footer-bar__social"><a class="social__link social__link--twitter" href="#"></a><a class="social__link social__link--facebook" href="#"></a><a class="social__link social__link--instagram" href="#"></a></div>
-          </div>
-        </div>
-      </footer>
+      </div>
     <script type="text/javascript" src="./js/index.js"></script></body>
   <link rel="apple-touch-icon" sizes="57x57" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="hotel-ui"><link rel="icon" type="image/png" sizes="32x32" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-20be3e7a017279e9731149174cb51cbf/favicon-16x16.png"><link rel="shortcut icon" href="icons-20be3e7a017279e9731149174cb51cbf/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="hotel-ui"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-20be3e7a017279e9731149174cb51cbf/apple-touch-startup-image-1536x2008.png"><link href="./css/index.css" rel="stylesheet"></head>
 </html>
