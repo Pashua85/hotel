@@ -1,0 +1,13 @@
+.ui-headers-footers {
+  background-color: #F4F4F6;
+
+  &__header {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 6.5rem;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}

@@ -1,5 +1,6 @@
-include ../button/button.pug
-include ../logo/logo.pug
+include ../button-white/button-white
+include ../button-blue/button-blue
+include ../logo/logo
 
 mixin header(isLoggedIn, userName)
   - isLoggedIn = isLoggedIn || false;
@@ -41,9 +42,9 @@ mixin header(isLoggedIn, userName)
       if !isLoggedIn 
         .header__user-block--unlogged
           a.header__link(href="sign-in.html")
-            + button('Войти', 'white', 'low', 'narrow', 'button')
+            + button-white('Войти', 'low')
           a.header__link(href="register.html")
-            + button('Зарегистрироваться', 'blue', 'low', 'narrow', 'button')
+            + button-blue('Зарегистрироваться', 'low')
       if isLoggedIn
         .header__user-block--logged= userName
   script

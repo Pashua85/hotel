@@ -2,6 +2,7 @@
   height: 7rem;
   box-shadow: 0rem 1rem 2rem rgba(31, 32, 65, 0.05);
   z-index: 5;
+  background: white;
 
   &__container {
     position: relative;
@@ -254,7 +255,7 @@
 
   &__user-block--logged {
     color: $grey-color;
-    padding-left: 6.1rem;
+    padding-left: 4.1rem;
     position: relative;
 
     &::before {
@@ -274,7 +275,7 @@
     text-decoration: none;
 
     &:not(:last-child) {
-      margin-right: 1.8rem;
+      margin-right: 1.6rem;
     }
     
     // изменяет стили компонента button, используеиого в хэдере
@@ -285,7 +286,7 @@
       }
     }
 
-    & .button--white {
+    & .button-white {
       @include respond(phone) {
         height: 3rem;
         width: 3rem;
@@ -306,7 +307,7 @@
       }
     }
 
-    & .button--blue {
+    & .button-blue {
       @include respond(phone) {
         position: relative;
         height: 3.4rem;
