@@ -14,10 +14,10 @@
     @include respond(tab-land) {
       flex-direction: column;
     }
+  }
 
-    // @include respond(tab-port) {
-    //   flex-direction: row;
-    // }
+  &__donut {
+    position: relative;
   }
 
   &__list {
@@ -31,12 +31,6 @@
       margin-left: 0;
       margin-top: 1rem;
     }
-
-    // @include respond(tab-port) {
-    //   align-self: flex-end;
-    //   margin-left: 3rem;
-    //   margin-top: 0;
-    // }
   }
 
   &__item {
@@ -77,14 +71,17 @@
 .donut {
 
   &__text {
-    fill: $purple-color;
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    text-align: center;
+    color: $purple-color;
   }
 
   &__number {
     font-family: 'Quicksand Bold', 'Montserrat Bold', sans-serif;
     font-weight: bold;
     font-size: 2.4rem;
-    text-anchor: middle;
     letter-spacing: -.1rem;
   }
 
@@ -94,10 +91,6 @@
     font-size: 1.2rem;
     text-anchor: middle;
     text-transform: uppercase;
-    -moz-transform: translateY(1.7rem);
-    -ms-transform: translateY(1.7rem);
-    -webkit-transform: translateY(1.7rem);
-    transform: translateY(1.7rem);
   }
 }
 

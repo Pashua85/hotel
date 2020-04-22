@@ -2,30 +2,12 @@
   h2.room-impressions__header.header--second Впечатления от номера
   .room-impressions__row
     .room-impressions__donut
-      <svg width="120" height="121" viewBox="0 0 120 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-        //- <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="59" height="121">
-        //-   <path d="M0 0H59V121H0V0Z" fill="#C4C4C4"/>
-        //- </mask>
-        //- <g mask="url(#mask0)">
-        //-   <circle cx="60" cy="61" r="58" stroke="url(#orangeGradient)" stroke-width="4"/>
-        //- </g>
-        //- <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="61" y="1" width="59" height="59">
-        //-   <path d="M61 1H120V60H61V1Z" fill="#C4C4C4"/>
-        //- </mask>
-        //- <g mask="url(#mask1)">
-        //-   <circle cx="60" cy="61" r="55" stroke="url(#blueGradient)" stroke-width="10"/>
-        //- </g>
-        //- <mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="61" y="62" width="59" height="59">
-        //-   <path d="M120 62V121H61L61 62L120 62Z" fill="#C4C4C4"/>
-        //- </mask>
-        //- <g mask="url(#mask2)">
-        //-   <circle cx="60" cy="61" r="58" transform="rotate(90 60 61)" stroke="url(#greenGradient)" stroke-width="4"/>
-        //- </g>
-        <g class="donut__text">
-          <text class="donut__number" x="50%" y="50%">260</text>
-          <text class="donut__label" x="50%" y="50%">голосов</text>
-        </g>
-      
+      <svg width="120" height="120" viewBox="0 0 33.5 33.5" class="donut">
+        <circle class="donut-hole" cx="16.75" cy="16.75" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="16.75" cy="16.75" r="15.91549430918954" fill="transparent" stroke="url(#blackGradient)" stroke-width="1.3" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+        <circle class="donut-ring" cx="16.75" cy="16.75" r="15.91549430918954" fill="transparent" stroke="url(#blueGradient)" stroke-width="1.3" stroke-dasharray="24.5 75.5" stroke-dashoffset="125"></circle>
+        <circle class="donut-ring" cx="16.75" cy="16.75" r="15.91549430918954" fill="transparent" stroke="url(#greenGradient)" stroke-width="1.3" stroke-dasharray="24.5 75.5" stroke-dashoffset="100"></circle>
+        <circle class="donut-ring" cx="16.75" cy="16.75" r="15.91549430918954" fill="transparent" stroke="url(#orangeGradient)" stroke-width="1.3" stroke-dasharray="49.5 50.5" stroke-dashoffset="75"></circle>
         <defs>
           <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
             <stop offset="0%" stop-color="#FFE39C"/>
@@ -39,8 +21,15 @@
             <stop offset="0%" stop-color="#6FCF97"/>
             <stop offset="100%" stop-color="#66D2EA"/>
           </linearGradient>
+          <linearGradient id="blackGradient" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#919191"/>
+            <stop offset="100%" stop-color="#3D4975"/>
+          </linearGradient>
         </defs>
       </svg>
+      .donut__text
+        .donut__number 260
+        .donut__label голосов
     ul.room-impressions__list
       li.room-impressions__item.room-impressions__item--great Великолепно
       li.room-impressions__item.room-impressions__item--good Хорошо
