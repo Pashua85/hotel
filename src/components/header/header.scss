@@ -278,19 +278,16 @@
       margin-right: 1.6rem;
     }
     
-    // изменяет стили компонента button, используеиого в хэдере
-    & .button {
+    // изменяет стили компонента button, используемого в хэдере
+    & .button-white, & .button-blue {
       @include respond(phone) {
         font-size: 0;
-        padding: 0;
       }
     }
 
     & .button-white {
       @include respond(phone) {
-        height: 3rem;
-        width: 3rem;
-        border-radius: 50%;
+        position: relative;
       }
 
       &::after {
