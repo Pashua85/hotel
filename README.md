@@ -8,3 +8,11 @@
 ```
 git clone git@github.com:Pashua85/hotel.git && cd hotel && npm i
 ```
+для работы с пректом в режиме разработки нужно ввести команду:
+```
+npm start
+```
+а для сборки продакшен-версии
+```
+npm run build
+```
